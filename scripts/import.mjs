@@ -2,6 +2,8 @@ import fs from 'node:fs/promises';
 import { processVacancies, stats, toCsv } from '../src/core.mjs';
 import { importHH } from '../src/importers/hh.mjs';
 import { importTrudvsem } from '../src/importers/trudvsem.mjs';
+import { importFarpost } from '../src/importers/farpost.mjs';
+import { importTelegram } from '../src/importers/telegram.mjs';
 
 const root = new URL('../', import.meta.url);
 const read = async name => JSON.parse(await fs.readFile(new URL(name, root), 'utf8'));
@@ -9,14 +11,18 @@ const write = (name, data) => fs.writeFile(new URL(name, root), data);
 const sources = [];
 const collected = [];
 
-const runs = await Promise.all([['HeadHunter', importHH], ['Работа России', importTrudvsem]].map(async ([name, importer]) => {
+const runs = await Promise.all([['HeadHunter', importHH], ['Работа России', importTrudvsem], ['FarPost', importFarpost], ['Публичный Telegram', importTelegram]].map(async ([name, importer]) => {
   try { const rows = await importer(); return { source: { name, mode: 'auto', status: 'ok', found: rows.length }, rows }; }
   catch (error) { return { source: { name, mode: 'auto', status: 'blocked', found: 0, error: String(error.message || error) }, rows: [] }; }
 }));
 for (const run of runs) { sources.push(run.source); collected.push(...run.rows); }
 
+const curated = await read('data/curated-public.json');
+collected.push(...curated);
+sources.push({ name:'Проверенные публичные страницы работодателей', mode:'curated', status:'ok', found:curated.length });
+
 let fallback = false;
-if (!collected.length) {
+if (!runs.some(run => run.rows.length)) {
   fallback = true;
   collected.push(...await read('data/manual-seed.json'));
 }

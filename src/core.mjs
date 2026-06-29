@@ -13,6 +13,7 @@ export function classifyLocation(vacancy) {
   const remote = vacancy.remote === true || /полностью удал[её]н|можно удал[её]нно|remote/iu.test(conditions);
   if (remote) return { accepted: false, bucket: 'remote', reason: 'Полностью удалённая вакансия вынесена из основного списка' };
   if (/вахт|переезд/iu.test(conditions)) return { accepted: false, bucket: 'otherCity', reason: 'Вахта или переезд исключены из основного списка' };
+  if (/военнослужащ|контрактн\w*\s+служб|\bСВО\b/iu.test(vacancy.name + ' ' + conditions)) return { accepted: false, bucket: 'imprecise', reason: 'Фактическое место службы не подтверждено как Спасск-Дальний' };
   if (OTHER_CITIES.some(city => location.includes(city))) return { accepted: false, bucket: 'otherCity', reason: 'Указан другой город' };
   if (CITY_RX.test(location)) return { accepted: true, bucket: 'local', reason: 'Явно указан Спасск-Дальний' };
   return { accepted: false, bucket: 'imprecise', reason: 'Нет точного указания Спасска-Дальнего' };
@@ -63,7 +64,13 @@ export function dedupe(vacancies) {
   const seen = new Set();
   const result = [];
   for (const vacancy of vacancies) {
-    const key = clean([vacancy.name,vacancy.employer,vacancy.address].join('|')).toLowerCase().replace(/[^а-яa-z0-9]+/giu,'');
+    const simple = value => clean(value).toLowerCase().replace(/ё/g,'е').replace(/спасск[\s‑–—-]*дальн\w*/giu,' ').replace(/\b(?:ооо|оао|пао|ао|ип|тс|фку|кгбуз|кгбусо)\b/giu,' ').replace(/[^а-яa-z0-9]+/giu,' ').trim();
+    const title = simple(vacancy.name.replace(/\([^)]*(?:улиц|ул\.|спасск|\d)[^)]*\)/giu,' '));
+    const employerRaw = simple(vacancy.employer);
+    const aliases = [['пятероч','пятерочка'],['мегаполис','мегаполис'],['российские железные дороги','ржд'],['ржд','ржд'],['винлаб','винлаб'],['ростелеком','ростелеком'],['лента','лента'],['мтс','мтс']];
+    const employer = aliases.find(([needle]) => employerRaw.includes(needle))?.[1] || employerRaw;
+    const address = simple(vacancy.address).replace(/\b(?:улица|ул|дом|д)\b/giu,' ').trim();
+    const key = [title,employer,address].join('|');
     if (!seen.has(key)) { seen.add(key); result.push(vacancy); }
   }
   return result;

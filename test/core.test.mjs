@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { classifyLocation, dedupe, filterVacancies, normalizeVacancy, processVacancies, scoreVacancy, toCsv } from '../src/core.mjs';
+import { parseFarpost } from '../src/importers/farpost.mjs';
 
 const local = { id:'1', name:'Оператор техподдержки', employer:'Тест', city:'Спасск-Дальний', address:'Спасск-Дальний, Советская, 1', experience:'Без опыта', education:'СПО', salary:'50 000 ₽', description:'Обучение на месте', source:'HeadHunter', url:'https://hh.ru/vacancy/1' };
 
@@ -13,6 +14,7 @@ test('геофильтр принимает только явный Спасск
 test('другие города и вахта отклоняются', () => {
   assert.equal(classifyLocation({...local,city:'Владивосток',address:'Владивосток'}).bucket, 'otherCity');
   assert.equal(classifyLocation({...local,city:'Спасск-Дальний',address:'Спасск-Дальний',schedule:'Вахта в Магадане'}).accepted, false);
+  assert.equal(classifyLocation({...local,name:'Военнослужащий по контракту',description:'Служба по контракту'}).accepted, false);
 });
 
 test('дедупликация не зависит от id источника', () => {
@@ -57,4 +59,9 @@ test('проект не содержит обязательных платных
   const workflow=await fs.readFile(new URL('../.github/workflows/update-and-deploy.yml',import.meta.url),'utf8');
   assert.doesNotMatch(packageText+workflow,/stripe|paid proxy|brightdata|scrapingbee|apify/iu);
   assert.match(workflow,/github-pages|deploy-pages/iu);
+});
+
+test('публичная выдача FarPost преобразуется в вакансии с оригинальной ссылкой', () => {
+  const html='<article>от 50 000 ₽ <a href="/spassk-dalnii/rabota/vacansii/kladovschik-123456.html">Кладовщик</a> ООО Склад. Улица Советская 1 Без опыта</article>';
+  const rows=parseFarpost(html); assert.equal(rows.length,1); assert.equal(rows[0].source,'FarPost'); assert.match(rows[0].url,/123456\.html/);
 });
