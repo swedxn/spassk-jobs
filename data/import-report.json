@@ -1,23 +1,22 @@
 {
-  "generatedAt": "2026-06-29T23:24:30.234Z",
+  "generatedAt": "2026-06-29T23:41:59.130Z",
   "updateStatus": "Сетевой доступ к API заблокирован; сохранён последний проверенный реальный срез",
   "fallback": true,
   "sourcesChecked": 10,
-  "sourcesConnected": 0,
+  "sourcesConnected": 1,
   "sourceRuns": [
     {
       "name": "HeadHunter",
       "mode": "auto",
       "status": "blocked",
       "found": 0,
-      "error": "fetch failed"
+      "error": "HH HTTP 403"
     },
     {
       "name": "Работа России",
       "mode": "auto",
-      "status": "blocked",
-      "found": 0,
-      "error": "fetch failed"
+      "status": "ok",
+      "found": 0
     }
   ],
   "raw": 36,
