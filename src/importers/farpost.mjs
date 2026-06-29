@@ -2,7 +2,7 @@ import { assertRobotsAllowed, fetchText, sleep, stripHtml } from './web-utils.mj
 
 const BASE = 'https://www.farpost.ru/spassk-dalnii/rabota/vacansii/';
 
-function absolute(href) { try { return new URL(href, BASE).href; } catch { return null; } }
+function absolute(href) { try { const url=new URL(href,BASE); url.search=''; url.hash=''; return url.href; } catch { return null; } }
 function salary(text) { return text.match(/(?:от|до)?\s*\d[\d\s]*(?:[–—-]\s*\d[\d\s]*)?\s*₽/u)?.[0]?.replace(/\s+/g,' ').trim() || 'Не указана'; }
 
 export function parseFarpost(html) {

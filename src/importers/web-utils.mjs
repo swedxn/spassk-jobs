@@ -6,7 +6,10 @@ export const stripHtml = html => String(html || '').replace(/<br\s*\/?>/gi, '\n'
 export async function fetchText(url, timeout = 25000) {
   const response = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'text/html,application/xhtml+xml,text/plain;q=0.9,*/*;q=0.5' }, signal: AbortSignal.timeout(timeout) });
   if (!response.ok) throw new Error(`${new URL(url).hostname} HTTP ${response.status}`);
-  return response.text();
+  const charset = response.headers.get('content-type')?.match(/charset=([^;\s]+)/i)?.[1]?.replace(/["']/g,'') || 'utf-8';
+  const bytes = await response.arrayBuffer();
+  try { return new TextDecoder(charset).decode(bytes); }
+  catch { return new TextDecoder('utf-8').decode(bytes); }
 }
 
 function patternRx(value) {
