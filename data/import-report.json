@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T23:53:37.115Z",
+  "generatedAt": "2026-06-29T23:59:12.673Z",
   "updateStatus": "Облачный импорт выполнен",
   "fallback": false,
   "sourcesChecked": 20,
@@ -38,20 +38,20 @@
     }
   ],
   "raw": 232,
-  "accepted": 52,
+  "accepted": 216,
   "remote": 0,
   "rejected": {
-    "otherCity": 3,
-    "imprecise": 0,
+    "otherCity": 11,
+    "imprecise": 4,
     "remote": 0,
-    "duplicate": 177
+    "duplicate": 1
   },
   "stats": {
-    "active": 52,
+    "active": 216,
     "noExperience": 5,
-    "noHigherEducation": 32,
-    "withSalary": 34,
-    "goodFit": 5
+    "noHigherEducation": 197,
+    "withSalary": 33,
+    "goodFit": 6
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
 }
