@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-29T23:24:30.234Z",
+  "updateStatus": "Сетевой доступ к API заблокирован; сохранён последний проверенный реальный срез",
+  "fallback": true,
+  "sourcesChecked": 10,
+  "sourcesConnected": 0,
+  "sourceRuns": [
+    {
+      "name": "HeadHunter",
+      "mode": "auto",
+      "status": "blocked",
+      "found": 0,
+      "error": "fetch failed"
+    },
+    {
+      "name": "Работа России",
+      "mode": "auto",
+      "status": "blocked",
+      "found": 0,
+      "error": "fetch failed"
+    }
+  ],
+  "raw": 36,
+  "accepted": 28,
+  "remote": 0,
+  "rejected": {
+    "otherCity": 5,
+    "imprecise": 2,
+    "remote": 0,
+    "duplicate": 1
+  },
+  "stats": {
+    "active": 28,
+    "noExperience": 18,
+    "noHigherEducation": 28,
+    "withSalary": 27,
+    "goodFit": 18
+  },
+  "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
+}

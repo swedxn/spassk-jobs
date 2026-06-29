@@ -1,0 +1,13 @@
+{
+  "name": "spassk-jobs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import": "node scripts/import.mjs",
+    "test": "node --test",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

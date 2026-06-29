@@ -1,0 +1,12 @@
+[
+  {"name":"HeadHunter","url":"https://spassk-far.hh.ru/vacancies","access":"Официальный публичный API","connected":true},
+  {"name":"Работа России","url":"https://trudvsem.ru/","access":"Официальные открытые данные","connected":true},
+  {"name":"FarPost","url":"https://www.farpost.ru/spassk-dalnii/rabota/vacansii/","access":"Публичная страница; только ручная ссылка, без автоматического парсинга","connected":false},
+  {"name":"Avito Работа","url":"https://www.avito.ru/spassk_dalniy/vakansii","access":"Нет подходящего бесплатного публичного API; антибот/robots","connected":false},
+  {"name":"SuperJob","url":"https://www.superjob.ru/vakansii/spassk-dalnij.html","access":"API требует ключ; чужие токены не используются","connected":false},
+  {"name":"Зарплата.ру","url":"https://www.zarplata.ru/","access":"Отдельный бесплатный открытый канал вакансий не подтверждён","connected":false},
+  {"name":"Telegram","url":"https://t.me/jobs_spassk","access":"Публичный адрес проверен, содержательной открытой ленты не найдено","connected":false},
+  {"name":"Администрация Спасска-Дальнего","url":"https://spasskd.ru/","access":"Проверяется как локальный источник; машиночитаемой ленты вакансий нет","connected":false},
+  {"name":"Спасская городская больница","url":"https://spassk-far.hh.ru/employer/3826452","access":"Вакансии учтены через HH, отдельный дубль не создаётся","connected":false},
+  {"name":"Работа.ру","url":"https://spassk-dalniy.rabota.ru/","access":"Публичная поисковая страница; автоматический открытый API не найден","connected":false}
+]
