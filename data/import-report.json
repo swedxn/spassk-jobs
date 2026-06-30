@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T13:29:37.493Z",
+  "generatedAt": "2026-06-30T18:25:59.453Z",
   "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Rabota1000, ЦентрРабота",
   "fallback": false,
   "sourcesChecked": 39,
@@ -23,7 +23,7 @@
       "name": "FarPost",
       "mode": "auto",
       "status": "ok",
-      "found": 189
+      "found": 190
     },
     {
       "name": "Публичный Telegram",
@@ -72,11 +72,11 @@
       "found": 28
     }
   ],
-  "raw": 489,
+  "raw": 490,
   "accepted": 361,
   "remote": 0,
   "rejected": {
-    "otherCity": 25,
+    "otherCity": 26,
     "imprecise": 31,
     "remote": 0,
     "duplicate": 72
@@ -87,13 +87,13 @@
     "noHigherEducation": 331,
     "withSalary": 350,
     "goodFit": 163,
-    "newVacancies": 1,
-    "changedVacancies": 9,
-    "strongOpportunities": 2
+    "newVacancies": 0,
+    "changedVacancies": 16,
+    "strongOpportunities": 1
   },
   "changes": {
-    "new": 1,
-    "changed": 9,
+    "new": 0,
+    "changed": 16,
     "closed": 0
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
