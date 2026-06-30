@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T00:01:10.568Z",
+  "generatedAt": "2026-06-30T00:02:59.180Z",
   "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter",
   "fallback": false,
   "sourcesChecked": 20,
@@ -34,7 +34,8 @@
       "name": "Проверенные публичные страницы работодателей",
       "mode": "curated",
       "status": "ok",
-      "found": 41
+      "found": 5,
+      "note": "Ручной FarPost-срез отключён, так как живой импорт успешен"
     },
     {
       "name": "HeadHunter — последний проверенный срез",
@@ -43,21 +44,21 @@
       "found": 36
     }
   ],
-  "raw": 268,
-  "accepted": 244,
+  "raw": 232,
+  "accepted": 212,
   "remote": 0,
   "rejected": {
-    "otherCity": 16,
+    "otherCity": 13,
     "imprecise": 6,
     "remote": 0,
-    "duplicate": 2
+    "duplicate": 1
   },
   "stats": {
-    "active": 244,
-    "noExperience": 23,
-    "noHigherEducation": 225,
-    "withSalary": 228,
-    "goodFit": 183
+    "active": 212,
+    "noExperience": 19,
+    "noHigherEducation": 211,
+    "withSalary": 199,
+    "goodFit": 180
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
 }
