@@ -101,7 +101,7 @@ export function filterVacancies(vacancies, filters = {}) {
 }
 
 export function toCsv(vacancies) {
-  const columns = ['id','name','employer','salary','city','address','experience','education','schedule','source','url','score','fit','publishedAt','checkedAt'];
+  const columns = ['id','name','employer','salary','city','address','experience','education','schedule','source','url','score','fit','opportunityScore','opportunity','firstSeenAt','lastSeenAt','isNew','publishedAt','checkedAt'];
   const q = v => `"${String(v ?? '').replaceAll('"','""')}"`;
   return '\uFEFF' + [columns.join(','), ...vacancies.map(v => columns.map(k => q(v[k])).join(','))].join('\n');
 }
@@ -112,6 +112,9 @@ export function stats(vacancies) {
     noExperience: vacancies.filter(v => /без опыта|не требуется/iu.test(v.experience + ' ' + v.description)).length,
     noHigherEducation: vacancies.filter(v => !/высш(?:ее|его)|бакалавр|магистр/iu.test(v.education + ' ' + v.description)).length,
     withSalary: vacancies.filter(v => v.salary !== 'Не указана').length,
-    goodFit: vacancies.filter(v => v.score >= 75).length
+    goodFit: vacancies.filter(v => v.score >= 75).length,
+    newVacancies: vacancies.filter(v => v.isNew).length,
+    changedVacancies: vacancies.filter(v => v.changedFields?.length).length,
+    strongOpportunities: vacancies.filter(v => v.opportunityScore >= 80).length
   };
 }

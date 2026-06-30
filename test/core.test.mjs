@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { classifyLocation, dedupe, filterVacancies, normalizeVacancy, processVacancies, scoreVacancy, toCsv } from '../src/core.mjs';
 import { parseFarpost } from '../src/importers/farpost.mjs';
+import { addOpportunityScores, reconcileHistory } from '../src/history.mjs';
 
 const local = { id:'1', name:'Оператор техподдержки', employer:'Тест', city:'Спасск-Дальний', address:'Спасск-Дальний, Советская, 1', experience:'Без опыта', education:'СПО', salary:'50 000 ₽', description:'Обучение на месте', source:'HeadHunter', url:'https://hh.ru/vacancy/1' };
 
@@ -64,4 +65,22 @@ test('проект не содержит обязательных платных
 test('публичная выдача FarPost преобразуется в вакансии с оригинальной ссылкой', () => {
   const html='<article>от 50 000 ₽ <a href="/spassk-dalnii/rabota/vacansii/kladovschik-123456.html">Кладовщик</a> ООО Склад. Улица Советская 1 Без опыта</article>';
   const rows=parseFarpost(html); assert.equal(rows.length,1); assert.equal(rows[0].source,'FarPost'); assert.match(rows[0].url,/123456\.html/);
+});
+
+test('история различает новые, изменившиеся и исчезнувшие вакансии', () => {
+  const previous=[normalizeVacancy(local)];
+  const changed={...previous[0],salary:'60 000 ₽'};
+  const first=reconcileHistory([changed,{...changed,id:'new-1',name:'Новая вакансия'}],previous,{},'2026-06-30T01:00:00Z');
+  assert.equal(first.events.filter(e=>e.type==='new').length,1);
+  assert.equal(first.events.filter(e=>e.type==='changed').length,1);
+  const missing1=reconcileHistory([], [changed], first.history,'2026-06-30T02:00:00Z');
+  const missing2=reconcileHistory([], [changed], missing1.history,'2026-06-30T03:00:00Z');
+  assert.equal(missing2.events.filter(e=>e.type==='closed').length,1);
+});
+
+test('Opportunity Score независим от Fit Score и учитывает свежесть', () => {
+  const base={...normalizeVacancy(local),score:80,isNew:false,changedFields:[]};
+  const [ordinary,fresh]=addOpportunityScores([base,{...base,id:'fresh',isNew:true}]);
+  assert.ok(fresh.opportunityScore>ordinary.opportunityScore);
+  assert.equal(typeof fresh.marketSalaryMedian,'number');
 });

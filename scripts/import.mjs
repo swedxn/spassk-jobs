@@ -4,9 +4,11 @@ import { importHH } from '../src/importers/hh.mjs';
 import { importTrudvsem } from '../src/importers/trudvsem.mjs';
 import { importFarpost } from '../src/importers/farpost.mjs';
 import { importTelegram } from '../src/importers/telegram.mjs';
+import { addOpportunityScores, reconcileHistory } from '../src/history.mjs';
 
 const root = new URL('../', import.meta.url);
 const read = async name => JSON.parse(await fs.readFile(new URL(name, root), 'utf8'));
+const readOr = async (name, fallback) => { try { return await read(name); } catch { return fallback; } };
 const write = (name, data) => fs.writeFile(new URL(name, root), data);
 const sources = [];
 const collected = [];
@@ -32,10 +34,17 @@ if (!hhRun?.rows.length) {
 }
 fallback = !runs.some(run => run.rows.length);
 
-const { vacancies, remote, rejected } = processVacancies(collected);
-const checked = await read('data/sources.json');
+const previousData = await readOr('data/vacancies.json',{vacancies:[]});
+const storedHistory = await readOr('data/history.json',{});
+const processed = processVacancies(collected);
 const now = new Date().toISOString();
+const reconciled = reconcileHistory(processed.vacancies,previousData.vacancies||[],storedHistory,now);
+const vacancies = addOpportunityScores(reconciled.vacancies);
+const remote = processed.remote;
+const rejected = processed.rejected;
+const checked = await read('data/sources.json');
 const blocked = sources.filter(source => source.status === 'blocked');
+const changeSummary = { new:reconciled.events.filter(event=>event.type==='new').length, changed:reconciled.events.filter(event=>event.type==='changed').length, closed:reconciled.events.filter(event=>event.type==='closed').length };
 const report = {
   generatedAt: now,
   updateStatus: fallback ? 'Сетевой доступ к автоматическим источникам заблокирован; сохранены проверенные реальные срезы' : blocked.length ? `Облачный импорт выполнен частично; недоступны: ${blocked.map(x=>x.name).join(', ')}` : 'Облачный импорт выполнен полностью',
@@ -48,11 +57,14 @@ const report = {
   remote: remote.length,
   rejected,
   stats: stats(vacancies),
+  changes: changeSummary,
   policy: 'Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены.'
 };
 
 await write('data/vacancies.json', JSON.stringify({ meta: report, vacancies, remote }, null, 2));
 await write('data/vacancies.csv', toCsv(vacancies));
+await write('data/history.json', JSON.stringify(reconciled.history, null, 2));
+await write('data/changes.json', JSON.stringify({ generatedAt:now, summary:changeSummary, events:reconciled.events.slice(0,250) }, null, 2));
 await write('data/import-report.json', JSON.stringify(report, null, 2));
-await write('data/import-report.md', `# Отчёт импорта\n\nДата: ${now}\n\n- Статус: ${report.updateStatus}\n- Проверено источников: ${report.sourcesChecked}\n- Принято строго по Спасску-Дальнему: ${report.accepted}\n- Отброшено из-за другого города: ${rejected.otherCity}\n- Отброшено без точного города: ${rejected.imprecise}\n- Дубликатов: ${rejected.duplicate}\n- Без опыта: ${report.stats.noExperience}\n- Без высшего образования: ${report.stats.noHigherEducation}\n- Хорошо подходят: ${report.stats.goodFit}\n`);
+await write('data/import-report.md', `# Отчёт импорта\n\nДата: ${now}\n\n- Статус: ${report.updateStatus}\n- Проверено источников: ${report.sourcesChecked}\n- Принято строго по Спасску-Дальнему: ${report.accepted}\n- Отброшено из-за другого города: ${rejected.otherCity}\n- Отброшено без точного города: ${rejected.imprecise}\n- Дубликатов: ${rejected.duplicate}\n- Без опыта: ${report.stats.noExperience}\n- Без высшего образования: ${report.stats.noHigherEducation}\n- Хорошо подходят: ${report.stats.goodFit}\n- Новых с прошлого обновления: ${changeSummary.new}\n- Изменившихся: ${changeSummary.changed}\n- Исчезнувших после повторной проверки: ${changeSummary.closed}\n`);
 console.log(JSON.stringify(report, null, 2));

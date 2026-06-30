@@ -6,6 +6,7 @@
   <meta name="description" content="Бесплатный агрегатор реальных вакансий строго в Спасске-Дальнем">
   <title>Работа рядом — Спасск-Дальний</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/enhancements.css">
 </head>
 <body>
   <header class="hero">
@@ -35,6 +36,13 @@
       <article><strong id="mNoHigher">—</strong><span>без требования<br>высшего</span></article>
       <article><strong id="mSalary">—</strong><span>с зарплатой</span></article>
       <article class="accent"><strong id="mGood">—</strong><span>хорошо<br>подходят</span></article>
+      <article><strong id="mNew">—</strong><span>новых за<br>обновление</span></article>
+      <article><strong id="mOpportunity">—</strong><span>срочно<br>посмотреть</span></article>
+    </section>
+
+    <section class="changes" id="changes">
+      <div class="section-heading"><div><p class="eyebrow">ЧТО ИЗМЕНИЛОСЬ</p><h2>Рынок вакансий в движении</h2></div><p>Система помнит объявления между обновлениями: новые, изменившиеся и исчезнувшие после повторной проверки.</p></div>
+      <div class="change-summary"><article><strong id="cNew">0</strong><span>новых</span></article><article><strong id="cChanged">0</strong><span>изменились</span></article><article><strong id="cClosed">0</strong><span>исчезли</span></article><div id="changeFeed" class="change-feed"><span>На первом запуске создан базовый снимок рынка.</span></div></div>
     </section>
 
     <section class="today" id="today">
@@ -46,13 +54,15 @@
       <div class="section-heading"><div><p class="eyebrow">ВСЕ ВАКАНСИИ</p><h2>Найти свой вариант</h2></div><p id="resultCount">Загружаем данные…</p></div>
       <div class="toolbar">
         <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Должность, компания, адрес…" autocomplete="off"></label>
-        <select id="sort" aria-label="Сортировка"><option value="fit">Сначала подходящие</option><option value="new">Сначала новые</option><option value="salary">По зарплате</option><option value="title">По названию</option></select>
+        <select id="sort" aria-label="Сортировка"><option value="opportunity">Сначала возможности</option><option value="fit">Сначала подходящие</option><option value="new">Сначала новые</option><option value="salary">По зарплате</option><option value="title">По названию</option></select>
       </div>
       <div class="chips" aria-label="Фильтры">
         <label><input id="fNoExp" type="checkbox"><span>Без опыта</span></label>
         <label><input id="fNoHigher" type="checkbox"><span>Без высшего</span></label>
         <label><input id="fSalary" type="checkbox"><span>С зарплатой</span></label>
         <label><input id="fGood" type="checkbox"><span>Хорошо подходит</span></label>
+        <label><input id="fNew" type="checkbox"><span>Новое</span></label>
+        <label><input id="fChanged" type="checkbox"><span>Изменилось</span></label>
         <label><input id="fFav" type="checkbox"><span>★ Избранное</span></label>
       </div>
       <div id="vacancyList" class="vacancy-list" aria-live="polite"></div>
@@ -62,7 +72,7 @@
     <section class="sources" id="sources">
       <div class="section-heading"><div><p class="eyebrow">ПРОЗРАЧНОСТЬ</p><h2>Источники</h2></div><p>Автоматически подключаем только официальные API и открытые данные. Остальные оставляем ручными ссылками — без обхода защит.</p></div>
       <div id="sourceList" class="source-list"></div>
-      <div class="exports"><div><strong>Открытые данные проекта</strong><span>Тот же набор, который показан на сайте</span></div><a href="data/vacancies.json" download>Скачать JSON</a><a href="data/vacancies.csv" download>Скачать CSV</a><a href="data/import-report.md">Отчёт импорта</a></div>
+      <div class="exports"><div><strong>Открытые данные проекта</strong><span>Тот же набор, который показан на сайте</span></div><a href="data/vacancies.json" download>JSON</a><a href="data/vacancies.csv" download>CSV</a><a href="data/changes.json">Изменения</a><a href="data/import-report.md">Отчёт</a></div>
     </section>
   </main>
 
@@ -75,7 +85,7 @@
         <div class="facts"></div><p class="description"></p>
         <details><summary>Подробнее и личный трекер</summary><div class="details-grid"><div><span>Образование</span><strong class="education"></strong></div><div><span>График</span><strong class="schedule"></strong></div><div><span>Источник</span><strong class="source"></strong></div></div><div class="reasons"></div><div class="warnings"></div><div class="tracker"><label>Статус<select class="application-status"></select></label><label>Заметка<textarea class="note" rows="2" placeholder="Например: позвонить во вторник"></textarea></label></div></details>
       </div>
-      <div class="card-side"><div class="score"><strong></strong><span>из 100</span></div><p class="fit"></p><a class="original" target="_blank" rel="noopener noreferrer">Открыть оригинал ↗</a></div>
+      <div class="card-side"><div class="score-pair"><div><div class="score"><strong></strong><span>fit</span></div><p class="fit"></p></div><div><div class="score opportunity-score"><strong></strong><span>шанс</span></div><p class="opportunity"></p></div></div><a class="original" target="_blank" rel="noopener noreferrer">Открыть оригинал ↗</a></div>
     </article>
   </template>
   <script type="module" src="assets/app.js"></script>
