@@ -2,10 +2,11 @@ import { fetchText, sleep, stripHtml } from './web-utils.mjs';
 
 const CHANNELS = [
   { name:'Vakansii_Spasske_dalnem_RF', queries:[''] },
-  { name:'rabota_spassk_dalnyq', queries:[''] },
+  { name:'rabota_spassk_dalnyq', queries:['', 'Спасск-Дальний', 'вакансия', 'требуется'] },
   { name:'fareastjob', queries:['', 'Спасск'] },
   { name:'spasskadmin', queries:['', 'вакансия', 'требуется'] },
   { name:'spassktoday', queries:['', 'вакансия', 'требуется'] },
+  { name:'spdlife25', queries:['вакансия', 'требуется', 'работа'] },
   { name:'yo_spasskd', queries:['вакансия', 'требуется'] },
   { name:'spasskped', queries:['вакансия', 'требуется'] },
   { name:'gimnazia_spd', queries:['вакансия', 'требуется'] },
@@ -16,7 +17,7 @@ const JOB_RX = new RegExp(`ваканси|(?:на\\s+(?:постоянную\\s+
 const ROLE_RX = new RegExp(ROLE,'iu');
 const DEDICATED = new Set(['Vakansii_Spasske_dalnem_RF','rabota_spassk_dalnyq']);
 const SCAM_RX = /мошенн|крипт|арбитраж|ставк[аи]|инвестиц|выкуп\s+товар|залог|перевод[ыа]?\s+по\s+карт|л[её]гкие деньги|доход\s+без\s+усилий|отзыв\w*\s+на\s+маркетплейс|смотреть\s+reels|простые\s+задания|подписываться\s+на\s+канал/iu;
-const MAX_AGE_MS = 120 * 24 * 60 * 60 * 1000;
+const MAX_AGE_MS = 45 * 24 * 60 * 60 * 1000;
 
 export function parseTelegramMessages(html, channel, now = Date.now()) {
   const rows=[];
@@ -31,7 +32,7 @@ export function parseTelegramMessages(html, channel, now = Date.now()) {
     if (publishedAt && now - Date.parse(publishedAt) > MAX_AGE_MS) continue;
     if (channel !== 'Vakansii_Spasske_dalnem_RF' && !/спасск[\s‑–—-]*дальн/iu.test(text)) continue;
     const lines=text.split(/\n|[.!?]\s+/).map(x=>x.trim()).filter(Boolean);
-    const title=(lines.find(line=>JOB_RX.test(line))||text.split(/\s+(?=\d[\d\s]*\s*₽)|\s+Обязанности:/iu)[0]||lines[0]||'Вакансия из Telegram').slice(0,150);
+    const title=(lines.find(line=>JOB_RX.test(line))||text.split(/\s+(?=(?:\d[\d\s]*\s*₽|Заработная\s+плата|Обязанности:|Требования:|Описание:))/iu)[0]||lines[0]||'Вакансия из Telegram').slice(0,150);
     const pay=text.match(/(?:от|до)?\s*\d[\d\s]*(?:[–—-]\s*\d[\d\s]*)?\s*(?:₽|руб)/iu)?.[0]||'Не указана';
     const address=text.match(/Спасск[\s‑–—-]*Дальн(?:ий|ем|его)\s*,\s*[А-ЯЁа-яё\s‑–—-]+,\s*\d+[А-ЯЁа-яё]?/u)?.[0] || 'Спасск-Дальний (адрес уточнить в посте)';
     const knownEmployer = text.match(/Пят[её]рочк\w*|Российские железные дороги|РЖД|МТС|Ростелеком|Красное\s+и\s+Белое|ВинЛаб|DNS/iu)?.[0];

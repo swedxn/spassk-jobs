@@ -2,6 +2,11 @@ const TRACKED_FIELDS = ['name','employer','salary','address','experience','educa
 
 const same = value => String(value ?? '').replace(/\s+/g,' ').trim();
 
+export function pruneHistory(history, now = new Date().toISOString(), maxInactiveDays = 120) {
+  const threshold=Date.parse(now)-maxInactiveDays*24*60*60*1000;
+  return Object.fromEntries(Object.entries(history).filter(([,item])=>item.active !== false || Date.parse(item.lastSeenAt || item.firstSeenAt || now) >= threshold));
+}
+
 export function reconcileHistory(vacancies, previous = [], stored = {}, now = new Date().toISOString()) {
   const previousById = new Map(previous.map(item => [item.id,item]));
   const currentIds = new Set(vacancies.map(item => item.id));

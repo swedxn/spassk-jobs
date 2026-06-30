@@ -1,11 +1,13 @@
 const STATUSES = ['не смотрел','интересно','хочу откликнуться','откликнулся','позвонил','жду ответа','пригласили','отказ','не подходит'];
 const storeKey = 'spassk-jobs-tracker-v1';
-let tracker = JSON.parse(localStorage.getItem(storeKey) || '{}');
+let tracker = {};
+try { tracker=JSON.parse(localStorage.getItem(storeKey) || '{}'); } catch { localStorage.removeItem(storeKey); }
 let data = { meta:{}, vacancies:[], remote:[] };
 let changesData = { summary:{new:0,changed:0,closed:0}, events:[] };
 const previousVisit = localStorage.getItem('spassk-jobs-last-visit');
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const safeUrl = value => { try { const url=new URL(value,location.href); return ['http:','https:'].includes(url.protocol)?url.href:'#'; } catch { return '#'; } };
 
 function saveTracker(){ localStorage.setItem(storeKey, JSON.stringify(tracker)); }
 function salaryNumber(value){ return Math.max(...(String(value).replace(/\s/g,'').match(/\d+/g)||['0']).map(Number)); }
@@ -30,7 +32,7 @@ function updateMetrics(){
 
 function renderToday(){
   const best=[...data.vacancies].filter(v=>v.active).sort((a,b)=>(b.opportunityScore||0)-(a.opportunityScore||0)||b.score-a.score).slice(0,3);
-  $('todayGrid').innerHTML=best.map((v,i)=>`<article class="today-card"><span class="rank">0${i+1} · шанс ${v.opportunityScore||0}/100</span><h3>${esc(v.name)}</h3><p>${esc(v.employer)} · ${esc(v.salary)}</p><a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">Открыть оригинал ↗</a></article>`).join('');
+  $('todayGrid').innerHTML=best.map((v,i)=>`<article class="today-card"><span class="rank">0${i+1} · шанс ${v.opportunityScore||0}/100</span><h3>${esc(v.name)}</h3><p>${esc(v.employer)} · ${esc(v.salary)}</p><a href="${esc(safeUrl(v.url))}" target="_blank" rel="noopener noreferrer">Открыть оригинал ↗</a></article>`).join('');
 }
 
 function renderChanges(){
@@ -70,7 +72,7 @@ function card(v){
   node.querySelector('.opportunity-score strong').textContent=v.opportunityScore??0;
   node.querySelector('.fit').textContent=v.fit;
   node.querySelector('.opportunity').textContent=v.opportunity||'Обычная вакансия';
-  node.querySelector('.original').href=v.url;
+  node.querySelector('.original').href=safeUrl(v.url);
   node.querySelector('.badges').innerHTML=[newForUser(v)?['Новое','new']:null,v.changedFields?.length?['Изменилось','changed']:null,noExp(v)?['Без опыта','']:null,noHigher(v)?['Без высшего','']:null,v.score>=75?['Хороший выбор','']:null].filter(Boolean).map(([x,c])=>`<span class="badge ${c}">${x}</span>`).join('');
   node.querySelector('.reasons').textContent=[v.reasons?.length?`Fit: ${v.reasons.join('; ')}.`:'',v.opportunityReasons?.length?`Возможность: ${v.opportunityReasons.join('; ')}.`:''].filter(Boolean).join(' ');
   node.querySelector('.warnings').textContent=v.warnings?.length?`Обратите внимание: ${v.warnings.join('; ')}.`:'';
@@ -90,15 +92,22 @@ function render(){
   $('resultCount').textContent=`Найдено: ${rows.length} из ${data.vacancies.length}`; $('empty').hidden=rows.length>0;
 }
 
+function renderRemote(){
+  const section=$('remoteVacancies'); const list=$('remoteList');
+  const rows=(data.remote||[]).filter(v=>v.active!==false);
+  section.hidden=!rows.length;
+  if(rows.length){ list.replaceChildren(...rows.map(card)); $('remoteCount').textContent=`Найдено полностью удалённых: ${rows.length}`; }
+}
+
 async function loadSources(){
   const sources=await fetch('data/sources.json').then(r=>r.json());
-  $('sourceList').innerHTML=sources.map(s=>`<article class="source-row"><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)} ↗</a><span class="source-state ${s.connected?'on':''}">${s.connected?'подключён':'ручная проверка'}</span><p>${esc(s.access)}</p></article>`).join('');
+  $('sourceList').innerHTML=sources.map(s=>`<article class="source-row"><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.name)} ↗</a><span class="source-state ${s.connected?'on':''}">${s.connected?'подключён':'ручная проверка'}</span><p>${esc(s.access)}</p></article>`).join('');
 }
 
 function exportTracker(){ const blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),tracker},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='spassk-jobs-tracker.json';a.click();URL.revokeObjectURL(a.href); }
 
 async function init(){
-  try{ const response=await fetch('data/vacancies.json',{cache:'no-store'});if(!response.ok)throw new Error(response.status);data=await response.json();changesData=await fetch('data/changes.json',{cache:'no-store'}).then(r=>r.ok?r.json():changesData).catch(()=>changesData);updateMetrics();renderChanges();renderToday();render();await loadSources();localStorage.setItem('spassk-jobs-last-visit',data.meta.generatedAt); }
+  try{ const response=await fetch('data/vacancies.json',{cache:'no-store'});if(!response.ok)throw new Error(response.status);data=await response.json();changesData=await fetch('data/changes.json',{cache:'no-store'}).then(r=>r.ok?r.json():changesData).catch(()=>changesData);updateMetrics();renderChanges();renderToday();render();renderRemote();await loadSources();localStorage.setItem('spassk-jobs-last-visit',data.meta.generatedAt); }
   catch(error){$('updateStatus').textContent='Ошибка загрузки данных';$('lastUpdate').textContent='Откройте JSON-экспорт или повторите позже';$('resultCount').textContent='Данные временно недоступны';console.error(error);}
 }
 

@@ -1,7 +1,7 @@
 import crypto from 'node:crypto';
 
 const CITY_RX = /спасск[\s‑–—-]*(дальн(?:ий|ем|его)|дальн)/iu;
-const OTHER_CITIES = ['владивосток','уссурийск','артём','артем','находка','дальнереченск','лесозаводск','арсеньев','партизанск','дальнегорск','большой камень','фокино','лучегорск','кировский','благовещенск','магадан','хабаровск','москва','санкт-петербург'];
+const OTHER_CITIES = ['владивосток','уссурийск','артём','артем','находка','дальнереченск','лесозаводск','арсеньев','партизанск','дальнегорск','большой камень','фокино','лучегорск','кировский','сибирцево','черниговка','хороль','покровка','камень-рыболов','кавалерово','славянка','ольга','терней','липовцы','михайловка','раздольное','новошахтинский','светлогорье','благовещенск','магадан','хабаровск','москва','санкт-петербург'];
 const PROFILE = ['техподдерж','системн','сетев','компьютер','it','оператор','продав','кассир','кладов','курьер','администратор','помощник','грузчик','достав','пвз','охран','ученик','стаж'];
 
 export const clean = value => String(value ?? '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
@@ -10,10 +10,12 @@ export const stableId = (...parts) => crypto.createHash('sha256').update(parts.m
 export function classifyLocation(vacancy) {
   const location = clean([vacancy.city, vacancy.address, vacancy.name].join(' ')).toLowerCase();
   const conditions = clean(vacancy.schedule + ' ' + vacancy.description);
-  const remote = vacancy.remote === true || /полностью удал[её]н|можно удал[её]нно|remote/iu.test(conditions);
+  const remoteMention = /(?:^|\W)(?:полностью\s+)?удал[её]нн(?:ая|ую|ой|о|ый|ые|ого)?(?:\s+работа|\s+формат)?(?:$|\W)|remote/iu.test(conditions);
+  const remote = vacancy.remote === true || (remoteMention && !/не\s+удал[её]нн|удал[её]нн[а-яё]*(?:\s+работа)?\s+(?:нет|не предусмотр)/iu.test(conditions));
   if (remote) return { accepted: false, bucket: 'remote', reason: 'Полностью удалённая вакансия вынесена из основного списка' };
   if (/вахт|переезд/iu.test(conditions)) return { accepted: false, bucket: 'otherCity', reason: 'Вахта или переезд исключены из основного списка' };
   if (/военнослужащ|контрактн\w*\s+служб|\bСВО\b/iu.test(vacancy.name + ' ' + conditions)) return { accepted: false, bucket: 'imprecise', reason: 'Фактическое место службы не подтверждено как Спасск-Дальний' };
+  if (/FarPost/iu.test(vacancy.source) && /спасск(?:ий|ого|ом)\s+район/iu.test(conditions) && !CITY_RX.test(conditions)) return { accepted:false, bucket:'imprecise', reason:'Указан Спасский район без подтверждения города Спасск-Дальний' };
   if (OTHER_CITIES.some(city => location.includes(city))) return { accepted: false, bucket: 'otherCity', reason: 'Указан другой город' };
   const farpostOtherCity = /FarPost/iu.test(vacancy.source) && OTHER_CITIES.some(city => new RegExp(`(?:^|[,;.]\\s*|\\bг(?:ород)?\\.?\\s+)${city}(?=\\s|,|;|$)`, 'iu').test(conditions));
   if (farpostOtherCity) return { accepted: false, bucket: 'otherCity', reason: 'В объявлении FarPost явно указан другой город' };
@@ -34,7 +36,9 @@ export function normalizeVacancy(raw) {
   const schedule = clean(raw.schedule?.name || raw.schedule || 'Не указано');
   const description = clean(raw.description || raw.snippet?.requirement || raw.snippet?.responsibility || 'Подробности — в оригинале вакансии.');
   const source = clean(raw.source?.name || raw.source || 'Источник');
-  const url = raw.alternate_url || raw.url || raw.vac_url || '#';
+  const candidateUrl = raw.alternate_url || raw.url || raw.vac_url || '#';
+  let url='#';
+  try { const parsed=new URL(candidateUrl); if (['http:','https:'].includes(parsed.protocol)) url=parsed.href; } catch { /* invalid and unsafe URLs stay disabled */ }
   const id = clean(raw.id || stableId(source, name, employer, address));
   return { id, name, employer, salary, city, address, experience, education, schedule, description, source, url, publishedAt: raw.published_at || raw.publishedAt || null, checkedAt: raw.checkedAt || new Date().toISOString(), remote: raw.remote === true, active: raw.active !== false, warnings: Array.isArray(raw.warnings) ? raw.warnings : [] };
 }
@@ -70,7 +74,7 @@ export function dedupe(vacancies) {
   const result = [];
   for (const vacancy of vacancies) {
     const simple = value => clean(value).toLowerCase().replace(/ё/g,'е').replace(/спасск[\s‑–—-]*дальн\w*/giu,' ').replace(/\b(?:ооо|оао|пао|ао|ип|тс|фку|кгбуз|кгбусо)\b/giu,' ').replace(/[^а-яa-z0-9]+/giu,' ').trim();
-    const title = simple(vacancy.name.replace(/\([^)]*(?:улиц|ул\.|спасск|\d)[^)]*\)/giu,' '));
+    const title = simple(vacancy.name.replace(/\([^)]*(?:улиц|ул\.|спасск|\d)[^)]*\)/giu,' ').replace(/\bзаработная\s+плата\b.*$/iu,' '));
     const employerRaw = simple(vacancy.employer);
     const aliases = [['пятероч','пятерочка'],['мегаполис','мегаполис'],['российские железные дороги','ржд'],['ржд','ржд'],['винлаб','винлаб'],['ростелеком','ростелеком'],['лента','лента'],['мтс','мтс']];
     const employer = aliases.find(([needle]) => employerRaw.includes(needle))?.[1] || employerRaw;

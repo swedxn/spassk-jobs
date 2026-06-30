@@ -1,8 +1,10 @@
 const UA = 'SpasskJobs/1.0 (https://github.com/swedxn/spassk-jobs/issues)';
 
 async function json(url) {
-  const response = await fetch(url, { headers: { 'User-Agent': UA, 'HH-User-Agent': UA, Accept: 'application/json' }, signal: AbortSignal.timeout(20000) });
-  if (!response.ok) throw new Error(`HH HTTP ${response.status}`);
+  let response;
+  try { response = await fetch(url, { headers: { 'User-Agent': UA, 'HH-User-Agent': UA, Accept: 'application/json' }, signal: AbortSignal.timeout(20000) }); }
+  catch(error){ throw new Error(`HH ${new URL(url).pathname}: ${error.message}`); }
+  if (!response.ok) throw new Error(`HH ${new URL(url).pathname} HTTP ${response.status}`);
   return response.json();
 }
 

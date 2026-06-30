@@ -41,7 +41,7 @@
     </section>
 
     <section class="changes" id="changes">
-      <div class="section-heading"><div><p class="eyebrow">ЧТО ИЗМЕНИЛОСЬ</p><h2>Рынок вакансий в движении</h2></div><p>Система помнит объявления между обновлениями: новые, изменившиеся и исчезнувшие после повторной проверки.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">ЧТО ИЗМЕНИЛОСЬ</p><h2>Рынок вакансий в движении</h2></div><p>Система помнит объявления между обновлениями: новые, изменившиеся и исчезнувшие после успешной проверки источника.</p></div>
       <div class="change-summary"><article><strong id="cNew">0</strong><span>новых</span></article><article><strong id="cChanged">0</strong><span>изменились</span></article><article><strong id="cClosed">0</strong><span>исчезли</span></article><div id="changeFeed" class="change-feed"><span>На первом запуске создан базовый снимок рынка.</span></div></div>
     </section>
 
@@ -67,6 +67,12 @@
       </div>
       <div id="vacancyList" class="vacancy-list" aria-live="polite"></div>
       <div id="empty" class="empty" hidden><strong>Ничего не нашлось</strong><p>Снимите один из фильтров или попробуйте другое слово.</p></div>
+    </section>
+
+    <section class="catalog" id="remoteVacancies" hidden>
+      <div class="section-heading"><div><p class="eyebrow">ОТДЕЛЬНО ОТ ГОРОДА</p><h2>Полностью удалённая работа</h2></div><p id="remoteCount">Загружаем данные…</p></div>
+      <p>Эти вакансии не входят в основное число по Спасску-Дальнему. Перед откликом особенно внимательно проверяйте работодателя.</p>
+      <div id="remoteList" class="vacancy-list"></div>
     </section>
 
     <section class="sources" id="sources">

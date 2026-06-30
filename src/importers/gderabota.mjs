@@ -39,14 +39,14 @@ function nextPage(html,current) {
 export async function importGdeRabota() {
   await assertRobotsAllowed(BASE);
   const rows=[]; let url=BASE; let page=1;
-  for(let i=0;i<10&&url;i++){
+  for(let i=0;i<25&&url;i++){
     const html=await fetchText(url);
     const parsed=parseGdeRabota(html);
     const before=rows.length;
     rows.push(...parsed.filter(item=>!rows.some(old=>old.url===item.url)));
     if(i>0 && rows.length===before) break;
     const next=nextPage(html,page); url=next?.url; page=next?.page||page+1;
-    if(!url && i<9) url=`${BASE}?page=${page}`;
+    if(!url && i<24) url=`${BASE}?page=${page}`;
     if(url) await sleep(900);
   }
   if(!rows.length) throw new Error('ГдеРабота: карточки не найдены — возможно, изменилась разметка');
