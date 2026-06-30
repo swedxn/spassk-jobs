@@ -6,6 +6,7 @@ import { importFarpost } from '../src/importers/farpost.mjs';
 import { importTelegram } from '../src/importers/telegram.mjs';
 import { importRabota1000 } from '../src/importers/rabota1000.mjs';
 import { importCentrrabota } from '../src/importers/centrrabota.mjs';
+import { importGdeRabota } from '../src/importers/gderabota.mjs';
 import { addOpportunityScores, reconcileHistory } from '../src/history.mjs';
 
 const root = new URL('../', import.meta.url);
@@ -15,7 +16,7 @@ const write = (name, data) => fs.writeFile(new URL(name, root), data);
 const sources = [];
 const collected = [];
 
-const runs = await Promise.all([['HeadHunter', importHH], ['Работа России', importTrudvsem], ['FarPost', importFarpost], ['Публичный Telegram', importTelegram], ['Rabota1000', importRabota1000], ['ЦентрРабота', importCentrrabota]].map(async ([name, importer]) => {
+const runs = await Promise.all([['HeadHunter', importHH], ['Работа России', importTrudvsem], ['FarPost', importFarpost], ['Публичный Telegram', importTelegram], ['ГдеРабота', importGdeRabota], ['Rabota1000', importRabota1000], ['ЦентрРабота', importCentrrabota]].map(async ([name, importer]) => {
   try { const rows = await importer(); return { source: { name, mode: 'auto', status: 'ok', found: rows.length }, rows }; }
   catch (error) { return { source: { name, mode: 'auto', status: 'blocked', found: 0, error: String(error.message || error) }, rows: [] }; }
 }));
@@ -23,7 +24,8 @@ for (const run of runs) { sources.push(run.source); collected.push(...run.rows);
 
 const curatedAll = await read('data/curated-public.json');
 const farpostRun = runs.find(run => run.source.name === 'FarPost');
-const curated = farpostRun?.rows.length ? curatedAll.filter(row => row.source !== 'FarPost') : curatedAll;
+const liveSources = new Set(runs.filter(run=>run.rows.length).map(run=>run.source.name));
+const curated = curatedAll.filter(row => !(row.source === 'FarPost' && farpostRun?.rows.length) && !(row.source === 'ГдеРабота' && liveSources.has('ГдеРабота')));
 collected.push(...curated);
 sources.push({ name:'Проверенные публичные страницы работодателей', mode:'curated', status:'ok', found:curated.length, note:farpostRun?.rows.length ? 'Ручной FarPost-срез отключён, так как живой импорт успешен' : 'Включён страховочный FarPost-срез' });
 

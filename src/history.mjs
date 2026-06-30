@@ -15,7 +15,7 @@ export function reconcileHistory(vacancies, previous = [], stored = {}, now = ne
     const firstSeenAt = old?.firstSeenAt || prior?.firstSeenAt || (isNew ? now : prior?.checkedAt || now);
     if (isNew) events.push({ type:'new', vacancyId:vacancy.id, name:vacancy.name, source:vacancy.source, at:now });
     if (changedFields.length) events.push({ type:'changed', vacancyId:vacancy.id, name:vacancy.name, source:vacancy.source, fields:changedFields, before:Object.fromEntries(changedFields.map(field=>[field,prior[field]])), after:Object.fromEntries(changedFields.map(field=>[field,vacancy[field]])), at:now });
-    history[vacancy.id] = { firstSeenAt, lastSeenAt:now, active:true, missedRuns:0, seenRuns:(old?.seenRuns || 0)+1, lastChangedAt:changedFields.length?now:old?.lastChangedAt||null };
+    history[vacancy.id] = { firstSeenAt, lastSeenAt:now, active:true, missedRuns:0, seenRuns:(old?.seenRuns || 0)+1, lastChangedAt:changedFields.length?now:old?.lastChangedAt||null, name:vacancy.name, source:vacancy.source };
     return { ...vacancy, firstSeenAt, lastSeenAt:now, isNew, changedFields };
   });
 
@@ -23,8 +23,13 @@ export function reconcileHistory(vacancies, previous = [], stored = {}, now = ne
     if (currentIds.has(prior.id)) continue;
     const old = stored[prior.id] || { firstSeenAt:prior.firstSeenAt || prior.checkedAt || now, seenRuns:1, missedRuns:0 };
     const missedRuns = (old.missedRuns || 0)+1;
-    history[prior.id] = { ...old, lastSeenAt:old.lastSeenAt || prior.checkedAt || now, active:missedRuns < 2, missedRuns };
-    if (missedRuns === 2) events.push({ type:'closed', vacancyId:prior.id, name:prior.name, source:prior.source, at:now });
+    history[prior.id] = { ...old, lastSeenAt:old.lastSeenAt || prior.checkedAt || now, active:false, missedRuns, name:prior.name, source:prior.source };
+    if (old.active !== false) events.push({ type:'closed', vacancyId:prior.id, name:prior.name, source:prior.source, at:now });
+  }
+  for (const [id,old] of Object.entries(stored)) {
+    if (currentIds.has(id) || previousById.has(id) || old.active === false) continue;
+    history[id] = { ...old, active:false, missedRuns:(old.missedRuns||0)+1 };
+    events.push({ type:'closed', vacancyId:id, name:old.name||id, source:old.source||'Источник', at:now });
   }
   return { vacancies:enriched, history, events };
 }
