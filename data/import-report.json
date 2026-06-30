@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-30T02:57:03.468Z",
+  "generatedAt": "2026-06-30T07:37:43.730Z",
   "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Rabota1000, ЦентрРабота",
   "fallback": false,
-  "sourcesChecked": 28,
-  "sourcesConnected": 5,
+  "sourcesChecked": 36,
+  "sourcesConnected": 6,
   "sourceRuns": [
     {
       "name": "HeadHunter",
@@ -16,19 +16,25 @@
       "name": "Работа России",
       "mode": "auto",
       "status": "ok",
-      "found": 0
+      "found": 65
     },
     {
       "name": "FarPost",
       "mode": "auto",
       "status": "ok",
-      "found": 189
+      "found": 191
     },
     {
       "name": "Публичный Telegram",
       "mode": "auto",
       "status": "ok",
-      "found": 0
+      "found": 1
+    },
+    {
+      "name": "ГдеРабота",
+      "mode": "auto",
+      "status": "ok",
+      "found": 30
     },
     {
       "name": "Rabota1000",
@@ -48,7 +54,7 @@
       "name": "Проверенные публичные страницы работодателей",
       "mode": "curated",
       "status": "ok",
-      "found": 12,
+      "found": 11,
       "note": "Ручной FarPost-срез отключён, так как живой импорт успешен"
     },
     {
@@ -58,29 +64,29 @@
       "found": 36
     }
   ],
-  "raw": 237,
-  "accepted": 216,
+  "raw": 334,
+  "accepted": 278,
   "remote": 0,
   "rejected": {
-    "otherCity": 14,
-    "imprecise": 6,
+    "otherCity": 23,
+    "imprecise": 27,
     "remote": 0,
-    "duplicate": 1
+    "duplicate": 6
   },
   "stats": {
-    "active": 216,
-    "noExperience": 20,
-    "noHigherEducation": 214,
-    "withSalary": 203,
-    "goodFit": 76,
-    "newVacancies": 7,
-    "changedVacancies": 0,
-    "strongOpportunities": 3
+    "active": 278,
+    "noExperience": 34,
+    "noHigherEducation": 260,
+    "withSalary": 266,
+    "goodFit": 101,
+    "newVacancies": 64,
+    "changedVacancies": 22,
+    "strongOpportunities": 16
   },
   "changes": {
-    "new": 7,
-    "changed": 0,
-    "closed": 0
+    "new": 64,
+    "changed": 22,
+    "closed": 4
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
 }

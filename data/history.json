@@ -1,1745 +1,2817 @@
 {
   "farpost-126422391": {
     "firstSeenAt": "2026-06-30T00:06:01.464Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "SMM-специалист/Менеджер",
+    "source": "FarPost"
   },
   "farpost-129727590": {
     "firstSeenAt": "2026-06-30T00:06:01.464Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор ПВЗ OZON",
+    "source": "FarPost"
   },
   "farpost-104544094": {
     "firstSeenAt": "2026-06-30T00:06:01.464Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Требуется Мастер по Наращиванию ресниц (Лашмейкер, Лешмейкер) в VP Studio",
+    "source": "FarPost"
   },
   "farpost-118491396": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:52:28.701Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Охранник",
+    "source": "FarPost"
   },
   "farpost-125641380": {
     "firstSeenAt": "2026-06-30T00:06:01.464Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель-механик (тракторист)",
+    "source": "FarPost"
   },
   "farpost-135472146": {
     "firstSeenAt": "2026-06-30T00:06:01.464Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Оператор РБУ",
+    "source": "FarPost"
   },
   "farpost-121448734": {
     "firstSeenAt": "2026-06-30T00:06:01.464Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец-консультант",
+    "source": "FarPost"
   },
   "farpost-118875424": {
     "firstSeenAt": "2026-06-30T00:06:01.464Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Уборщик служебных помещений на 4 часа в день",
+    "source": "FarPost"
   },
   "farpost-127887400": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец-кассир, Сотрудник торгового зала (Спасск-Дальний)",
+    "source": "FarPost"
   },
   "farpost-136193656": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:52:28.701Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Мастер дорожный на Корфовскую",
+    "source": "FarPost"
   },
   "farpost-132845810": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Менеджер пункта выдачи. Работа в фирменном пункте выдачи Wildberries!",
+    "source": "FarPost"
   },
   "farpost-117587701": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Управляющий магазином",
+    "source": "FarPost"
   },
   "farpost-128547680": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец-консультант",
+    "source": "FarPost"
   },
   "farpost-136570791": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец-консультант",
+    "source": "FarPost"
   },
   "farpost-104396837": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:52:28.701Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Заместитель управляющего, старший продавец, продавец",
+    "source": "FarPost"
   },
   "farpost-94971708": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Повар на период отпуска",
+    "source": "FarPost"
   },
   "farpost-133078554": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Охранник / стрелок / контролер КПП",
+    "source": "FarPost"
   },
   "farpost-125446683": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Риелтор, агент по недвижимости",
+    "source": "FarPost"
   },
   "farpost-136122544": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель (категории С, СЕ)",
+    "source": "FarPost"
   },
   "farpost-128356396": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Пекарь в хлебный цех",
+    "source": "FarPost"
   },
   "farpost-107106242": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Младший инспектор отдела охраны, кинолог",
+    "source": "FarPost"
   },
   "farpost-130891662": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель такси .Яндекс,Везет,Uber Без Самозанятости.Без выписки , Подключаем всех !",
+    "source": "FarPost"
   },
   "farpost-98893548": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель-курьер",
+    "source": "FarPost"
   },
   "farpost-102413072": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
     "lastSeenAt": "2026-06-30T02:57:03.468Z",
-    "active": true,
-    "missedRuns": 0,
+    "active": false,
+    "missedRuns": 1,
     "seenRuns": 3,
-    "lastChangedAt": null
+    "lastChangedAt": null,
+    "name": "Мерчендайзер",
+    "source": "FarPost"
   },
   "farpost-134073332": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель-экспедитор",
+    "source": "FarPost"
   },
   "farpost-136517001": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Бариста",
+    "source": "FarPost"
   },
   "farpost-112616356": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Пекарь (г. Спасск-Дальний, ул. Вокзальная, д. 45)",
+    "source": "FarPost"
   },
   "farpost-134410532": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Директор магазина - партнер (г. Спасск-Дальний, ул Парковая, д 64 )",
+    "source": "FarPost"
   },
   "farpost-124694458": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор магазина (ул. Советская, 132а)",
+    "source": "FarPost"
   },
   "farpost-127554708": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Пекарь (ул. Краснознамённая, 31)",
+    "source": "FarPost"
   },
   "farpost-125719420": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор магазина (ул. Парковая, 64)",
+    "source": "FarPost"
   },
   "farpost-129313637": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Оператор фронтального погрузчика",
+    "source": "FarPost"
   },
   "farpost-132429316": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:52:28.701Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Продавец-консультант ул. Красногвардейская д. 81/2",
+    "source": "FarPost"
   },
   "farpost-136496854": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор гостиницы",
+    "source": "FarPost"
   },
   "farpost-130215526": {
     "firstSeenAt": "2026-06-30T00:06:01.465Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Электромонтер связи и радиофикации",
+    "source": "FarPost"
   },
   "farpost-126851422": {
     "firstSeenAt": "2026-06-30T00:06:01.466Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:52:28.701Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Сторож",
+    "source": "FarPost"
   },
   "farpost-134108484": {
     "firstSeenAt": "2026-06-30T00:06:01.466Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Повар",
+    "source": "FarPost"
   },
   "farpost-133670756": {
     "firstSeenAt": "2026-06-30T00:06:01.466Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Кадастровый инженер, помощник кадастрового инженера",
+    "source": "FarPost"
   },
   "farpost-129611256": {
     "firstSeenAt": "2026-06-30T00:06:01.466Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:52:28.701Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Сиделка",
+    "source": "FarPost"
   },
   "farpost-128662132": {
     "firstSeenAt": "2026-06-30T00:06:01.466Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Кухонный работник в детский лагерь на летний период",
+    "source": "FarPost"
   },
   "farpost-118394146": {
     "firstSeenAt": "2026-06-30T00:06:01.466Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Повар в детский лагерь на летний период",
+    "source": "FarPost"
   },
   "farpost-109972568": {
     "firstSeenAt": "2026-06-30T00:06:01.466Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Бетонщик",
+    "source": "FarPost"
   },
   "farpost-131327953": {
     "firstSeenAt": "2026-06-30T00:06:01.466Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель грузового автомобиля",
+    "source": "FarPost"
   },
   "farpost-116773533": {
     "firstSeenAt": "2026-06-30T00:06:01.466Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Менеджер выдачи Спасск -Дальний",
+    "source": "FarPost"
   },
   "farpost-136476567": {
     "firstSeenAt": "2026-06-30T00:06:01.466Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:52:28.701Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Менеджер по логистике",
+    "source": "FarPost"
   },
   "farpost-136475894": {
     "firstSeenAt": "2026-06-30T00:06:01.466Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Медсестра младшая, медбрат младший",
+    "source": "FarPost"
   },
   "farpost-108614800": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:32:18.923Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Водитель категорий В",
+    "source": "FarPost"
   },
   "farpost-117895987": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Менеджер по работе с Клиентами (продажи)",
+    "source": "FarPost"
   },
   "farpost-66593145": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Официант",
+    "source": "FarPost"
   },
   "farpost-84753874": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Уборщик, мойщик посуды",
+    "source": "FarPost"
   },
   "farpost-133148010": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:32:18.923Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Продавец-консультант ул. Советская д. 79",
+    "source": "FarPost"
   },
   "farpost-136462212": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Специалист операционно-кассового отдела",
+    "source": "FarPost"
   },
   "farpost-136462134": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Грузчик-экспедитор",
+    "source": "FarPost"
   },
   "farpost-135408228": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:32:18.923Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Водитель-экспедитор категории СЕ",
+    "source": "FarPost"
   },
   "farpost-136077826": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Санитар",
+    "source": "FarPost"
   },
   "farpost-133279671": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Офис менеджер коммерческого отдела",
+    "source": "FarPost"
   },
   "farpost-133537031": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Заместитель коммерческого директора",
+    "source": "FarPost"
   },
   "farpost-136454122": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Специалист ПТО",
+    "source": "FarPost"
   },
   "farpost-105840476": {
     "firstSeenAt": "2026-06-30T00:06:03.127Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец-кассир (р-он Цемзавода, р-он Стоматологии)",
+    "source": "FarPost"
   },
   "farpost-136442009": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Повар-универсал",
+    "source": "FarPost"
   },
   "farpost-111281540": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Сварщик",
+    "source": "FarPost"
   },
   "farpost-110622462": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Торговый представитель",
+    "source": "FarPost"
   },
   "farpost-136437147": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор автомойки",
+    "source": "FarPost"
   },
   "farpost-132715246": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Сотрудник торгового зала",
+    "source": "FarPost"
   },
   "farpost-128270476": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
     "lastSeenAt": "2026-06-30T02:32:18.923Z",
-    "active": true,
-    "missedRuns": 1,
+    "active": false,
+    "missedRuns": 2,
     "seenRuns": 1,
     "lastChangedAt": "2026-06-30T02:32:18.923Z"
   },
   "farpost-133833111": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "ПРОДАВЕЦ-КАССИР",
+    "source": "FarPost"
   },
   "farpost-136428692": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец-консультант",
+    "source": "FarPost"
   },
   "farpost-124363798": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель-экспедитор",
+    "source": "FarPost"
   },
   "farpost-135503443": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Электромеханик ШЧ-6",
+    "source": "FarPost"
   },
   "farpost-135497288": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Старший электромеханик СЦБ ШЧ-6",
+    "source": "FarPost"
   },
   "farpost-133837992": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Диспетчер дистанции СЦБ ШЧ-6",
+    "source": "FarPost"
   },
   "farpost-136043146": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Электромонтер ШЧ-6",
+    "source": "FarPost"
   },
   "farpost-135652612": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Кухонный работник",
+    "source": "FarPost"
   },
   "farpost-57589318": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Кочегар-сторож",
+    "source": "FarPost"
   },
   "farpost-119856347": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Плотник. Строитель",
+    "source": "FarPost"
   },
   "farpost-78744723": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Пекарь-тестовод",
+    "source": "FarPost"
   },
   "farpost-135680403": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Требуются повара, помощник повара, зарплата высокая, выплата каждую неделю",
+    "source": "FarPost"
   },
   "farpost-136418272": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "HR Generalist (кадровый специалист)",
+    "source": "FarPost"
   },
   "farpost-136418241": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Руководитель центра обучения",
+    "source": "FarPost"
   },
   "farpost-136418235": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Методист",
+    "source": "FarPost"
   },
   "farpost-136418231": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Инженер - метролог",
+    "source": "FarPost"
   },
   "farpost-136418215": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Специалист по документообороту",
+    "source": "FarPost"
   },
   "farpost-136418209": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Технический руководитель",
+    "source": "FarPost"
   },
   "farpost-134596873": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Руководитель центра продаж",
+    "source": "FarPost"
   },
   "farpost-136416129": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Рыбообработчик",
+    "source": "FarPost"
   },
   "farpost-123687696": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Оператор выдачи",
+    "source": "FarPost"
   },
   "farpost-135310972": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Разнорабочий",
+    "source": "FarPost"
   },
   "farpost-109866904": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Разнорабочий (с. Андреевка, п. Ливадия)",
+    "source": "FarPost"
   },
   "farpost-120443070": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Грузчик-комплектовщик (г. Спасск-Дальний)",
+    "source": "FarPost"
   },
   "farpost-126562166": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец-кассир",
+    "source": "FarPost"
   },
   "farpost-135126007": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Грузчик-комплектовщик",
+    "source": "FarPost"
   },
   "farpost-135332862": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Помощник повара",
+    "source": "FarPost"
   },
   "farpost-78547853": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:52:28.701Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Инспектор службы безопасности",
+    "source": "FarPost"
   },
   "farpost-136385400": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор",
+    "source": "FarPost"
   },
   "farpost-132312374": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Пекарь в булочный цех",
+    "source": "FarPost"
   },
   "farpost-103037132": {
     "firstSeenAt": "2026-06-30T00:06:03.128Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Разнорабочий",
+    "source": "FarPost"
   },
   "farpost-132047813": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Мастер участка",
+    "source": "FarPost"
   },
   "farpost-110046503": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель бензовоза",
+    "source": "FarPost"
   },
   "farpost-117882085": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Специалист по охране труда",
+    "source": "FarPost"
   },
   "farpost-76625801": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Механизатор",
+    "source": "FarPost"
   },
   "farpost-119858569": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Водитель",
+    "source": "FarPost"
   },
   "farpost-130443961": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Автослесарь",
+    "source": "FarPost"
   },
   "farpost-134110378": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Врач ветеринарный",
+    "source": "FarPost"
   },
   "farpost-118874141": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Грузчик",
+    "source": "FarPost"
   },
   "farpost-136371135": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Руководитель отдела логистики филиала в г. Спасск-Дальний",
+    "source": "FarPost"
   },
   "farpost-135847030": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Приемосдатчик (старший)",
+    "source": "FarPost"
   },
   "farpost-136368187": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Экономист",
+    "source": "FarPost"
   },
   "farpost-64692853": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор кафе",
+    "source": "FarPost"
   },
   "farpost-79262628": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Помощник повара",
+    "source": "FarPost"
   },
   "farpost-119273979": {
     "firstSeenAt": "2026-06-30T00:06:04.898Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Повар-универсал",
+    "source": "FarPost"
   },
   "farpost-94808119": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор кафе",
+    "source": "FarPost"
   },
   "farpost-121706718": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Повар-пиццерист",
+    "source": "FarPost"
   },
   "farpost-136366633": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Инженер ОТК",
+    "source": "FarPost"
   },
   "farpost-136365009": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Грузчик/Рабочий/Сборщик/Подработка/Почасовая оплата/Еженедельные выплаты",
+    "source": "FarPost"
   },
   "farpost-136363424": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель",
+    "source": "FarPost"
   },
   "farpost-82924073": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель грузового автомобиля",
+    "source": "FarPost"
   },
   "farpost-135548005": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:32:18.923Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T02:32:18.923Z",
+    "name": "Помощник машиниста автомотрисы",
+    "source": "FarPost"
   },
   "farpost-136341415": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Уборщик, горничная",
+    "source": "FarPost"
   },
   "farpost-129889967": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Старший полицейский, полицейский, полицейский-водитель",
+    "source": "FarPost"
   },
   "farpost-136350180": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Пекарь",
+    "source": "FarPost"
   },
   "farpost-130779185": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Кухонный работник",
+    "source": "FarPost"
   },
   "farpost-125384069": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Менеджер по работе с клиентами",
+    "source": "FarPost"
   },
   "farpost-80123103": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Менеджер по продажам авиабилетов",
+    "source": "FarPost"
   },
   "farpost-136340702": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель автомобиля",
+    "source": "FarPost"
   },
   "farpost-136339726": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Промоутер",
+    "source": "FarPost"
   },
   "farpost-136337397": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Помощник повара",
+    "source": "FarPost"
   },
   "farpost-135927043": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Повар",
+    "source": "FarPost"
   },
   "farpost-83288659": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Пекарь в кулинарный цех",
+    "source": "FarPost"
   },
   "farpost-112480309": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Уборщик (-ца) в пекарню",
+    "source": "FarPost"
   },
   "farpost-53464364": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Пекарь в хлебный цех в Спасске-Дальнем",
+    "source": "FarPost"
   },
   "farpost-124281974": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Бариста кассир",
+    "source": "FarPost"
   },
   "farpost-99669899": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Медсестра, оптик, оптометрист",
+    "source": "FarPost"
   },
   "farpost-127217762": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец",
+    "source": "FarPost"
   },
   "farpost-122626714": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель категории Е",
+    "source": "FarPost"
   },
   "farpost-136324057": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Торговый Представитель",
+    "source": "FarPost"
   },
   "farpost-136323262": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:52:28.701Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Разнорабочий",
+    "source": "FarPost"
   },
   "farpost-50125372": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор гостиницы",
+    "source": "FarPost"
   },
   "farpost-119434590": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Грузчик",
+    "source": "FarPost"
   },
   "farpost-113462314": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель-экспедитор",
+    "source": "FarPost"
   },
   "farpost-110877628": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Сборщик мебели-разнорабочий (г. Спасск-Дальний)",
+    "source": "FarPost"
   },
   "farpost-110876564": {
     "firstSeenAt": "2026-06-30T00:06:04.899Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец-консультант в мебельный магазин (г. Спасск-Дальний)",
+    "source": "FarPost"
   },
   "farpost-19083643": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель-экспедитор",
+    "source": "FarPost"
   },
   "farpost-136302826": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Мойщик посуды",
+    "source": "FarPost"
   },
   "farpost-114322773": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Младший инспектор",
+    "source": "FarPost"
   },
   "farpost-71263910": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Охранник-водитель",
+    "source": "FarPost"
   },
   "farpost-125891656": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Охранник, охранник-водитель",
+    "source": "FarPost"
   },
   "farpost-108613528": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец-кассир",
+    "source": "FarPost"
   },
   "farpost-118688413": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Арматурщик, Арматурщица",
+    "source": "FarPost"
   },
   "farpost-128442045": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Мастер горный",
+    "source": "FarPost"
   },
   "farpost-93215080": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор магазина",
+    "source": "FarPost"
   },
   "farpost-135946033": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Тракторист-машинист сельскохозяйственного производства",
+    "source": "FarPost"
   },
   "farpost-136298843": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Машинист экскаватора",
+    "source": "FarPost"
   },
   "farpost-116705363": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Риелтор, агент по недвижимости",
+    "source": "FarPost"
   },
   "farpost-136298744": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель самосвала",
+    "source": "FarPost"
   },
   "farpost-104202470": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Продавец-кассир (ул. Советская 45, Советская 130)",
+    "source": "FarPost"
   },
   "farpost-133097119": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Фитнес тренер",
+    "source": "FarPost"
   },
   "farpost-134509928": {
     "firstSeenAt": "2026-06-30T00:06:06.561Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор",
+    "source": "FarPost"
   },
   "farpost-136288393": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:52:28.701Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T02:52:28.701Z",
+    "name": "Разнорабочий-строитель",
+    "source": "FarPost"
   },
   "farpost-125481533": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Горничная",
+    "source": "FarPost"
   },
   "farpost-135776645": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Пекарь и помощник пекаря",
+    "source": "FarPost"
   },
   "farpost-83641390": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Повар-универсал и повар помощника",
+    "source": "FarPost"
   },
   "farpost-134106816": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Официант-бармен",
+    "source": "FarPost"
   },
   "farpost-136041984": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:32:18.923Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Помощник машиниста тепловоза",
+    "source": "FarPost"
   },
   "farpost-135759743": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": "2026-06-30T02:32:18.923Z"
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Сигналист",
+    "source": "FarPost"
   },
   "farpost-135760105": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Монтер пути",
+    "source": "FarPost"
   },
   "farpost-135760276": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Бригадир (освобожденный) по текущему содержанию и ремонту пути и искусственных сооружений",
+    "source": "FarPost"
   },
   "farpost-135760563": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": "2026-06-30T07:37:43.730Z",
+    "name": "Мастер дорожный",
+    "source": "FarPost"
   },
   "farpost-103366967": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Инспектор транспортной безопасности (обучение, аттестация)",
+    "source": "FarPost"
   },
   "farpost-128777133": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Требуется Грузчик,Разнорабочий.",
+    "source": "FarPost"
   },
   "farpost-111617598": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Уборщик, горничная",
+    "source": "FarPost"
   },
   "farpost-103852079": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Грузчик-Кладовщик",
+    "source": "FarPost"
   },
   "farpost-88429079": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец",
+    "source": "FarPost"
   },
   "farpost-110315288": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Грузчик",
+    "source": "FarPost"
   },
   "farpost-103255609": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель",
+    "source": "FarPost"
   },
   "farpost-114691887": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Автослесарь-механик для иногородних с проживанием",
+    "source": "FarPost"
   },
   "farpost-60124682": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Помощник художника.",
+    "source": "FarPost"
   },
   "farpost-133375777": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Требуется мастер по ремонту ванной комнаты и санузла",
+    "source": "FarPost"
   },
   "sector-bi-storekeeper": {
     "firstSeenAt": "2026-06-30T10:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Кладовщик",
+    "source": "Сайт работодателя"
   },
   "mts-seller-48692122367368891": {
     "firstSeenAt": "2026-06-30T10:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец в салон МТС",
+    "source": "Сайт работодателя МТС"
   },
   "energybase-rza-1046694": {
     "firstSeenAt": "2026-06-30T10:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Специалист РЗА в СРЗА и АСУ ТП",
+    "source": "Energybase / работодатель"
   },
   "pomogatel-sitter-2026": {
     "firstSeenAt": "2026-06-30T10:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Сиделка по уходу за лежачим больным",
+    "source": "Помогатель"
   },
   "gderabota-turner-32repair": {
     "firstSeenAt": "2026-06-30T10:00:00+10:00",
     "lastSeenAt": "2026-06-30T02:57:03.468Z",
-    "active": true,
-    "missedRuns": 0,
+    "active": false,
+    "missedRuns": 1,
     "seenRuns": 3,
-    "lastChangedAt": null
+    "lastChangedAt": null,
+    "name": "Токарь-универсал",
+    "source": "ГдеРабота"
   },
   "hh-seed-mobile-banker": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Мобильный банкир (без поиска клиентов)",
+    "source": "HeadHunter"
   },
   "hh-seed-security-manager": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Менеджер по безопасности",
+    "source": "HeadHunter"
   },
   "hh-seed-docs": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Специалист по документообороту",
+    "source": "HeadHunter"
   },
   "hh-seed-economist": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Ведущий экономист",
+    "source": "HeadHunter"
   },
   "hh-seed-logistics": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Менеджер по логистике",
+    "source": "HeadHunter"
   },
   "hh-seed-driver": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Водитель автомобиля",
+    "source": "HeadHunter"
   },
   "hh-seed-loader-tobacco": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Грузчик на табак (г. Спасск-Дальний)",
+    "source": "HeadHunter"
   },
   "hh-seed-cash": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Специалист операционно-кассового отдела",
+    "source": "HeadHunter"
   },
   "hh-seed-trade-security": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Сотрудник торговой безопасности",
+    "source": "HeadHunter"
   },
   "hh-seed-dns": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец-консультант",
+    "source": "HeadHunter"
   },
   "hh-seed-dispatcher": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Диспетчер дистанции сигнализации, централизации и блокировки",
+    "source": "HeadHunter"
   },
   "hh-seed-training": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Руководитель центра обучения",
+    "source": "HeadHunter"
   },
   "hh-seed-hr": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "HR Generalist",
+    "source": "HeadHunter"
   },
   "hh-seed-loader-picker": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Грузчик-комплектовщик",
+    "source": "HeadHunter"
   },
   "hh-seed-pharmacy": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Фармацевт / Провизор / Медицинский консультант",
+    "source": "HeadHunter"
   },
   "hh-seed-mechanic": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Механик-контролёр",
+    "source": "HeadHunter"
   },
   "hh-seed-receiving": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Ведущий специалист по приёмке (улица Советская)",
+    "source": "HeadHunter"
   },
   "hh-seed-signalist": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Сигналист",
+    "source": "HeadHunter"
   },
   "hh-seed-client-manager": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Менеджер по работе с клиентами",
+    "source": "HeadHunter"
   },
   "hh-seed-pyaterochka-seller": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Продавец (Спасск-Дальний, Красногвардейская, 81/2)",
+    "source": "HeadHunter"
   },
   "hh-seed-baker": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Пекарь (Спасск-Дальний, Красногвардейская, 81/2)",
+    "source": "HeadHunter"
   },
   "hh-seed-admin-store": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор магазина (Спасск-Дальний, Парковая, 64зд)",
+    "source": "HeadHunter"
   },
   "hh-seed-tech-lead": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Технический руководитель (испытательной лаборатории)",
+    "source": "HeadHunter"
   },
   "hh-seed-inspector": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Младший инспектор отдела охраны ФКУ ИК-33",
+    "source": "HeadHunter"
   },
   "hh-seed-vtb-delivery": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Менеджер выездного канала банка по доставке банковских карт ВТБ",
+    "source": "HeadHunter"
   },
   "hh-seed-remi": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Управляющий магазином",
+    "source": "HeadHunter"
   },
   "hh-seed-blizkiy": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Администратор (Спасск-Дальний)",
+    "source": "HeadHunter"
   },
   "hh-seed-secretary": {
     "firstSeenAt": "2026-06-30T00:00:00+10:00",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 3,
-    "lastChangedAt": null
+    "seenRuns": 4,
+    "lastChangedAt": null,
+    "name": "Секретарь судебного заседания (Спасский р-н)",
+    "source": "HeadHunter"
   },
   "farpost-136218116": {
     "firstSeenAt": "2026-06-30T00:06:06.562Z",
     "seenRuns": 1,
-    "missedRuns": 1,
+    "missedRuns": 2,
     "lastSeenAt": "2026-06-30T00:06:06.562Z",
-    "active": true
+    "active": false
   },
   "joblab-merchandiser-20260430": {
     "firstSeenAt": "2026-06-30T02:57:03.468Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 1,
-    "lastChangedAt": null
+    "seenRuns": 2,
+    "lastChangedAt": null,
+    "name": "Мерчендайзер",
+    "source": "JobLab"
   },
   "joblab-office-sales-20260301": {
     "firstSeenAt": "2026-06-30T02:57:03.468Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 1,
-    "lastChangedAt": null
+    "seenRuns": 2,
+    "lastChangedAt": null,
+    "name": "Менеджер в офис продаж",
+    "source": "JobLab"
   },
   "svoeagro-supervisor-2130029209": {
     "firstSeenAt": "2026-06-30T02:57:03.468Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 1,
-    "lastChangedAt": null
+    "seenRuns": 2,
+    "lastChangedAt": null,
+    "name": "Супервайзер",
+    "source": "Своё Фермерство"
   },
   "svoeagro-agronomist-55141": {
     "firstSeenAt": "2026-06-30T02:57:03.468Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 1,
-    "lastChangedAt": null
+    "seenRuns": 2,
+    "lastChangedAt": null,
+    "name": "Агроном по семеноводству",
+    "source": "Своё Фермерство"
   },
   "svoeagro-environment-deputy-55353": {
     "firstSeenAt": "2026-06-30T02:57:03.468Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 1,
-    "lastChangedAt": null
+    "seenRuns": 2,
+    "lastChangedAt": null,
+    "name": "Заместитель директора в области охраны окружающей среды",
+    "source": "Своё Фермерство"
   },
   "svoeagro-driver-forwarder-2132150025": {
     "firstSeenAt": "2026-06-30T02:57:03.468Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
-    "seenRuns": 1,
-    "lastChangedAt": null
+    "seenRuns": 2,
+    "lastChangedAt": null,
+    "name": "Водитель-экспедитор на автомобиле компании",
+    "source": "Своё Фермерство"
   },
   "svoeagro-sales-rep-2131928039": {
     "firstSeenAt": "2026-06-30T02:57:03.468Z",
-    "lastSeenAt": "2026-06-30T02:57:03.468Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 2,
+    "lastChangedAt": null,
+    "name": "Торговый представитель",
+    "source": "Своё Фермерство"
+  },
+  "trudvsem-340133d8-5263-11f1-b37c-614806db9c9b": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
     "active": true,
     "missedRuns": 0,
     "seenRuns": 1,
-    "lastChangedAt": null
+    "lastChangedAt": null,
+    "name": "ведущий специалист 1 разряда отдела организации работы комиссии по делам несовершеннолетних и защите их прав",
+    "source": "Работа России"
+  },
+  "trudvsem-1325b668-5261-11f1-b37c-614806db9c9b": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "ведущий специалист 1 разряда управления имущественных отношений",
+    "source": "Работа России"
+  },
+  "trudvsem-d9e99fc8-7113-11f1-b55b-1f6a79e1a270": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Технический руководитель",
+    "source": "Работа России"
+  },
+  "trudvsem-cdeca718-7110-11f1-8ebd-35060bb86e5d": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Инженер-метролог",
+    "source": "Работа России"
+  },
+  "trudvsem-bcc39ca8-21a6-11f1-9ac8-d164183f71d4": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Уборщик территорий",
+    "source": "Работа России"
+  },
+  "trudvsem-85065168-219a-11f1-9ac8-d164183f71d4": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Уборщик территорий",
+    "source": "Работа России"
+  },
+  "trudvsem-c0b6f388-684a-11f1-a95e-05a97d193f2d": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "учитель информатики",
+    "source": "Работа России"
+  },
+  "trudvsem-8e50052f-3f92-11f1-af40-15277f213853": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "учитель географии",
+    "source": "Работа России"
+  },
+  "trudvsem-316ee080-62c7-11f1-875d-37533a592c34": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Уборщик производственных и служебных помещений",
+    "source": "Работа России"
+  },
+  "trudvsem-4cf3cd68-1e71-11f1-99d5-5f9d65125ca1": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Уборщик территорий",
+    "source": "Работа России"
+  },
+  "trudvsem-428b2f6d-3890-11f1-889f-09fcf7d79153": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Социальный педагог",
+    "source": "Работа России"
+  },
+  "trudvsem-4e0ffccd-3891-11f1-8817-f343e38ace6a": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "учитель информатики",
+    "source": "Работа России"
+  },
+  "trudvsem-82278f0c-3891-11f1-8817-f343e38ace6a": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "учитель истории",
+    "source": "Работа России"
+  },
+  "trudvsem-e6ea0aef-3890-11f1-889f-09fcf7d79153": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "учитель математики",
+    "source": "Работа России"
+  },
+  "trudvsem-f744f70f-2bd0-11f1-b896-f7acc8f2fb19": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "учитель-логопед",
+    "source": "Работа России"
+  },
+  "trudvsem-49efdf58-241b-11f1-ba68-e7fd5bf5650b": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Уборщик территорий",
+    "source": "Работа России"
+  },
+  "trudvsem-81feaaf3-6abd-11f1-bc65-eb3e74f52215": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "уборщик служебных помещений",
+    "source": "Работа России"
+  },
+  "trudvsem-93e8f758-688a-11f1-87b6-774ea53b3c76": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Учитель Географии",
+    "source": "Работа России"
+  },
+  "trudvsem-42671238-688b-11f1-9198-073774f6909c": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Учитель математики",
+    "source": "Работа России"
+  },
+  "trudvsem-fd2a0498-5f14-11f1-aaeb-750452cc88fa": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Дефектолог/ Логопед-дефектолог",
+    "source": "Работа России"
+  },
+  "trudvsem-56fd3470-234b-11f1-8d48-d52d8860c0e6": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Уборщик территорий",
+    "source": "Работа России"
+  },
+  "trudvsem-423df678-21aa-11f1-9ac8-d164183f71d4": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Уборщик территорий",
+    "source": "Работа России"
+  },
+  "trudvsem-c1da7248-5e41-11f1-aaeb-750452cc88fa": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Учитель начальных классов",
+    "source": "Работа России"
+  },
+  "trudvsem-fb753118-5e42-11f1-aaeb-750452cc88fa": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "воспитатель",
+    "source": "Работа России"
+  },
+  "trudvsem-bcf8ae78-5e43-11f1-aaeb-750452cc88fa": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "учитель химии",
+    "source": "Работа России"
+  },
+  "trudvsem-50fa15f8-5e44-11f1-aaeb-750452cc88fa": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "учитель технологии",
+    "source": "Работа России"
+  },
+  "trudvsem-9d1ef428-5e42-11f1-aaeb-750452cc88fa": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "учитель физики",
+    "source": "Работа России"
+  },
+  "trudvsem-9b11a420-0870-11f1-b61c-b780d0024235": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Начальник отдела (управления кадрами и трудовыми отношениями)",
+    "source": "Работа России"
+  },
+  "trudvsem-acec4c39-2d65-11f1-8ac2-61ac2858f806": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "ведущий инженер по безопасности",
+    "source": "Работа России"
+  },
+  "trudvsem-575e53e7-7109-11f1-8093-61b073a087e6": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Руководитель центра обучения",
+    "source": "Работа России"
+  },
+  "trudvsem-73b8bae0-5fbd-11f1-ae65-05b28ac604d6": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Рабочий по комплексному обслуживанию и ремонту зданий",
+    "source": "Работа России"
+  },
+  "trudvsem-b43d44ef-7107-11f1-b55b-1f6a79e1a270": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Директор по персоналу / HR-директор",
+    "source": "Работа России"
+  },
+  "trudvsem-f0cac904-6914-11f1-9c38-bd48021b08e2": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Монтер пути",
+    "source": "Работа России"
+  },
+  "trudvsem-983bf093-710b-11f1-8ebd-35060bb86e5d": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Методист",
+    "source": "Работа России"
+  },
+  "farpost-128751133": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Водитель-экспедитор",
+    "source": "FarPost"
+  },
+  "farpost-134872656": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Кассир",
+    "source": "FarPost"
+  },
+  "farpost-136063428": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Выкладчик",
+    "source": "FarPost"
+  },
+  "tg-rabota_spassk_dalnyq-6658": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Продавец-кассир (Спасск-Дальний, Краснознамённая, 31)",
+    "source": "Telegram @rabota_spassk_dalnyq"
+  },
+  "gderabota-147874": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Воспитатель",
+    "source": "ГдеРабота"
+  },
+  "gderabota-108881": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Фармацевт",
+    "source": "ГдеРабота"
+  },
+  "gderabota-73248": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Психолог в социальной сфере",
+    "source": "ГдеРабота"
+  },
+  "gderabota-68446": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Экономист",
+    "source": "ГдеРабота"
+  },
+  "gderabota-64540": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Продавец-кассир",
+    "source": "ГдеРабота"
+  },
+  "gderabota-45571": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Продавец непродовольственных товаров",
+    "source": "ГдеРабота"
+  },
+  "gderabota-856734": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Водитель категории В в ООО РЕСУРСТРАНС",
+    "source": "ГдеРабота"
+  },
+  "gderabota-885831": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Продавец-кассир в Пятерочку",
+    "source": "ГдеРабота"
+  },
+  "gderabota-893257": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Младшая медсестра по уходу в Спасском доме-интернате",
+    "source": "ГдеРабота"
+  },
+  "gderabota-900708": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Оператор ЭВМ (без опыта)",
+    "source": "ГдеРабота"
+  },
+  "gderabota-873729": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Диспетчер полигона ТБО в ООО КАПИТАЛ",
+    "source": "ГдеРабота"
+  },
+  "gderabota-115540": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Уборщик территорий в школу",
+    "source": "ГдеРабота"
+  },
+  "gderabota-917216": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Уборщик территорий в УК Эталон",
+    "source": "ГдеРабота"
+  },
+  "gderabota-690318": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Администратор магазина в Пятерочку (Спасск-Дальний)",
+    "source": "ГдеРабота"
+  },
+  "gderabota-360415": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Токарь-универсал на предприятие в Спасск-Дальний",
+    "source": "ГдеРабота"
+  },
+  "gderabota-359007": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Медник в АО \"32 ремонтный завод средств обеспечения полетов\"",
+    "source": "ГдеРабота"
+  },
+  "gderabota-430087": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Столяр в 32 Ремонтный завод средств обеспечения полетов",
+    "source": "ГдеРабота"
+  },
+  "gderabota-143216": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Слесарь по ремонту авто на 32 Ремонтный завод",
+    "source": "ГдеРабота"
+  },
+  "gderabota-913968": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Уборщик служебных помещений в школу № 1",
+    "source": "ГдеРабота"
+  },
+  "gderabota-917082": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Покосчик травы в УК Эталон",
+    "source": "ГдеРабота"
+  },
+  "gderabota-907456": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Уборщик служебных помещений в колледж Спасска-Дальнего",
+    "source": "ГдеРабота"
+  },
+  "gderabota-938184": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Слесарь по ремонту автомобилей на завод",
+    "source": "ГдеРабота"
+  },
+  "gderabota-889499": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Монтер пути в РЖД с бесплатным обучением",
+    "source": "ГдеРабота"
+  },
+  "gderabota-560610": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Администратор в магазин «Пятерочка»",
+    "source": "ГдеРабота"
+  },
+  "gderabota-1008003": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Специалист по охране лесов без опыта в КИРОВСКЛЕС",
+    "source": "ГдеРабота"
+  },
+  "gderabota-918390": {
+    "firstSeenAt": "2026-06-30T07:37:43.730Z",
+    "lastSeenAt": "2026-06-30T07:37:43.730Z",
+    "active": true,
+    "missedRuns": 0,
+    "seenRuns": 1,
+    "lastChangedAt": null,
+    "name": "Техник по подготовке производства на завод цинкования",
+    "source": "ГдеРабота"
   }
 }
