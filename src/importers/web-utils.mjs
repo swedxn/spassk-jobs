@@ -1,15 +1,18 @@
 const UA = 'SpasskJobs/1.0 (+https://github.com/swedxn/spassk-jobs; public-interest vacancy aggregator)';
 
 export const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-export const stripHtml = html => String(html || '').replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, ' ').replace(/&nbsp;|&#160;/gi, ' ').replace(/&amp;/gi, '&').replace(/&quot;/gi, '"').replace(/&#39;|&apos;/gi, "'").replace(/\s+/g, ' ').trim();
+export const stripHtml = html => String(html || '').replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, ' ').replace(/&#x([0-9a-f]+);/gi,(_,n)=>String.fromCodePoint(parseInt(n,16))).replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n))).replace(/&nbsp;/gi, ' ').replace(/&amp;/gi, '&').replace(/&quot;/gi, '"').replace(/&apos;/gi, "'").replace(/\s+/g, ' ').trim();
 
 export async function fetchText(url, timeout = 25000) {
   const response = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'text/html,application/xhtml+xml,text/plain;q=0.9,*/*;q=0.5' }, signal: AbortSignal.timeout(timeout) });
   if (!response.ok) throw new Error(`${new URL(url).hostname} HTTP ${response.status}`);
   const charset = response.headers.get('content-type')?.match(/charset=([^;\s]+)/i)?.[1]?.replace(/["']/g,'') || 'utf-8';
   const bytes = await response.arrayBuffer();
-  try { return new TextDecoder(charset).decode(bytes); }
-  catch { return new TextDecoder('utf-8').decode(bytes); }
+  try {
+    const decoded = new TextDecoder(charset).decode(bytes);
+    const broken = (decoded.match(/�/g) || []).length;
+    return broken > 5 ? new TextDecoder('windows-1251').decode(bytes) : decoded;
+  } catch { return new TextDecoder('utf-8').decode(bytes); }
 }
 
 function patternRx(value) {

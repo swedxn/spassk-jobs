@@ -19,7 +19,7 @@ function updateMetrics(){
   $('mNoHigher').textContent=s.noHigherEducation??data.vacancies.filter(noHigher).length;
   $('mSalary').textContent=s.withSalary??data.vacancies.filter(v=>v.salary!=='Не указана').length;
   $('mGood').textContent=s.goodFit??data.vacancies.filter(v=>v.score>=75).length;
-  $('updateStatus').textContent=data.meta.fallback?'Данные сохранены, API недоступен':'Импорт работает';
+  $('updateStatus').textContent=data.meta.updateStatus||'Импорт работает';
   $('lastUpdate').textContent=`Последняя проверка: ${new Date(data.meta.generatedAt).toLocaleString('ru-RU',{dateStyle:'medium',timeStyle:'short'})}`;
 }
 

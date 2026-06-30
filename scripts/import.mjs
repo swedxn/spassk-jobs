@@ -22,17 +22,21 @@ collected.push(...curated);
 sources.push({ name:'Проверенные публичные страницы работодателей', mode:'curated', status:'ok', found:curated.length });
 
 let fallback = false;
-if (!runs.some(run => run.rows.length)) {
-  fallback = true;
-  collected.push(...await read('data/manual-seed.json'));
+const hhRun = runs.find(run => run.source.name === 'HeadHunter');
+if (!hhRun?.rows.length) {
+  const seed = await read('data/manual-seed.json');
+  collected.push(...seed);
+  sources.push({ name:'HeadHunter — последний проверенный срез', mode:'fallback', status:'ok', found:seed.length });
 }
+fallback = !runs.some(run => run.rows.length);
 
 const { vacancies, remote, rejected } = processVacancies(collected);
 const checked = await read('data/sources.json');
 const now = new Date().toISOString();
+const blocked = sources.filter(source => source.status === 'blocked');
 const report = {
   generatedAt: now,
-  updateStatus: fallback ? 'Сетевой доступ к API заблокирован; сохранён последний проверенный реальный срез' : 'Облачный импорт выполнен',
+  updateStatus: fallback ? 'Сетевой доступ к автоматическим источникам заблокирован; сохранены проверенные реальные срезы' : blocked.length ? `Облачный импорт выполнен частично; недоступны: ${blocked.map(x=>x.name).join(', ')}` : 'Облачный импорт выполнен полностью',
   fallback,
   sourcesChecked: checked.length,
   sourcesConnected: sources.filter(s => s.status === 'ok').length,
