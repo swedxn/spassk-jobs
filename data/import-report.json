@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-29T23:59:12.673Z",
-  "updateStatus": "Облачный импорт выполнен",
+  "generatedAt": "2026-06-30T00:01:10.568Z",
+  "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter",
   "fallback": false,
   "sourcesChecked": 20,
-  "sourcesConnected": 4,
+  "sourcesConnected": 5,
   "sourceRuns": [
     {
       "name": "HeadHunter",
@@ -35,23 +35,29 @@
       "mode": "curated",
       "status": "ok",
       "found": 41
+    },
+    {
+      "name": "HeadHunter — последний проверенный срез",
+      "mode": "fallback",
+      "status": "ok",
+      "found": 36
     }
   ],
-  "raw": 232,
-  "accepted": 216,
+  "raw": 268,
+  "accepted": 244,
   "remote": 0,
   "rejected": {
-    "otherCity": 11,
-    "imprecise": 4,
+    "otherCity": 16,
+    "imprecise": 6,
     "remote": 0,
-    "duplicate": 1
+    "duplicate": 2
   },
   "stats": {
-    "active": 216,
-    "noExperience": 5,
-    "noHigherEducation": 197,
-    "withSalary": 33,
-    "goodFit": 6
+    "active": 244,
+    "noExperience": 23,
+    "noHigherEducation": 225,
+    "withSalary": 228,
+    "goodFit": 183
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
 }
