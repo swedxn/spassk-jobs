@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-30T07:41:06.408Z",
+  "generatedAt": "2026-06-30T08:39:06.414Z",
   "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Rabota1000, ЦентрРабота",
   "fallback": false,
-  "sourcesChecked": 36,
-  "sourcesConnected": 6,
+  "sourcesChecked": 39,
+  "sourcesConnected": 7,
   "sourceRuns": [
     {
       "name": "HeadHunter",
       "mode": "auto",
       "status": "blocked",
       "found": 0,
-      "error": "HH HTTP 403",
-      "retained": 28
+      "error": "HH /vacancies HTTP 403",
+      "retained": 26
     },
     {
       "name": "Работа России",
@@ -23,19 +23,25 @@
       "name": "FarPost",
       "mode": "auto",
       "status": "ok",
-      "found": 191
+      "found": 192
     },
     {
       "name": "Публичный Telegram",
       "mode": "auto",
       "status": "ok",
-      "found": 1
+      "found": 21
     },
     {
       "name": "ГдеРабота",
       "mode": "auto",
       "status": "ok",
       "found": 131
+    },
+    {
+      "name": "Спасский завод ЖБИ",
+      "mode": "auto",
+      "status": "ok",
+      "found": 3
     },
     {
       "name": "Rabota1000",
@@ -56,38 +62,39 @@
       "mode": "curated",
       "status": "ok",
       "found": 11,
+      "expired": 0,
       "note": "Ручной FarPost-срез отключён, так как живой импорт успешен"
     },
     {
       "name": "HeadHunter — последний проверенный срез",
       "mode": "fallback",
       "status": "ok",
-      "found": 36
+      "found": 28
     }
   ],
-  "raw": 463,
-  "accepted": 339,
-  "remote": 0,
+  "raw": 477,
+  "accepted": 350,
+  "remote": 1,
   "rejected": {
-    "otherCity": 31,
-    "imprecise": 27,
-    "remote": 0,
-    "duplicate": 66
+    "otherCity": 25,
+    "imprecise": 30,
+    "remote": 1,
+    "duplicate": 71
   },
   "stats": {
-    "active": 339,
-    "noExperience": 91,
-    "noHigherEducation": 311,
-    "withSalary": 328,
-    "goodFit": 147,
-    "newVacancies": 96,
-    "changedVacancies": 1,
-    "strongOpportunities": 18
+    "active": 350,
+    "noExperience": 94,
+    "noHigherEducation": 322,
+    "withSalary": 338,
+    "goodFit": 160,
+    "newVacancies": 15,
+    "changedVacancies": 73,
+    "strongOpportunities": 3
   },
   "changes": {
-    "new": 96,
-    "changed": 1,
-    "closed": 35
+    "new": 15,
+    "changed": 73,
+    "closed": 5
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
 }
