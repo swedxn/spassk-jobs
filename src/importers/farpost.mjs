@@ -12,8 +12,13 @@ export function parseFarpost(html) {
     const url = absolute(match[1]);
     const name = stripHtml(match[2]).replace(/^\d[\d\s]*(?:[–—-]\s*\d[\d\s]*)?\s*₽\s*/u,'').trim();
     if (!url || !name || name.length < 3 || name.length > 180) continue;
-    const start = Math.max(0, match.index - 450); const end = Math.min(html.length, match.index + match[0].length + 900);
-    const context = stripHtml(html.slice(start, end));
+    const rowStart = html.lastIndexOf('<tr', match.index);
+    const rowEnd = html.indexOf('</tr>', match.index);
+    const boundedRow = rowStart >= 0 && rowEnd > match.index && rowEnd - rowStart < 16000;
+    const start = boundedRow ? rowStart : Math.max(0, match.index - 350);
+    const end = boundedRow ? rowEnd + 5 : Math.min(html.length, match.index + match[0].length + 700);
+    const fragment = html.slice(start, end).replace(/\b(?:class|href|data-[\w-]+|target|title)=["'][^"']*["']/gi,' ');
+    const context = stripHtml(fragment);
     const employer = context.match(/(?:ООО|АО|ПАО|ИП|ФКУ|КГБУЗ|КГБУСО|ТС)\s*[«"']?[^.·]{2,90}/u)?.[0]?.trim() || 'Работодатель указан в оригинале';
     const address = context.match(/(?:Спасск[\s‑–—-]*Дальн(?:ий|его|ем)[^,.]{0,20}[,.]?\s*)?(?:ул(?:ица)?\.?|пер(?:еулок)?\.?|проспект|микрорайон)\s+[А-ЯЁа-яё0-9\s‑–—-]+(?:,?\s*\d+[а-яА-ЯёЁ\/]*)?/u)?.[0]?.trim() || 'Спасск-Дальний';
     rows.push({ id:`farpost-${url.match(/-(\d+)\.html/)?.[1] || Buffer.from(url).toString('base64url').slice(-18)}`, name, employer, salary:salary(context), city:'Спасск-Дальний', address:`Спасск-Дальний${address === 'Спасск-Дальний' ? '' : ', ' + address}`, experience:/без опыта/iu.test(context)?'Без опыта':'Не указано', education:/средн(?:ее|е-специальное)|без высшего/iu.test(context)?'Без высшего образования':'Не указано', schedule:/посмен/iu.test(context)?'Посменный':/дневн/iu.test(context)?'Дневной':'Не указано', description:context.slice(0,900), source:'FarPost', url, checkedAt:new Date().toISOString() });
