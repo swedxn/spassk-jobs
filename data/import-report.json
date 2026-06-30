@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T08:43:15.913Z",
+  "generatedAt": "2026-06-30T12:41:58.417Z",
   "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Rabota1000, ЦентрРабота",
   "fallback": false,
   "sourcesChecked": 39,
@@ -11,19 +11,19 @@
       "status": "blocked",
       "found": 0,
       "error": "HH /vacancies HTTP 403",
-      "retained": 26
+      "retained": 25
     },
     {
       "name": "Работа России",
       "mode": "auto",
       "status": "ok",
-      "found": 65
+      "found": 66
     },
     {
       "name": "FarPost",
       "mode": "auto",
       "status": "ok",
-      "found": 192
+      "found": 188
     },
     {
       "name": "Публичный Telegram",
@@ -35,7 +35,7 @@
       "name": "ГдеРабота",
       "mode": "auto",
       "status": "ok",
-      "found": 130
+      "found": 146
     },
     {
       "name": "Спасский завод ЖБИ",
@@ -72,29 +72,29 @@
       "found": 28
     }
   ],
-  "raw": 476,
-  "accepted": 348,
+  "raw": 488,
+  "accepted": 360,
   "remote": 0,
   "rejected": {
     "otherCity": 25,
-    "imprecise": 30,
+    "imprecise": 31,
     "remote": 0,
-    "duplicate": 73
+    "duplicate": 72
   },
   "stats": {
-    "active": 348,
-    "noExperience": 94,
-    "noHigherEducation": 320,
-    "withSalary": 336,
-    "goodFit": 159,
-    "newVacancies": 0,
-    "changedVacancies": 8,
-    "strongOpportunities": 1
+    "active": 360,
+    "noExperience": 100,
+    "noHigherEducation": 330,
+    "withSalary": 349,
+    "goodFit": 163,
+    "newVacancies": 13,
+    "changedVacancies": 18,
+    "strongOpportunities": 5
   },
   "changes": {
-    "new": 0,
-    "changed": 8,
-    "closed": 2
+    "new": 13,
+    "changed": 18,
+    "closed": 1
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
 }
