@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T08:39:06.414Z",
+  "generatedAt": "2026-06-30T08:43:15.913Z",
   "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Rabota1000, ЦентрРабота",
   "fallback": false,
   "sourcesChecked": 39,
@@ -35,7 +35,7 @@
       "name": "ГдеРабота",
       "mode": "auto",
       "status": "ok",
-      "found": 131
+      "found": 130
     },
     {
       "name": "Спасский завод ЖБИ",
@@ -72,29 +72,29 @@
       "found": 28
     }
   ],
-  "raw": 477,
-  "accepted": 350,
-  "remote": 1,
+  "raw": 476,
+  "accepted": 348,
+  "remote": 0,
   "rejected": {
     "otherCity": 25,
     "imprecise": 30,
-    "remote": 1,
-    "duplicate": 71
+    "remote": 0,
+    "duplicate": 73
   },
   "stats": {
-    "active": 350,
+    "active": 348,
     "noExperience": 94,
-    "noHigherEducation": 322,
-    "withSalary": 338,
-    "goodFit": 160,
-    "newVacancies": 15,
-    "changedVacancies": 73,
-    "strongOpportunities": 3
+    "noHigherEducation": 320,
+    "withSalary": 336,
+    "goodFit": 159,
+    "newVacancies": 0,
+    "changedVacancies": 8,
+    "strongOpportunities": 1
   },
   "changes": {
-    "new": 15,
-    "changed": 73,
-    "closed": 5
+    "new": 0,
+    "changed": 8,
+    "closed": 2
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
 }
