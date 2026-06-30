@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import { classifyLocation, dedupe, filterVacancies, normalizeVacancy, processVacancies, scoreVacancy, toCsv } from '../src/core.mjs';
+import { classifyLocation, dedupe, filterVacancies, normalizeVacancy, processVacancies, scoreVacancy, suspiciousSourceDrop, toCsv } from '../src/core.mjs';
 import { parseFarpost } from '../src/importers/farpost.mjs';
 import { parseRabota1000 } from '../src/importers/rabota1000.mjs';
 import { parseCentrrabota } from '../src/importers/centrrabota.mjs';
@@ -88,6 +88,12 @@ test('сетевой сбой не превращается в моки: исп�
   const failing=async()=>{throw new Error('getaddrinfo failed')};
   let rows=[]; try{rows=await failing()}catch{rows=JSON.parse(await fs.readFile(new URL('../data/manual-seed.json',import.meta.url),'utf8'))}
   const result=processVacancies(rows); assert.ok(result.vacancies.length>0); assert.ok(result.vacancies.every(v=>v.source==='HeadHunter'));
+});
+
+test('резкое неполное падение выдачи не закрывает сотню вакансий', () => {
+  assert.equal(suspiciousSourceDrop(122,27),true);
+  assert.equal(suspiciousSourceDrop(122,100),false);
+  assert.equal(suspiciousSourceDrop(12,2),false);
 });
 
 test('основной список после импорта не содержит другие города', async () => {

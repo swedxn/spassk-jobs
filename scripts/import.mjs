@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import { processVacancies, stats, toCsv } from '../src/core.mjs';
+import { processVacancies, stats, suspiciousSourceDrop, toCsv } from '../src/core.mjs';
 import { importHH } from '../src/importers/hh.mjs';
 import { importTrudvsem } from '../src/importers/trudvsem.mjs';
 import { importFarpost } from '../src/importers/farpost.mjs';
@@ -28,7 +28,6 @@ const runs = await Promise.all([['HeadHunter', importHH], ['Работа Рос�
   try { const rows = await importer(); return { source: { name, mode: 'auto', status: 'ok', found: rows.length }, rows }; }
   catch (error) { return { source: { name, mode: 'auto', status: 'blocked', found: 0, error: String(error.message || error) }, rows: [] }; }
 }));
-for (const run of runs) { sources.push(run.source); collected.push(...run.rows); }
 
 const sourceMatches = {
   'HeadHunter': source => source === 'HeadHunter',
@@ -38,6 +37,19 @@ const sourceMatches = {
   'ГдеРабота': source => source === 'ГдеРабота',
   'Спасский завод ЖБИ': source => source === 'Спасский завод ЖБИ — сайт работодателя'
 };
+for (const run of runs) {
+  const matches=sourceMatches[run.source.name];
+  const previousCount=matches ? (previousData.vacancies||[]).filter(v=>matches(v.source)).length : 0;
+  if(run.source.status==='ok' && suspiciousSourceDrop(previousCount,run.rows.length)){
+    run.source.observed=run.rows.length;
+    run.source.found=0;
+    run.source.status='blocked';
+    run.source.error=`Защитная остановка: источник внезапно вернул ${run.rows.length} вместо прежних ${previousCount}; сохранён предыдущий срез`;
+    run.rows=[];
+  }
+  sources.push(run.source);
+  collected.push(...run.rows);
+}
 for (const run of runs.filter(run=>run.source.status==='blocked')) {
   const matches=sourceMatches[run.source.name]; if(!matches) continue;
   const retained=(previousData.vacancies||[]).filter(v=>matches(v.source) && freshSnapshot(v));
