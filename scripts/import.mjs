@@ -17,9 +17,11 @@ const runs = await Promise.all([['HeadHunter', importHH], ['Работа Рос�
 }));
 for (const run of runs) { sources.push(run.source); collected.push(...run.rows); }
 
-const curated = await read('data/curated-public.json');
+const curatedAll = await read('data/curated-public.json');
+const farpostRun = runs.find(run => run.source.name === 'FarPost');
+const curated = farpostRun?.rows.length ? curatedAll.filter(row => row.source !== 'FarPost') : curatedAll;
 collected.push(...curated);
-sources.push({ name:'Проверенные публичные страницы работодателей', mode:'curated', status:'ok', found:curated.length });
+sources.push({ name:'Проверенные публичные страницы работодателей', mode:'curated', status:'ok', found:curated.length, note:farpostRun?.rows.length ? 'Ручной FarPost-срез отключён, так как живой импорт успешен' : 'Включён страховочный FarPost-срез' });
 
 let fallback = false;
 const hhRun = runs.find(run => run.source.name === 'HeadHunter');
