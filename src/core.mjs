@@ -15,6 +15,8 @@ export function classifyLocation(vacancy) {
   if (/вахт|переезд/iu.test(conditions)) return { accepted: false, bucket: 'otherCity', reason: 'Вахта или переезд исключены из основного списка' };
   if (/военнослужащ|контрактн\w*\s+служб|\bСВО\b/iu.test(vacancy.name + ' ' + conditions)) return { accepted: false, bucket: 'imprecise', reason: 'Фактическое место службы не подтверждено как Спасск-Дальний' };
   if (OTHER_CITIES.some(city => location.includes(city))) return { accepted: false, bucket: 'otherCity', reason: 'Указан другой город' };
+  const farpostOtherCity = /FarPost/iu.test(vacancy.source) && OTHER_CITIES.some(city => new RegExp(`(?:^|[,;.]\\s*|\\bг(?:ород)?\\.?\\s+)${city}(?=\\s|,|;|$)`, 'iu').test(conditions));
+  if (farpostOtherCity) return { accepted: false, bucket: 'otherCity', reason: 'В объявлении FarPost явно указан другой город' };
   const explicitOtherWorkplace = OTHER_CITIES.some(city => new RegExp(`(?:работа|место работы|работать|объект|офис|склад|магазин)\\s*(?:находится\\s*)?(?:в|:)?\\s*(?:г(?:ороде)?\\.?\\s*)?${city}`, 'iu').test(conditions));
   if (explicitOtherWorkplace) return { accepted: false, bucket: 'otherCity', reason: 'В описании явно указано место работы в другом городе' };
   if (CITY_RX.test(location)) return { accepted: true, bucket: 'local', reason: 'Явно указан Спасск-Дальний' };
@@ -64,6 +66,7 @@ export function scoreVacancy(vacancy) {
 
 export function dedupe(vacancies) {
   const seen = new Set();
+  const seenPlaces = new Set();
   const result = [];
   for (const vacancy of vacancies) {
     const simple = value => clean(value).toLowerCase().replace(/ё/g,'е').replace(/спасск[\s‑–—-]*дальн\w*/giu,' ').replace(/\b(?:ооо|оао|пао|ао|ип|тс|фку|кгбуз|кгбусо)\b/giu,' ').replace(/[^а-яa-z0-9]+/giu,' ').trim();
@@ -73,7 +76,9 @@ export function dedupe(vacancies) {
     const employer = aliases.find(([needle]) => employerRaw.includes(needle))?.[1] || employerRaw;
     const address = simple(vacancy.address).replace(/\b(?:улица|ул|дом|д)\b/giu,' ').trim();
     const key = [title,employer,address].join('|');
-    if (!seen.has(key)) { seen.add(key); result.push(vacancy); }
+    const specificAddress = address.replace(/\bспасск\s+дальний\b/giu,' ').trim();
+    const placeKey = specificAddress && !/уточнить|оригинал/iu.test(address) ? [title,specificAddress].join('|') : null;
+    if (!seen.has(key) && (!placeKey || !seenPlaces.has(placeKey))) { seen.add(key); if(placeKey)seenPlaces.add(placeKey); result.push(vacancy); }
   }
   return result;
 }

@@ -15,12 +15,26 @@ const readOr = async (name, fallback) => { try { return await read(name); } catc
 const write = (name, data) => fs.writeFile(new URL(name, root), data);
 const sources = [];
 const collected = [];
+const previousData = await readOr('data/vacancies.json',{vacancies:[]});
 
 const runs = await Promise.all([['HeadHunter', importHH], ['Работа России', importTrudvsem], ['FarPost', importFarpost], ['Публичный Telegram', importTelegram], ['ГдеРабота', importGdeRabota], ['Rabota1000', importRabota1000], ['ЦентрРабота', importCentrrabota]].map(async ([name, importer]) => {
   try { const rows = await importer(); return { source: { name, mode: 'auto', status: 'ok', found: rows.length }, rows }; }
   catch (error) { return { source: { name, mode: 'auto', status: 'blocked', found: 0, error: String(error.message || error) }, rows: [] }; }
 }));
 for (const run of runs) { sources.push(run.source); collected.push(...run.rows); }
+
+const sourceMatches = {
+  'HeadHunter': source => source === 'HeadHunter',
+  'Работа России': source => source === 'Работа России',
+  'FarPost': source => source === 'FarPost',
+  'Публичный Telegram': source => source.startsWith('Telegram @'),
+  'ГдеРабота': source => source === 'ГдеРабота'
+};
+for (const run of runs.filter(run=>run.source.status==='blocked')) {
+  const matches=sourceMatches[run.source.name]; if(!matches) continue;
+  const retained=(previousData.vacancies||[]).filter(v=>matches(v.source));
+  if(retained.length){ collected.push(...retained.map(v=>({...v,warnings:[...(v.warnings||[]),'Источник временно недоступен; сохранён последний успешный срез']}))); run.source.retained=retained.length; }
+}
 
 const curatedAll = await read('data/curated-public.json');
 const farpostRun = runs.find(run => run.source.name === 'FarPost');
@@ -38,7 +52,6 @@ if (!hhRun?.rows.length) {
 }
 fallback = !runs.some(run => run.rows.length);
 
-const previousData = await readOr('data/vacancies.json',{vacancies:[]});
 const storedHistory = await readOr('data/history.json',{});
 const processed = processVacancies(collected);
 const now = new Date().toISOString();

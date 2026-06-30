@@ -21,6 +21,8 @@ test('другие города и вахта отклоняются', () => {
   assert.equal(classifyLocation({...local,city:'Спасск-Дальний',address:'Спасск-Дальний',schedule:'Вахта в Магадане'}).accepted, false);
   assert.equal(classifyLocation({...local,name:'Военнослужащий по контракту',description:'Служба по контракту'}).accepted, false);
   assert.equal(classifyLocation({...local,description:'Работа в г. Партизанск, служебный транспорт'}).bucket, 'otherCity');
+  assert.equal(classifyLocation({...local,source:'FarPost',description:'ООО Компания. Приморский край, Владивосток, улица Светлая, 1'}).bucket,'otherCity');
+  assert.equal(classifyLocation({...local,source:'FarPost',description:'Гостиница на 542 км трассы Хабаровск–Владивосток'}).accepted,true);
 });
 
 test('дедупликация не зависит от id источника', () => {

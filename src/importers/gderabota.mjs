@@ -20,7 +20,7 @@ export function parseGdeRabota(html) {
   const links = vacancyLinks(html);
   return links.flatMap((card,index) => {
     const fragment = html.slice(card.match.index, links[index+1]?.match.index ?? Math.min(html.length, card.match.index+14000));
-    const context = stripHtml(fragment);
+    const context = stripHtml(fragment).split(/Заполните квиз|Соседние города/iu)[0].trim();
     if (!/спасск[\s‑–—-]*дальн/iu.test(context) || card.name.length > 180) return [];
     const salary = context.match(/(?:от|до)?\s*\d[\d\s]*(?:[–—-]\s*\d[\d\s]*)?\s*₽/u)?.[0]?.replace(/\s+/g,' ').trim() || 'Не указана';
     const experience = context.match(/без опыта|от\s+\d+\s+(?:года|лет)(?:\s+до\s+\d+\s+лет)?/iu)?.[0] || 'Не указано';
@@ -42,8 +42,11 @@ export async function importGdeRabota() {
   for(let i=0;i<10&&url;i++){
     const html=await fetchText(url);
     const parsed=parseGdeRabota(html);
+    const before=rows.length;
     rows.push(...parsed.filter(item=>!rows.some(old=>old.url===item.url)));
+    if(i>0 && rows.length===before) break;
     const next=nextPage(html,page); url=next?.url; page=next?.page||page+1;
+    if(!url && i<9) url=`${BASE}?page=${page}`;
     if(url) await sleep(900);
   }
   if(!rows.length) throw new Error('ГдеРабота: карточки не найдены — возможно, изменилась разметка');
