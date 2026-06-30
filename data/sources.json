@@ -34,7 +34,7 @@
   {"name":"SuperJob","url":"https://www.superjob.ru/vakansii/spassk-dalnij.html","access":"Официальный API требует ключ приложения; чужие токены не используются","connected":false},
   {"name":"Зарплата.ру","url":"https://www.zarplata.ru/","access":"Отдельный бесплатный открытый канал вакансий не подтверждён; пересечения покрывает HH","connected":false},
   {"name":"Работа.ру","url":"https://spassk-dalniy.rabota.ru/","access":"Нет подтверждённого открытого API; публичная страница оставлена для ручной проверки","connected":false},
-  {"name":"Администрация Спасска-Дальнего / ЦЗН","url":"https://spasskd.ru/index.php/organizatsii-goroda/tsentr-zanyatosti","access":"Локальные объявления и контакты ЦЗН; основной госнабор поступает через Работа России","connected":true},
+  {"name":"Администрация Спасска-Дальнего / ЦЗН","url":"https://spasskd.gosuslugi.ru/","access":"Официальный сайт переехал на Госвеб в мае 2026; вакансии администрации и ЦЗН учитываются через Работа России и официальный Telegram","connected":true},
   {"name":"Спасская городская больница","url":"https://spassk-far.hh.ru/employer/3826452","access":"Вакансии учитываются через HH и Работа России, отдельные дубли не создаются","connected":true},
   {"name":"AWDB открытые данные","url":"https://awdb.ru/jobs/primorskiy-kr/","access":"Используется для сверки числа вакансий; данные пересекаются с государственным набором","connected":false},
   {"name":"JobVK / HotWork","url":"https://ru.jobvk.com/pri/spassk-dalniy/","access":"Агрегаторы содержат много дублей, вахту и сомнительные объявления; только ручная контрольная проверка","connected":false}
