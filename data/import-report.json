@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T08:43:15.913Z",
+  "generatedAt": "2026-06-30T12:01:08.484Z",
   "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Rabota1000, ЦентрРабота",
   "fallback": false,
   "sourcesChecked": 39,
@@ -11,19 +11,19 @@
       "status": "blocked",
       "found": 0,
       "error": "HH /vacancies HTTP 403",
-      "retained": 26
+      "retained": 25
     },
     {
       "name": "Работа России",
       "mode": "auto",
       "status": "ok",
-      "found": 65
+      "found": 66
     },
     {
       "name": "FarPost",
       "mode": "auto",
       "status": "ok",
-      "found": 192
+      "found": 188
     },
     {
       "name": "Публичный Telegram",
@@ -35,7 +35,7 @@
       "name": "ГдеРабота",
       "mode": "auto",
       "status": "ok",
-      "found": 130
+      "found": 27
     },
     {
       "name": "Спасский завод ЖБИ",
@@ -48,7 +48,7 @@
       "mode": "auto",
       "status": "blocked",
       "found": 0,
-      "error": "robots.txt запрещает путь /spassk-dalni"
+      "error": "robots.txt недоступен — импорт отменён безопасно: rabota1000.ru HTTP 403"
     },
     {
       "name": "ЦентрРабота",
@@ -72,29 +72,29 @@
       "found": 28
     }
   ],
-  "raw": 476,
-  "accepted": 348,
+  "raw": 369,
+  "accepted": 249,
   "remote": 0,
   "rejected": {
-    "otherCity": 25,
-    "imprecise": 30,
+    "otherCity": 23,
+    "imprecise": 31,
     "remote": 0,
-    "duplicate": 73
+    "duplicate": 66
   },
   "stats": {
-    "active": 348,
-    "noExperience": 94,
-    "noHigherEducation": 320,
-    "withSalary": 336,
-    "goodFit": 159,
+    "active": 249,
+    "noExperience": 42,
+    "noHigherEducation": 231,
+    "withSalary": 238,
+    "goodFit": 99,
     "newVacancies": 0,
-    "changedVacancies": 8,
+    "changedVacancies": 17,
     "strongOpportunities": 1
   },
   "changes": {
     "new": 0,
-    "changed": 8,
-    "closed": 2
+    "changed": 17,
+    "closed": 99
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
 }
