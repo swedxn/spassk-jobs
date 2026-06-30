@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-30T02:52:28.701Z",
+  "generatedAt": "2026-06-30T02:57:03.468Z",
   "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Rabota1000, ЦентрРабота",
   "fallback": false,
-  "sourcesChecked": 26,
+  "sourcesChecked": 28,
   "sourcesConnected": 5,
   "sourceRuns": [
     {
@@ -48,7 +48,7 @@
       "name": "Проверенные публичные страницы работодателей",
       "mode": "curated",
       "status": "ok",
-      "found": 5,
+      "found": 12,
       "note": "Ручной FarPost-срез отключён, так как живой импорт успешен"
     },
     {
@@ -58,8 +58,8 @@
       "found": 36
     }
   ],
-  "raw": 230,
-  "accepted": 209,
+  "raw": 237,
+  "accepted": 216,
   "remote": 0,
   "rejected": {
     "otherCity": 14,
@@ -68,18 +68,18 @@
     "duplicate": 1
   },
   "stats": {
-    "active": 209,
-    "noExperience": 19,
-    "noHigherEducation": 208,
-    "withSalary": 196,
-    "goodFit": 73,
-    "newVacancies": 0,
-    "changedVacancies": 10,
-    "strongOpportunities": 2
+    "active": 216,
+    "noExperience": 20,
+    "noHigherEducation": 214,
+    "withSalary": 203,
+    "goodFit": 76,
+    "newVacancies": 7,
+    "changedVacancies": 0,
+    "strongOpportunities": 3
   },
   "changes": {
-    "new": 0,
-    "changed": 10,
+    "new": 7,
+    "changed": 0,
     "closed": 0
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."

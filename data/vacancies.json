@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-06-30T02:52:28.701Z",
+    "generatedAt": "2026-06-30T02:57:03.468Z",
     "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Rabota1000, ЦентрРабота",
     "fallback": false,
-    "sourcesChecked": 26,
+    "sourcesChecked": 28,
     "sourcesConnected": 5,
     "sourceRuns": [
       {
@@ -49,7 +49,7 @@
         "name": "Проверенные публичные страницы работодателей",
         "mode": "curated",
         "status": "ok",
-        "found": 5,
+        "found": 12,
         "note": "Ручной FarPost-срез отключён, так как живой импорт успешен"
       },
       {
@@ -59,8 +59,8 @@
         "found": 36
       }
     ],
-    "raw": 230,
-    "accepted": 209,
+    "raw": 237,
+    "accepted": 216,
     "remote": 0,
     "rejected": {
       "otherCity": 14,
@@ -69,18 +69,18 @@
       "duplicate": 1
     },
     "stats": {
-      "active": 209,
-      "noExperience": 19,
-      "noHigherEducation": 208,
-      "withSalary": 196,
-      "goodFit": 73,
-      "newVacancies": 0,
-      "changedVacancies": 10,
-      "strongOpportunities": 2
+      "active": 216,
+      "noExperience": 20,
+      "noHigherEducation": 214,
+      "withSalary": 203,
+      "goodFit": 76,
+      "newVacancies": 7,
+      "changedVacancies": 0,
+      "strongOpportunities": 3
     },
     "changes": {
-      "new": 0,
-      "changed": 10,
+      "new": 7,
+      "changed": 0,
       "closed": 0
     },
     "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
@@ -100,7 +100,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/smm-specialist-menedzher-126422391.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.683Z",
+      "checkedAt": "2026-06-30T02:56:54.732Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -111,7 +111,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.464Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -136,7 +136,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/administrator-pvz-ozon-129727590.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.683Z",
+      "checkedAt": "2026-06-30T02:56:54.733Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -148,7 +148,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.464Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -172,7 +172,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/trebuetsja-master-po-narashivaniju-resnic-lashmejker-leshmejker-v-vp-studio-104544094.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.733Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -183,7 +183,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.464Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -208,7 +208,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/ohrannik-118491396.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.733Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -220,11 +220,9 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
-      "changedFields": [
-        "employer"
-      ],
+      "changedFields": [],
       "opportunityScore": 59,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
@@ -247,7 +245,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-mehanik-traktorist-125641380.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.733Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -258,7 +256,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.464Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -283,7 +281,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/operator-rbu-135472146.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.733Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -295,7 +293,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.464Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 59,
@@ -320,7 +318,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-konsultant-121448734.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.733Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -332,7 +330,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.464Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 59,
@@ -357,7 +355,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/uborshik-sluzhebnyh-pomeshenij-na-4-chasa-v-den-118875424.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.733Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -368,7 +366,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.464Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -393,7 +391,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-kassir-sotrudnik-torgovogo-zala-spassk-dalnij-127887400.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.733Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -405,7 +403,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -429,7 +427,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/master-dorozhnyj-na-korfovskuju-136193656.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.733Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -440,11 +438,9 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
-      "changedFields": [
-        "employer"
-      ],
+      "changedFields": [],
       "opportunityScore": 55,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
@@ -467,7 +463,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/menedzher-punkta-vydachi-rabota-v-firmennom-punkte-vydachi-wildberries-132845810.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -478,7 +474,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -503,7 +499,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/upravljajushij-magazinom-117587701.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -514,7 +510,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -539,7 +535,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-konsultant-128547680.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -551,7 +547,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -575,7 +571,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-konsultant-136570791.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -587,7 +583,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 59,
@@ -612,7 +608,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/zamestitel-upravljajushego-starshij-prodavec-prodavec-104396837.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.684Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -624,11 +620,9 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
-      "changedFields": [
-        "employer"
-      ],
+      "changedFields": [],
       "opportunityScore": 44,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
@@ -650,7 +644,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/povar-na-period-otpuska-94971708.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -661,7 +655,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -685,7 +679,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/ohrannik-strelok-kontroler-kpp-133078554.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -697,7 +691,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 59,
@@ -722,7 +716,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/rieltor-agent-po-nedvizhimosti-125446683.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -733,15 +727,16 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
-      "opportunityScore": 40,
+      "opportunityScore": 55,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
-        "высшее не заявлено"
+        "высшее не заявлено",
+        "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136122544",
@@ -757,7 +752,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-kategorii-s-se-136122544.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -768,7 +763,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -793,7 +788,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pekar-v-hlebnyj-ceh-128356396.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -804,7 +799,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -828,7 +823,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/mladshij-inspektor-otdela-ohrany-kinolog-107106242.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -840,7 +835,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -864,7 +859,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-taxi-jandex-vezet-uber-bez-samozanjatosti-bez-vypiski-podkljuchaem-vseh-130891662.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -875,7 +870,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -900,7 +895,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-kurjer-98893548.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -912,7 +907,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -936,7 +931,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/merchendajzer-102413072.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -946,7 +941,7 @@
         "высшее образование не заявлено"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 39,
@@ -970,7 +965,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-expeditor-134073332.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -981,7 +976,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -1006,7 +1001,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/barista-136517001.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1017,7 +1012,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -1041,7 +1036,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pekar-g-spassk-dalnij-ul-vokzalnaja-d-45-112616356.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1052,7 +1047,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -1076,7 +1071,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/direktor-magazina-partner-g-spassk-dalnij-ul-parkovaja-d-64-134410532.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1087,7 +1082,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -1112,7 +1107,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/administrator-magazina-ul-sovetskaja-132a-124694458.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1124,7 +1119,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -1148,7 +1143,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pekar-ul-krasnoznamennaja-31-127554708.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1159,7 +1154,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -1183,7 +1178,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/administrator-magazina-ul-parkovaja-64-125719420.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1195,7 +1190,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -1219,7 +1214,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/operator-frontalnogo-pogruzchika-129313637.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1231,7 +1226,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -1255,7 +1250,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-konsultant-ul-krasnogvardejskaja-d-81-2-132429316.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1267,11 +1262,9 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
-      "changedFields": [
-        "employer"
-      ],
+      "changedFields": [],
       "opportunityScore": 44,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
@@ -1293,7 +1286,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/administrator-gostinicy-136496854.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.734Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1305,7 +1298,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -1329,7 +1322,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/elektromonter-svjazi-i-radiofikacii-130215526.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.735Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1340,7 +1333,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.465Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -1365,7 +1358,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/storozh-126851422.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.735Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1375,11 +1368,9 @@
         "высшее образование не заявлено"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.466Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
-      "changedFields": [
-        "employer"
-      ],
+      "changedFields": [],
       "opportunityScore": 39,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
@@ -1401,7 +1392,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/povar-134108484.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.735Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1412,7 +1403,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.466Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -1437,7 +1428,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/kadastrovyj-inzhener-pomoshnik-kadastrovogo-inzhenera-133670756.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.685Z",
+      "checkedAt": "2026-06-30T02:56:54.735Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1449,7 +1440,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.466Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -1457,7 +1448,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-129611256",
@@ -1473,7 +1464,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/sidelka-129611256.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.686Z",
+      "checkedAt": "2026-06-30T02:56:54.735Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1484,11 +1475,9 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.466Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
-      "changedFields": [
-        "address"
-      ],
+      "changedFields": [],
       "opportunityScore": 40,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
@@ -1510,7 +1499,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/kuhonnyj-rabotnik-v-detskij-lager-na-letnij-period-128662132.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.686Z",
+      "checkedAt": "2026-06-30T02:56:54.735Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1521,7 +1510,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.466Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -1529,7 +1518,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-118394146",
@@ -1545,7 +1534,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/povar-v-detskij-lager-na-letnij-period-118394146.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.686Z",
+      "checkedAt": "2026-06-30T02:56:54.735Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1556,7 +1545,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.466Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -1581,7 +1570,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/betonshik-109972568.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.686Z",
+      "checkedAt": "2026-06-30T02:56:54.735Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1592,7 +1581,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.466Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -1616,7 +1605,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-gruzovogo-avtomobilja-131327953.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.686Z",
+      "checkedAt": "2026-06-30T02:56:54.735Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1627,7 +1616,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.466Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -1652,7 +1641,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/menedzher-vydachi-spassk-dalnij-116773533.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.686Z",
+      "checkedAt": "2026-06-30T02:56:54.735Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1663,7 +1652,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.466Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -1688,7 +1677,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/menedzher-po-logistike-136476567.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:19.686Z",
+      "checkedAt": "2026-06-30T02:56:54.735Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1699,11 +1688,9 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.466Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
-      "changedFields": [
-        "employer"
-      ],
+      "changedFields": [],
       "opportunityScore": 40,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
@@ -1725,7 +1712,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/medsestra-mladshaja-medbrat-mladshij-136475894.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.350Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1736,16 +1723,15 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:01.466Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
-      "opportunityScore": 35,
+      "opportunityScore": 40,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
-        "высшее не заявлено",
-        "зарплата ниже медианы похожих вакансий"
+        "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-108614800",
@@ -1761,7 +1747,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-kategorij-v-108614800.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.350Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1772,7 +1758,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -1797,7 +1783,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/menedzher-po-rabote-s-klientami-prodazhi-117895987.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1808,7 +1794,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -1832,7 +1818,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/oficiant-66593145.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1843,7 +1829,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -1868,7 +1854,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/uborshik-mojshik-posudy-84753874.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1879,7 +1865,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -1903,7 +1889,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-konsultant-ul-sovetskaja-d-79-133148010.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1915,7 +1901,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -1939,7 +1925,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/specialist-operacionno-kassovogo-otdela-136462212.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1950,7 +1936,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -1959,7 +1945,7 @@
         "высшее не заявлено",
         "зарплата ниже медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136462134",
@@ -1975,7 +1961,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/gruzchik-expeditor-136462134.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -1987,7 +1973,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -2011,7 +1997,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-expeditor-kategorii-se-135408228.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2022,7 +2008,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -2047,7 +2033,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/sanitar-136077826.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2058,7 +2044,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -2067,7 +2053,7 @@
         "высшее не заявлено",
         "зарплата ниже медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-133279671",
@@ -2083,7 +2069,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/ofis-menedzher-kommercheskogo-otdela-133279671.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2094,7 +2080,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -2119,7 +2105,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/zamestitel-kommercheskogo-direktora-133537031.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2130,7 +2116,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -2139,7 +2125,7 @@
         "высшее не заявлено",
         "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136454122",
@@ -2155,7 +2141,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/specialist-pto-136454122.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2166,7 +2152,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -2174,7 +2160,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-105840476",
@@ -2190,7 +2176,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-kassir-r-on-cemzavoda-r-on-stomatologii-105840476.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2202,7 +2188,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.127Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -2226,7 +2212,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/povar-universal-136442009.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2237,7 +2223,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -2261,7 +2247,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/svarshik-111281540.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2272,7 +2258,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -2280,7 +2266,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-110622462",
@@ -2296,7 +2282,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/torgovyj-predstavitel-110622462.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2307,7 +2293,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -2315,7 +2301,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136437147",
@@ -2331,7 +2317,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/administrator-avtomojki-136437147.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2343,7 +2329,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -2367,7 +2353,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/sotrudnik-torgovogo-zala-132715246.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2378,7 +2364,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -2387,7 +2373,7 @@
         "высшее не заявлено",
         "зарплата ниже медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-133833111",
@@ -2403,7 +2389,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-kassir-133833111.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2414,7 +2400,7 @@
         "направление совпадает с интересами"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 43,
@@ -2438,7 +2424,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-konsultant-136428692.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2450,7 +2436,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 39,
@@ -2475,7 +2461,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-expeditor-124363798.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.381Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2486,7 +2472,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -2510,7 +2496,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/elektromehanik-shch-6-135503443.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2521,7 +2507,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -2545,7 +2531,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/starshij-elektromehanik-scb-shch-6-135497288.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2556,7 +2542,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -2581,7 +2567,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/dispetcher-distancii-scb-shch-6-133837992.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2592,7 +2578,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -2601,7 +2587,7 @@
         "высшее не заявлено",
         "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136043146",
@@ -2617,7 +2603,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/elektromonter-shch-6-136043146.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2628,7 +2614,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -2653,7 +2639,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/kuhonnyj-rabotnik-135652612.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.351Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2664,7 +2650,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -2673,7 +2659,7 @@
         "высшее не заявлено",
         "зарплата ниже медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-57589318",
@@ -2689,7 +2675,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/kochegar-storozh-57589318.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2700,7 +2686,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -2724,7 +2710,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/plotnik-stroitel-119856347.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2735,7 +2721,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -2744,7 +2730,7 @@
         "высшее не заявлено",
         "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-78744723",
@@ -2760,7 +2746,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pekar-testovod-78744723.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2771,7 +2757,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -2795,7 +2781,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/trebujutsja-povara-pomoshnik-povara-zarplata-vysokaja-vyplata-kazhduju-nedelju-135680403.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2807,7 +2793,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -2831,7 +2817,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/hr-generalist-kadrovyj-specialist-136418272.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2842,7 +2828,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -2851,7 +2837,7 @@
         "высшее не заявлено",
         "зарплата ниже медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136418241",
@@ -2867,7 +2853,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/rukovoditel-centra-obuchenija-136418241.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2878,7 +2864,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 50,
@@ -2903,7 +2889,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/metodist-136418235.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2914,7 +2900,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -2923,7 +2909,7 @@
         "высшее не заявлено",
         "зарплата ниже медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136418231",
@@ -2939,7 +2925,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/inzhener-metrolog-136418231.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2950,7 +2936,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -2959,7 +2945,7 @@
         "высшее не заявлено",
         "зарплата ниже медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136418215",
@@ -2975,7 +2961,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/specialist-po-dokumentooborotu-136418215.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -2986,7 +2972,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -3010,7 +2996,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/tehnicheskij-rukovoditel-136418209.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3021,7 +3007,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -3045,7 +3031,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/rukovoditel-centra-prodazh-134596873.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3056,7 +3042,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -3080,7 +3066,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/ryboobrabotchik-136416129.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3091,7 +3077,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -3100,7 +3086,7 @@
         "высшее не заявлено",
         "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-123687696",
@@ -3116,7 +3102,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/operator-vydachi-123687696.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3127,7 +3113,7 @@
         "направление совпадает с интересами"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 43,
@@ -3151,7 +3137,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/raznorabochij-135310972.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3162,7 +3148,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -3187,7 +3173,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/raznorabochij-s-andreevka-p-livadija-109866904.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3198,7 +3184,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -3222,7 +3208,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/gruzchik-komplektovshik-g-spassk-dalnij-120443070.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3234,7 +3220,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 59,
@@ -3259,7 +3245,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-kassir-126562166.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3271,7 +3257,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 39,
@@ -3296,7 +3282,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/gruzchik-komplektovshik-135126007.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3308,7 +3294,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -3332,7 +3318,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pomoshnik-povara-135332862.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3344,7 +3330,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -3368,7 +3354,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/inspektor-sluzhby-bezopasnosti-78547853.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3379,11 +3365,9 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
-      "changedFields": [
-        "address"
-      ],
+      "changedFields": [],
       "opportunityScore": 55,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
@@ -3406,7 +3390,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/administrator-136385400.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3418,7 +3402,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -3442,7 +3426,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pekar-v-bulochnyj-ceh-132312374.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:21.382Z",
+      "checkedAt": "2026-06-30T02:56:56.352Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3453,7 +3437,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -3477,7 +3461,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/raznorabochij-103037132.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3488,7 +3472,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:03.128Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -3513,7 +3497,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/master-uchastka-132047813.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3524,7 +3508,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -3549,7 +3533,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-benzovoza-110046503.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3560,7 +3544,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -3584,7 +3568,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/specialist-po-ohrane-truda-117882085.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3596,7 +3580,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -3620,7 +3604,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/mehanizator-76625801.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3631,7 +3615,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -3639,7 +3623,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-119858569",
@@ -3655,7 +3639,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-119858569.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3666,7 +3650,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -3690,7 +3674,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/avtoslesar-130443961.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3701,7 +3685,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -3725,7 +3709,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/vrach-veterinarnyj-134110378.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3736,15 +3720,16 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
-      "opportunityScore": 40,
+      "opportunityScore": 55,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
-        "высшее не заявлено"
+        "высшее не заявлено",
+        "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-118874141",
@@ -3760,7 +3745,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/gruzchik-118874141.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3772,7 +3757,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -3796,7 +3781,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/rukovoditel-otdela-logistiki-filiala-v-g-spassk-dalnij-136371135.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3807,7 +3792,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -3832,7 +3817,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/priemosdatchik-starshij-135847030.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3843,7 +3828,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -3851,7 +3836,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136368187",
@@ -3867,7 +3852,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/ekonomist-136368187.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3877,7 +3862,7 @@
         "высшее образование не заявлено"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 39,
@@ -3885,7 +3870,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-64692853",
@@ -3901,7 +3886,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/administrator-kafe-64692853.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3913,7 +3898,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -3937,7 +3922,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pomoshnik-povara-79262628.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3949,7 +3934,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -3973,7 +3958,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/povar-universal-119273979.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -3984,7 +3969,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.898Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -4008,7 +3993,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/administrator-kafe-94808119.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4020,7 +4005,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -4044,7 +4029,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/povar-piccerist-121706718.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4055,7 +4040,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -4079,7 +4064,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/inzhener-otk-136366633.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4090,7 +4075,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -4099,7 +4084,7 @@
         "высшее не заявлено",
         "зарплата ниже медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136365009",
@@ -4115,7 +4100,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/gruzchik-rabochij-sborshik-podrabotka-pochasovaja-oplata-ezhenedelnye-vyplaty-136365009.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4127,7 +4112,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -4151,7 +4136,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-136363424.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.091Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4162,7 +4147,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -4186,7 +4171,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-gruzovogo-avtomobilja-82924073.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4197,7 +4182,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -4222,7 +4207,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pomoshnik-mashinista-avtomotrisy-135548005.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4234,7 +4219,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -4242,7 +4227,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136341415",
@@ -4258,7 +4243,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/uborshik-gornichnaja-136341415.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4269,7 +4254,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -4293,7 +4278,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/starshij-policejskij-policejskij-policejskij-voditel-129889967.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4303,7 +4288,7 @@
         "высшее образование не заявлено"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 39,
@@ -4327,7 +4312,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pekar-136350180.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4338,7 +4323,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -4362,7 +4347,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/kuhonnyj-rabotnik-130779185.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4373,7 +4358,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -4382,7 +4367,7 @@
         "высшее не заявлено",
         "зарплата ниже медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-125384069",
@@ -4398,7 +4383,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/menedzher-po-rabote-s-klientami-125384069.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.971Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4409,7 +4394,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -4433,7 +4418,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/menedzher-po-prodazham-aviabiletov-80123103.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4444,7 +4429,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -4468,7 +4453,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-avtomobilja-136340702.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4479,7 +4464,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -4504,7 +4489,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/promouter-136339726.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4515,7 +4500,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -4523,7 +4508,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136337397",
@@ -4539,7 +4524,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pomoshnik-povara-136337397.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4551,7 +4536,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -4575,7 +4560,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/povar-135927043.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4586,7 +4571,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -4610,7 +4595,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pekar-v-kulinarnyj-ceh-83288659.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4621,7 +4606,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -4645,7 +4630,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/uborshik-ca-v-pekarnju-112480309.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4656,7 +4641,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -4681,7 +4666,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pekar-v-hlebnyj-ceh-v-spasske-dalnem-53464364.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4692,7 +4677,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -4717,7 +4702,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/barista-kassir-124281974.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4729,7 +4714,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -4753,7 +4738,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/medsestra-optik-optometrist-99669899.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4764,15 +4749,16 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
-      "opportunityScore": 40,
+      "opportunityScore": 55,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
-        "высшее не заявлено"
+        "высшее не заявлено",
+        "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-127217762",
@@ -4788,7 +4774,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-127217762.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4800,7 +4786,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 39,
@@ -4825,7 +4811,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-kategorii-e-122626714.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4836,7 +4822,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -4861,7 +4847,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/torgovyj-predstavitel-136324057.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4872,15 +4858,16 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
-      "opportunityScore": 40,
+      "opportunityScore": 55,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
-        "высшее не заявлено"
+        "высшее не заявлено",
+        "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136323262",
@@ -4896,7 +4883,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/raznorabochij-136323262.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4907,11 +4894,9 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
-      "changedFields": [
-        "employer"
-      ],
+      "changedFields": [],
       "opportunityScore": 55,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
@@ -4934,7 +4919,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/administrator-gostinicy-50125372.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4946,7 +4931,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -4970,7 +4955,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/gruzchik-119434590.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -4982,7 +4967,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 59,
@@ -5007,7 +4992,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-expeditor-113462314.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5018,7 +5003,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -5042,7 +5027,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/sborshik-mebeli-raznorabochij-g-spassk-dalnij-110877628.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.092Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5053,7 +5038,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -5078,7 +5063,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-konsultant-v-mebelnyj-magazin-g-spassk-dalnij-110876564.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:23.093Z",
+      "checkedAt": "2026-06-30T02:56:57.972Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5090,7 +5075,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:04.899Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 39,
@@ -5115,7 +5100,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-expeditor-19083643.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5126,7 +5111,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -5151,7 +5136,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/mojshik-posudy-136302826.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5162,7 +5147,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -5186,7 +5171,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/mladshij-inspektor-114322773.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5197,7 +5182,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -5221,7 +5206,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/ohrannik-voditel-71263910.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5233,7 +5218,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 39,
@@ -5258,7 +5243,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/ohrannik-ohrannik-voditel-125891656.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5270,7 +5255,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -5294,7 +5279,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-kassir-108613528.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5306,7 +5291,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -5330,7 +5315,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/armaturshik-armaturshica-118688413.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5341,7 +5326,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -5349,7 +5334,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-128442045",
@@ -5365,7 +5350,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/master-gornyj-128442045.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5376,7 +5361,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -5400,7 +5385,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/administrator-magazina-93215080.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5412,7 +5397,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -5436,7 +5421,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/traktorist-mashinist-selskohozjajstvennogo-proizvodstva-135946033.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5447,7 +5432,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -5456,7 +5441,7 @@
         "высшее не заявлено",
         "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136298843",
@@ -5472,7 +5457,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/mashinist-exkavatora-136298843.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5483,7 +5468,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -5492,7 +5477,7 @@
         "высшее не заявлено",
         "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-116705363",
@@ -5508,7 +5493,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/rieltor-agent-po-nedvizhimosti-116705363.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5519,7 +5504,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -5528,7 +5513,7 @@
         "высшее не заявлено",
         "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-136298744",
@@ -5544,7 +5529,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-samosvala-136298744.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5555,7 +5540,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -5580,7 +5565,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-kassir-ul-sovetskaja-45-104202470.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.796Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5592,7 +5577,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -5616,7 +5601,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/fitnes-trener-133097119.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5626,7 +5611,7 @@
         "высшее образование не заявлено"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 39,
@@ -5634,7 +5619,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-134509928",
@@ -5650,7 +5635,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/administrator-134509928.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5662,7 +5647,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.561Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 59,
@@ -5687,7 +5672,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/raznorabochij-stroitel-136288393.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5698,11 +5683,9 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
-      "changedFields": [
-        "address"
-      ],
+      "changedFields": [],
       "opportunityScore": 40,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
@@ -5724,7 +5707,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/gornichnaja-125481533.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5735,7 +5718,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -5744,7 +5727,7 @@
         "высшее не заявлено",
         "зарплата ниже медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-135776645",
@@ -5760,7 +5743,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pekar-i-pomoshnik-pekarja-135776645.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.740Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5771,7 +5754,7 @@
         "направление совпадает с интересами"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 43,
@@ -5795,7 +5778,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/povar-universal-i-povar-pomoshnika-83641390.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5807,7 +5790,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -5831,7 +5814,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/oficiant-barmen-134106816.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5842,7 +5825,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -5866,7 +5849,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pomoshnik-mashinista-teplovoza-136041984.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5878,7 +5861,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 59,
@@ -5887,7 +5870,7 @@
         "высшее не заявлено",
         "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-135759743",
@@ -5903,7 +5886,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/signalist-135759743.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5914,7 +5897,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -5922,7 +5905,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-135760105",
@@ -5938,7 +5921,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/monter-puti-135760105.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5949,7 +5932,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -5957,7 +5940,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-135760276",
@@ -5973,7 +5956,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/brigadir-osvobozhdennyj-po-tekushemu-soderzhaniju-i-remontu-puti-i-iskusstvennyh-sooruzhenij-135760276.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -5984,7 +5967,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -5993,7 +5976,7 @@
         "высшее не заявлено",
         "зарплата выше медианы похожих вакансий"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-135760563",
@@ -6009,7 +5992,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/master-dorozhnyj-135760563.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -6020,7 +6003,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 55,
@@ -6045,7 +6028,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/inspektor-transportnoj-bezopasnosti-obuchenie-attestacija-103366967.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -6057,7 +6040,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 50,
@@ -6083,7 +6066,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/trebuetsja-gruzchik-raznorabochij-128777133.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -6095,7 +6078,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -6119,7 +6102,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/uborshik-gornichnaja-111617598.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -6130,7 +6113,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 35,
@@ -6155,7 +6138,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/gruzchik-kladovshik-103852079.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -6167,7 +6150,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -6191,7 +6174,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/prodavec-88429079.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -6203,7 +6186,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 44,
@@ -6227,7 +6210,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/gruzchik-110315288.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -6238,7 +6221,7 @@
         "направление совпадает с интересами"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 43,
@@ -6262,7 +6245,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/voditel-103255609.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -6273,7 +6256,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -6297,7 +6280,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/avtoslesar-mehanik-dlja-inogorodnih-s-prozhivaniem-114691887.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -6308,7 +6291,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -6332,7 +6315,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/pomoshnik-hudozhnika-60124682.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -6343,7 +6326,7 @@
         "направление совпадает с интересами"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 43,
@@ -6351,7 +6334,7 @@
       "opportunityReasons": [
         "высшее не заявлено"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "farpost-133375777",
@@ -6367,7 +6350,7 @@
       "source": "FarPost",
       "url": "https://www.farpost.ru/spassk-dalnii/rabota/vacansii/trebuetsja-master-po-remontu-vannoj-komnaty-i-sanuzla-133375777.html",
       "publishedAt": null,
-      "checkedAt": "2026-06-30T02:52:24.797Z",
+      "checkedAt": "2026-06-30T02:56:59.741Z",
       "remote": false,
       "active": true,
       "warnings": [],
@@ -6377,7 +6360,7 @@
         "высшее образование не заявлено"
       ],
       "firstSeenAt": "2026-06-30T00:06:06.562Z",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 39,
@@ -6413,7 +6396,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T10:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 45,
@@ -6451,7 +6434,7 @@
         "направление совпадает с интересами"
       ],
       "firstSeenAt": "2026-06-30T10:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 69,
@@ -6488,15 +6471,16 @@
         "заявлен опыт или повышенные требования"
       ],
       "firstSeenAt": "2026-06-30T10:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
-      "opportunityScore": 33,
+      "opportunityScore": 48,
       "opportunity": "Обычная вакансия",
       "opportunityReasons": [
+        "зарплата выше медианы похожих вакансий",
         "источник с повышенным доверием"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "pomogatel-sitter-2026",
@@ -6525,7 +6509,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T10:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 29,
@@ -6561,7 +6545,7 @@
         "заявлен опыт или повышенные требования"
       ],
       "firstSeenAt": "2026-06-30T10:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 31,
@@ -6570,6 +6554,276 @@
         "высшее не заявлено"
       ],
       "marketSalaryMedian": 100000
+    },
+    {
+      "id": "joblab-merchandiser-20260430",
+      "name": "Мерчендайзер",
+      "employer": "ИП Варламова А. В.",
+      "salary": "Договорная",
+      "city": "Спасск-Дальний",
+      "address": "Спасск-Дальний",
+      "experience": "Без опыта",
+      "education": "Не указано",
+      "schedule": "Подработка",
+      "description": "Выкладка книг, смена ценников и фотоотчёт. День и время можно выбирать, допускается совмещение. Карточка присутствует в текущей публичной городской выдаче JobLab.",
+      "source": "JobLab",
+      "url": "https://joblab.ru/city/392/",
+      "publishedAt": "2026-04-30",
+      "checkedAt": "2026-06-30T12:00:00+10:00",
+      "remote": false,
+      "active": true,
+      "warnings": [
+        "Уточните у работодателя, остаётся ли подработка открытой"
+      ],
+      "score": 80,
+      "fit": "Хорошо подходит",
+      "reasons": [
+        "подходит без опыта или есть обучение",
+        "высшее образование не заявлено",
+        "зарплата указана"
+      ],
+      "firstSeenAt": "2026-06-30T02:57:03.468Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
+      "isNew": true,
+      "changedFields": [],
+      "opportunityScore": 74,
+      "opportunity": "Сильная возможность",
+      "opportunityReasons": [
+        "новая вакансия",
+        "можно без опыта",
+        "высшее не заявлено"
+      ],
+      "marketSalaryMedian": 68543
+    },
+    {
+      "id": "joblab-office-sales-20260301",
+      "name": "Менеджер в офис продаж",
+      "employer": "Jobers",
+      "salary": "от 70 000 ₽",
+      "city": "Спасск-Дальний",
+      "address": "Спасск-Дальний",
+      "experience": "Опыт от 1 года",
+      "education": "Не указано",
+      "schedule": "Полный день",
+      "description": "Работа с существующей клиентской базой, её расширение, консультации и переговоры. Карточка присутствует в текущей публичной городской выдаче JobLab.",
+      "source": "JobLab",
+      "url": "https://joblab.ru/city/392/",
+      "publishedAt": "2026-03-01",
+      "checkedAt": "2026-06-30T12:00:00+10:00",
+      "remote": false,
+      "active": true,
+      "warnings": [
+        "Уточните у работодателя, остаётся ли вакансия открытой"
+      ],
+      "score": 30,
+      "fit": "Слабое совпадение",
+      "reasons": [
+        "высшее образование не заявлено",
+        "зарплата указана",
+        "заявлен опыт или повышенные требования"
+      ],
+      "firstSeenAt": "2026-06-30T02:57:03.468Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
+      "isNew": true,
+      "changedFields": [],
+      "opportunityScore": 64,
+      "opportunity": "Сильная возможность",
+      "opportunityReasons": [
+        "новая вакансия",
+        "высшее не заявлено",
+        "зарплата выше медианы похожих вакансий"
+      ],
+      "marketSalaryMedian": 55000
+    },
+    {
+      "id": "svoeagro-supervisor-2130029209",
+      "name": "Супервайзер",
+      "employer": "ПК Серышевский, ИП Мельниченко Д. В.",
+      "salary": "80 000 ₽",
+      "city": "Спасск-Дальний",
+      "address": "Спасск-Дальний",
+      "experience": "Опыт 1–3 года",
+      "education": "СПО или высшее",
+      "schedule": "Полный день",
+      "description": "Работа с командой торговых представителей, развитие клиентской базы и увеличение продаж. В карточке указаны командировки.",
+      "source": "Своё Фермерство",
+      "url": "https://svoevagro.ru/vacancies/2130029209",
+      "publishedAt": "2026-01-30",
+      "checkedAt": "2026-06-30T12:00:00+10:00",
+      "remote": false,
+      "active": true,
+      "warnings": [
+        "Уточните актуальность и территорию командировок"
+      ],
+      "score": 15,
+      "fit": "Слабое совпадение",
+      "reasons": [
+        "зарплата указана",
+        "заявлен опыт или повышенные требования"
+      ],
+      "firstSeenAt": "2026-06-30T02:57:03.468Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
+      "isNew": true,
+      "changedFields": [],
+      "opportunityScore": 41,
+      "opportunity": "Обычная вакансия",
+      "opportunityReasons": [
+        "новая вакансия"
+      ],
+      "marketSalaryMedian": 80000
+    },
+    {
+      "id": "svoeagro-agronomist-55141",
+      "name": "Агроном по семеноводству",
+      "employer": "Российский сельскохозяйственный центр, филиал по Приморскому краю",
+      "salary": "41 000 ₽",
+      "city": "Спасск-Дальний",
+      "address": "Спасск-Дальний",
+      "experience": "Не имеет значения",
+      "education": "Не указано",
+      "schedule": "Полный рабочий день",
+      "description": "Первичная документация, отбор проб, клубневой анализ картофеля, апробация посевов и работа во ФГИС «Семеноводство».",
+      "source": "Своё Фермерство",
+      "url": "https://svoevagro.ru/vacancies/55141",
+      "publishedAt": "2026-01-22",
+      "checkedAt": "2026-06-30T12:00:00+10:00",
+      "remote": false,
+      "active": true,
+      "warnings": [
+        "Уточните актуальность и требования к профильному образованию"
+      ],
+      "score": 55,
+      "fit": "Можно рассмотреть",
+      "reasons": [
+        "высшее образование не заявлено",
+        "зарплата указана"
+      ],
+      "firstSeenAt": "2026-06-30T02:57:03.468Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
+      "isNew": true,
+      "changedFields": [],
+      "opportunityScore": 49,
+      "opportunity": "Обычная вакансия",
+      "opportunityReasons": [
+        "новая вакансия",
+        "высшее не заявлено",
+        "зарплата ниже медианы похожих вакансий"
+      ],
+      "marketSalaryMedian": 80000
+    },
+    {
+      "id": "svoeagro-environment-deputy-55353",
+      "name": "Заместитель директора в области охраны окружающей среды",
+      "employer": "ФГБУ Государственный заповедник «Ханкайский»",
+      "salary": "55 000 ₽",
+      "city": "Спасск-Дальний",
+      "address": "Спасск-Дальний",
+      "experience": "Не имеет значения",
+      "education": "Не указано",
+      "schedule": "Ненормированный рабочий день",
+      "description": "Руководство отделом охраны окружающей среды, рейдовые, противопожарные и природоохранные мероприятия.",
+      "source": "Своё Фермерство",
+      "url": "https://svoevagro.ru/vacancies/55353",
+      "publishedAt": "2026-02-26",
+      "checkedAt": "2026-06-30T12:00:00+10:00",
+      "remote": false,
+      "active": true,
+      "warnings": [
+        "Уточните актуальность и квалификационные требования"
+      ],
+      "score": 75,
+      "fit": "Хорошо подходит",
+      "reasons": [
+        "высшее образование не заявлено",
+        "направление совпадает с интересами",
+        "зарплата указана"
+      ],
+      "firstSeenAt": "2026-06-30T02:57:03.468Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
+      "isNew": true,
+      "changedFields": [],
+      "opportunityScore": 53,
+      "opportunity": "Обычная вакансия",
+      "opportunityReasons": [
+        "новая вакансия",
+        "высшее не заявлено",
+        "зарплата ниже медианы похожих вакансий"
+      ],
+      "marketSalaryMedian": 80000
+    },
+    {
+      "id": "svoeagro-driver-forwarder-2132150025",
+      "name": "Водитель-экспедитор на автомобиле компании",
+      "employer": "Приморский Торговый Центр",
+      "salary": "100 000 ₽",
+      "city": "Спасск-Дальний",
+      "address": "Спасск-Дальний",
+      "experience": "Опыт вождения от 1 года",
+      "education": "Не имеет значения",
+      "schedule": "Полный день",
+      "description": "Доставка кондитерских изделий по магазинам, погрузка и разгрузка товара, отчётные документы и контроль автомобиля.",
+      "source": "Своё Фермерство",
+      "url": "https://svoevagro.ru/vacancies/2132150025",
+      "publishedAt": "2026-04-15",
+      "checkedAt": "2026-06-30T12:00:00+10:00",
+      "remote": false,
+      "active": true,
+      "warnings": [],
+      "score": 75,
+      "fit": "Хорошо подходит",
+      "reasons": [
+        "высшее образование не заявлено",
+        "направление совпадает с интересами",
+        "зарплата указана"
+      ],
+      "firstSeenAt": "2026-06-30T02:57:03.468Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
+      "isNew": true,
+      "changedFields": [],
+      "opportunityScore": 80,
+      "opportunity": "Срочно посмотреть",
+      "opportunityReasons": [
+        "новая вакансия",
+        "высшее не заявлено",
+        "зарплата выше медианы похожих вакансий"
+      ],
+      "marketSalaryMedian": 68543
+    },
+    {
+      "id": "svoeagro-sales-rep-2131928039",
+      "name": "Торговый представитель",
+      "employer": "Партнер",
+      "salary": "80 000 ₽",
+      "city": "Спасск-Дальний",
+      "address": "Спасск-Дальний",
+      "experience": "Опыт не обязателен, аналогичный опыт — преимущество",
+      "education": "Не имеет значения",
+      "schedule": "Полный день",
+      "description": "Переговоры и продажи продуктов питания. Работодатель указывает готовность обучать кандидата.",
+      "source": "Своё Фермерство",
+      "url": "https://svoevagro.ru/vacancies/2131928039",
+      "publishedAt": "2026-04-07",
+      "checkedAt": "2026-06-30T12:00:00+10:00",
+      "remote": false,
+      "active": true,
+      "warnings": [],
+      "score": 55,
+      "fit": "Можно рассмотреть",
+      "reasons": [
+        "высшее образование не заявлено",
+        "зарплата указана"
+      ],
+      "firstSeenAt": "2026-06-30T02:57:03.468Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
+      "isNew": true,
+      "changedFields": [],
+      "opportunityScore": 61,
+      "opportunity": "Сильная возможность",
+      "opportunityReasons": [
+        "новая вакансия",
+        "высшее не заявлено"
+      ],
+      "marketSalaryMedian": 80000
     },
     {
       "id": "hh-seed-mobile-banker",
@@ -6597,7 +6851,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 81,
@@ -6608,7 +6862,7 @@
         "зарплата выше медианы похожих вакансий",
         "источник с повышенным доверием"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "hh-seed-security-manager",
@@ -6636,7 +6890,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 81,
@@ -6675,7 +6929,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 66,
@@ -6713,7 +6967,7 @@
         "заявлен опыт или повышенные требования"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 41,
@@ -6722,7 +6976,7 @@
         "высшее не заявлено",
         "источник с повышенным доверием"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "hh-seed-logistics",
@@ -6749,7 +7003,7 @@
         "заявлен опыт или повышенные требования"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 40,
@@ -6786,7 +7040,7 @@
         "заявлен опыт или повышенные требования"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 41,
@@ -6824,7 +7078,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 70,
@@ -6862,7 +7116,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 61,
@@ -6873,7 +7127,7 @@
         "зарплата ниже медианы похожих вакансий",
         "источник с повышенным доверием"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "hh-seed-trade-security",
@@ -6901,7 +7155,7 @@
         "заявлен опыт или повышенные требования"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 41,
@@ -6939,7 +7193,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 70,
@@ -6977,7 +7231,7 @@
         "заявлен опыт или повышенные требования"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 56,
@@ -6987,7 +7241,7 @@
         "зарплата выше медианы похожих вакансий",
         "источник с повышенным доверием"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "hh-seed-training",
@@ -7015,7 +7269,7 @@
         "заявлен опыт или повышенные требования"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 51,
@@ -7053,7 +7307,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 61,
@@ -7064,7 +7318,7 @@
         "зарплата ниже медианы похожих вакансий",
         "источник с повышенным доверием"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "hh-seed-loader-picker",
@@ -7093,7 +7347,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 70,
@@ -7133,7 +7387,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 59,
@@ -7143,7 +7397,7 @@
         "высшее не заявлено",
         "источник с повышенным доверием"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "hh-seed-mechanic",
@@ -7171,7 +7425,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 66,
@@ -7209,7 +7463,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 66,
@@ -7247,7 +7501,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 66,
@@ -7257,7 +7511,7 @@
         "высшее не заявлено",
         "источник с повышенным доверием"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     },
     {
       "id": "hh-seed-client-manager",
@@ -7285,7 +7539,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 66,
@@ -7324,7 +7578,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 70,
@@ -7362,7 +7616,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 66,
@@ -7401,7 +7655,7 @@
         "заявлен опыт или повышенные требования"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 45,
@@ -7438,7 +7692,7 @@
         "заявлен опыт или повышенные требования"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 41,
@@ -7478,7 +7732,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 63,
@@ -7519,7 +7773,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 78,
@@ -7558,7 +7812,7 @@
         "заявлен опыт или повышенные требования"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 56,
@@ -7597,7 +7851,7 @@
         "заявлен опыт или повышенные требования"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 60,
@@ -7637,7 +7891,7 @@
         "зарплата указана"
       ],
       "firstSeenAt": "2026-06-30T00:00:00+10:00",
-      "lastSeenAt": "2026-06-30T02:52:28.701Z",
+      "lastSeenAt": "2026-06-30T02:57:03.468Z",
       "isNew": false,
       "changedFields": [],
       "opportunityScore": 54,
@@ -7648,7 +7902,7 @@
         "зарплата ниже медианы похожих вакансий",
         "источник с повышенным доверием"
       ],
-      "marketSalaryMedian": 85000
+      "marketSalaryMedian": 80000
     }
   ],
   "remote": []

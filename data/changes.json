@@ -1,170 +1,59 @@
 {
-  "generatedAt": "2026-06-30T02:52:28.701Z",
+  "generatedAt": "2026-06-30T02:57:03.468Z",
   "summary": {
-    "new": 0,
-    "changed": 10,
+    "new": 7,
+    "changed": 0,
     "closed": 0
   },
   "events": [
     {
-      "type": "changed",
-      "vacancyId": "farpost-118491396",
-      "name": "Охранник",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ООО \"ЧОА\"Вымпел\" сегодня в 11:15 3442"
-      },
-      "after": {
-        "employer": "ООО \"ЧОА\"Вымпел\" сегодня в 11:15 3446"
-      },
-      "at": "2026-06-30T02:52:28.701Z"
+      "type": "new",
+      "vacancyId": "joblab-merchandiser-20260430",
+      "name": "Мерчендайзер",
+      "source": "JobLab",
+      "at": "2026-06-30T02:57:03.468Z"
     },
     {
-      "type": "changed",
-      "vacancyId": "farpost-136193656",
-      "name": "Мастер дорожный на Корфовскую",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "АО \"РЖД\" сегодня в 08:53 89"
-      },
-      "after": {
-        "employer": "АО \"РЖД\" сегодня в 08:53 90"
-      },
-      "at": "2026-06-30T02:52:28.701Z"
+      "type": "new",
+      "vacancyId": "joblab-office-sales-20260301",
+      "name": "Менеджер в офис продаж",
+      "source": "JobLab",
+      "at": "2026-06-30T02:57:03.468Z"
     },
     {
-      "type": "changed",
-      "vacancyId": "farpost-104396837",
-      "name": "Заместитель управляющего, старший продавец, продавец",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ООО \"Альбион 2002\" вчера в 14:19 4499"
-      },
-      "after": {
-        "employer": "ООО \"Альбион 2002\" вчера в 14:19 4500"
-      },
-      "at": "2026-06-30T02:52:28.701Z"
+      "type": "new",
+      "vacancyId": "svoeagro-supervisor-2130029209",
+      "name": "Супервайзер",
+      "source": "Своё Фермерство",
+      "at": "2026-06-30T02:57:03.468Z"
     },
     {
-      "type": "changed",
-      "vacancyId": "farpost-132429316",
-      "name": "Продавец-консультант ул. Красногвардейская д. 81/2",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ПАО \"ВинЛаб\" 25 июня 322"
-      },
-      "after": {
-        "employer": "ПАО \"ВинЛаб\" 25 июня 323"
-      },
-      "at": "2026-06-30T02:52:28.701Z"
+      "type": "new",
+      "vacancyId": "svoeagro-agronomist-55141",
+      "name": "Агроном по семеноводству",
+      "source": "Своё Фермерство",
+      "at": "2026-06-30T02:57:03.468Z"
     },
     {
-      "type": "changed",
-      "vacancyId": "farpost-126851422",
-      "name": "Сторож",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ИП Папикян АА 25 июня 1591"
-      },
-      "after": {
-        "employer": "ИП Папикян АА 25 июня 1592"
-      },
-      "at": "2026-06-30T02:52:28.701Z"
+      "type": "new",
+      "vacancyId": "svoeagro-environment-deputy-55353",
+      "name": "Заместитель директора в области охраны окружающей среды",
+      "source": "Своё Фермерство",
+      "at": "2026-06-30T02:57:03.468Z"
     },
     {
-      "type": "changed",
-      "vacancyId": "farpost-129611256",
-      "name": "Сиделка",
-      "source": "FarPost",
-      "fields": [
-        "address"
-      ],
-      "before": {
-        "address": "Спасск-Дальний, Спасск-Дальний, улица Парковая 29 24 июня 683"
-      },
-      "after": {
-        "address": "Спасск-Дальний, Спасск-Дальний, улица Парковая 29 24 июня 684"
-      },
-      "at": "2026-06-30T02:52:28.701Z"
+      "type": "new",
+      "vacancyId": "svoeagro-driver-forwarder-2132150025",
+      "name": "Водитель-экспедитор на автомобиле компании",
+      "source": "Своё Фермерство",
+      "at": "2026-06-30T02:57:03.468Z"
     },
     {
-      "type": "changed",
-      "vacancyId": "farpost-136476567",
-      "name": "Менеджер по логистике",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ООО \"ФГ-Логистика\" 24 июня 164"
-      },
-      "after": {
-        "employer": "ООО \"ФГ-Логистика\" 24 июня 166"
-      },
-      "at": "2026-06-30T02:52:28.701Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-78547853",
-      "name": "Инспектор службы безопасности",
-      "source": "FarPost",
-      "fields": [
-        "address"
-      ],
-      "before": {
-        "address": "Спасск-Дальний, улица Арсенальная 15 19 июня 2410"
-      },
-      "after": {
-        "address": "Спасск-Дальний, улица Арсенальная 15 19 июня 2411"
-      },
-      "at": "2026-06-30T02:52:28.701Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-136323262",
-      "name": "Разнорабочий",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ООО \"ЭльБрус\" 16 июня 353"
-      },
-      "after": {
-        "employer": "ООО \"ЭльБрус\" 16 июня 354"
-      },
-      "at": "2026-06-30T02:52:28.701Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-136288393",
-      "name": "Разнорабочий-строитель",
-      "source": "FarPost",
-      "fields": [
-        "address"
-      ],
-      "before": {
-        "address": "Спасск-Дальний, улица Родниковая 31 14 июня 112"
-      },
-      "after": {
-        "address": "Спасск-Дальний, улица Родниковая 31 14 июня 113"
-      },
-      "at": "2026-06-30T02:52:28.701Z"
+      "type": "new",
+      "vacancyId": "svoeagro-sales-rep-2131928039",
+      "name": "Торговый представитель",
+      "source": "Своё Фермерство",
+      "at": "2026-06-30T02:57:03.468Z"
     }
   ]
 }
