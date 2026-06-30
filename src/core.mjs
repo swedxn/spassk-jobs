@@ -1,7 +1,7 @@
 import crypto from 'node:crypto';
 
 const CITY_RX = /спасск[\s‑–—-]*(дальн(?:ий|ем|его)|дальн)/iu;
-const OTHER_CITIES = ['владивосток','уссурийск','артём','артем','находка','дальнереченск','лесозаводск','арсеньев','благовещенск','магадан','хабаровск','москва','санкт-петербург'];
+const OTHER_CITIES = ['владивосток','уссурийск','артём','артем','находка','дальнереченск','лесозаводск','арсеньев','партизанск','дальнегорск','большой камень','фокино','лучегорск','кировский','благовещенск','магадан','хабаровск','москва','санкт-петербург'];
 const PROFILE = ['техподдерж','системн','сетев','компьютер','it','оператор','продав','кассир','кладов','курьер','администратор','помощник','грузчик','достав','пвз','охран','ученик','стаж'];
 
 export const clean = value => String(value ?? '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
@@ -15,6 +15,8 @@ export function classifyLocation(vacancy) {
   if (/вахт|переезд/iu.test(conditions)) return { accepted: false, bucket: 'otherCity', reason: 'Вахта или переезд исключены из основного списка' };
   if (/военнослужащ|контрактн\w*\s+служб|\bСВО\b/iu.test(vacancy.name + ' ' + conditions)) return { accepted: false, bucket: 'imprecise', reason: 'Фактическое место службы не подтверждено как Спасск-Дальний' };
   if (OTHER_CITIES.some(city => location.includes(city))) return { accepted: false, bucket: 'otherCity', reason: 'Указан другой город' };
+  const explicitOtherWorkplace = OTHER_CITIES.some(city => new RegExp(`(?:работа|место работы|работать|объект|офис|склад|магазин)\\s*(?:находится\\s*)?(?:в|:)?\\s*(?:г(?:ороде)?\\.?\\s*)?${city}`, 'iu').test(conditions));
+  if (explicitOtherWorkplace) return { accepted: false, bucket: 'otherCity', reason: 'В описании явно указано место работы в другом городе' };
   if (CITY_RX.test(location)) return { accepted: true, bucket: 'local', reason: 'Явно указан Спасск-Дальний' };
   return { accepted: false, bucket: 'imprecise', reason: 'Нет точного указания Спасска-Дальнего' };
 }

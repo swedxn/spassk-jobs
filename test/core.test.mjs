@@ -3,6 +3,9 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { classifyLocation, dedupe, filterVacancies, normalizeVacancy, processVacancies, scoreVacancy, toCsv } from '../src/core.mjs';
 import { parseFarpost } from '../src/importers/farpost.mjs';
+import { parseRabota1000 } from '../src/importers/rabota1000.mjs';
+import { parseCentrrabota } from '../src/importers/centrrabota.mjs';
+import { parseTelegramMessages } from '../src/importers/telegram.mjs';
 import { addOpportunityScores, reconcileHistory } from '../src/history.mjs';
 
 const local = { id:'1', name:'Оператор техподдержки', employer:'Тест', city:'Спасск-Дальний', address:'Спасск-Дальний, Советская, 1', experience:'Без опыта', education:'СПО', salary:'50 000 ₽', description:'Обучение на месте', source:'HeadHunter', url:'https://hh.ru/vacancy/1' };
@@ -16,6 +19,7 @@ test('другие города и вахта отклоняются', () => {
   assert.equal(classifyLocation({...local,city:'Владивосток',address:'Владивосток'}).bucket, 'otherCity');
   assert.equal(classifyLocation({...local,city:'Спасск-Дальний',address:'Спасск-Дальний',schedule:'Вахта в Магадане'}).accepted, false);
   assert.equal(classifyLocation({...local,name:'Военнослужащий по контракту',description:'Служба по контракту'}).accepted, false);
+  assert.equal(classifyLocation({...local,description:'Работа в г. Партизанск, служебный транспорт'}).bucket, 'otherCity');
 });
 
 test('дедупликация не зависит от id источника', () => {
@@ -83,4 +87,28 @@ test('Opportunity Score независим от Fit Score и учитывает 
   const [ordinary,fresh]=addOpportunityScores([base,{...base,id:'fresh',isNew:true}]);
   assert.ok(fresh.opportunityScore>ordinary.opportunityScore);
   assert.equal(typeof fresh.marketSalaryMedian,'number');
+});
+
+test('Rabota1000 импортирует публичные городские карточки', () => {
+  const html='<article><a href="/vacancy/106770354">Продавец-консультант</a><a href="/vacancy/106770354">Продавец-консультант</a><b>60 000 руб.</b><a>DNS</a> Спасск-Дальний 29 июн. 2026 г. Описание Без опыта, обучаем. Источник: hh.ru</article>';
+  const rows=parseRabota1000(html);
+  assert.equal(rows.length,1); assert.equal(rows[0].source,'Rabota1000'); assert.match(rows[0].url,/106770354/);
+});
+
+test('ЦентрРабота импортирует открытые вакансии прямых работодателей', () => {
+  const html='<div><a href="/vacancies/vacancy/prodavets-kassir_31143457">Продавец-кассир</a> ООО «МАГАЗИН» Приморский край, г Спасск-Дальний, Советская улица, 1 2026-06-20 от 53800 <a href="/vacancies/vacancy/prodavets-kassir_31143457">Смотреть</a></div>';
+  const rows=parseCentrrabota(html);
+  assert.equal(rows.length,1); assert.equal(rows[0].source,'ЦентрРабота'); assert.match(rows[0].address,/Спасск-Дальний/);
+});
+
+test('Telegram принимает свежую вакансию и отбрасывает старую и мошенническую', () => {
+  const block=(id,date,text)=>`<div class="tgme_widget_message_wrap"><div data-post="spassktoday/${id}"><div class="tgme_widget_message_text">${text}</div><time datetime="${date}"></time></div></div>`;
+  const html=block(1,'2026-06-29T01:00:00Z','ВАКАНСИЯ г. Спасск-Дальний! Требуется продавец, без опыта, 55 000 руб.')+block(2,'2025-01-01T01:00:00Z','Вакансия г. Спасск-Дальний: кассир')+block(3,'2026-06-29T01:00:00Z','Вакансия Спасск-Дальний: лёгкие деньги и крипта');
+  const rows=parseTelegramMessages(html,'spassktoday',Date.parse('2026-06-30T00:00:00Z'));
+  assert.equal(rows.length,1); assert.equal(rows[0].experience,'Без опыта');
+});
+
+test('бесплатное облачное обновление запускается каждые три часа', async () => {
+  const workflow=await fs.readFile(new URL('../.github/workflows/update-and-deploy.yml',import.meta.url),'utf8');
+  assert.match(workflow,/cron:\s*'17 \*\/3 \* \* \*'/u);
 });

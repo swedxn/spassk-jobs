@@ -4,6 +4,8 @@ import { importHH } from '../src/importers/hh.mjs';
 import { importTrudvsem } from '../src/importers/trudvsem.mjs';
 import { importFarpost } from '../src/importers/farpost.mjs';
 import { importTelegram } from '../src/importers/telegram.mjs';
+import { importRabota1000 } from '../src/importers/rabota1000.mjs';
+import { importCentrrabota } from '../src/importers/centrrabota.mjs';
 import { addOpportunityScores, reconcileHistory } from '../src/history.mjs';
 
 const root = new URL('../', import.meta.url);
@@ -13,7 +15,7 @@ const write = (name, data) => fs.writeFile(new URL(name, root), data);
 const sources = [];
 const collected = [];
 
-const runs = await Promise.all([['HeadHunter', importHH], ['Работа России', importTrudvsem], ['FarPost', importFarpost], ['Публичный Telegram', importTelegram]].map(async ([name, importer]) => {
+const runs = await Promise.all([['HeadHunter', importHH], ['Работа России', importTrudvsem], ['FarPost', importFarpost], ['Публичный Telegram', importTelegram], ['Rabota1000', importRabota1000], ['ЦентрРабота', importCentrrabota]].map(async ([name, importer]) => {
   try { const rows = await importer(); return { source: { name, mode: 'auto', status: 'ok', found: rows.length }, rows }; }
   catch (error) { return { source: { name, mode: 'auto', status: 'blocked', found: 0, error: String(error.message || error) }, rows: [] }; }
 }));
