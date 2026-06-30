@@ -20,7 +20,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
       - run: npm test
       - run: npm run import
       - name: Save updated cloud data
@@ -30,10 +33,11 @@ jobs:
           git add data
           git diff --cached --quiet || git commit -m "data: update vacancies"
           git push
+      - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: dist
       - uses: actions/deploy-pages@v4
         id: deployment
     environment:

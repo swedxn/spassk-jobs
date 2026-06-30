@@ -1,113 +1,14 @@
 <!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#080908">
-  <meta name="description" content="Актуальные вакансии строго в Спасске-Дальнем — без других городов, вахт и переезда">
-  <title>РАБОТА.СПАССК — вакансии рядом</title>
-  <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#vacancies">Перейти к вакансиям</a>
-  <header class="hero" id="top">
-    <div class="hero-noise" aria-hidden="true"></div>
-    <div class="hero-orb orb-one" aria-hidden="true"></div>
-    <div class="hero-orb orb-two" aria-hidden="true"></div>
-    <nav class="nav shell" aria-label="Главная навигация">
-      <a class="brand" href="#top" aria-label="РАБОТА.СПАССК — на главную"><span class="brand-mark">РС</span><span>РАБОТА<span class="brand-dot">.</span>СПАССК</span></a>
-      <div class="nav-links">
-        <a href="#today">Лучшие</a>
-        <a href="#vacancies">Все вакансии</a>
-        <a href="#sources">Данные</a>
-      </div>
-      <a class="nav-cta" href="#vacancies">Найти работу <span>↘</span></a>
-    </nav>
-
-    <div class="hero-content shell">
-      <div class="hero-copy">
-        <div class="live-kicker reveal"><span class="live-dot"></span><span>База обновляется каждые 3 часа</span></div>
-        <h1 aria-label="Работа. Только здесь."><span class="title-line reveal">РАБОТА.</span><span class="title-line title-accent reveal">ТОЛЬКО ЗДЕСЬ.</span></h1>
-        <p class="hero-lead reveal">Весь доступный рынок вакансий Спасска-Дальнего — в одном месте. Без Владивостока, вахт и предложений «где-то по краю».</p>
-        <div class="hero-actions reveal"><a class="button button-primary" href="#vacancies">Смотреть вакансии <span>→</span></a><a class="button button-ghost" href="#today">Что выбрать сегодня</a></div>
-        <p class="city-rule reveal">Показаны только вакансии в Спасске-Дальнем. Вакансии из других городов скрыты.</p>
-      </div>
-
-      <aside class="hero-panel reveal" aria-label="Состояние рынка вакансий">
-        <div class="panel-head"><span>LIVE / СПАССК-ДАЛЬНИЙ</span><span class="panel-signal"><i></i> ONLINE</span></div>
-        <div class="hero-number"><strong id="mActive">—</strong><span>активных<br>вакансий</span></div>
-        <div class="hero-stats">
-          <div><strong id="mGood">—</strong><span>подходят</span></div>
-          <div><strong id="mNoExp">—</strong><span>без опыта</span></div>
-          <div><strong id="mSources">—</strong><span>источников</span></div>
-        </div>
-        <div class="cloud-status"><span class="status-icon">↻</span><div><strong id="updateStatus">Загрузка актуальных данных…</strong><p id="lastUpdate">Проверяем облачный набор</p></div></div>
-      </aside>
-    </div>
-
-    <div class="hero-ticker" aria-hidden="true"><div>БЕЗ ПЕРЕЕЗДА&nbsp;&nbsp;•&nbsp;&nbsp; БЕЗ ВАХТЫ&nbsp;&nbsp;•&nbsp;&nbsp; ТОЛЬКО СПАССК-ДАЛЬНИЙ&nbsp;&nbsp;•&nbsp;&nbsp; РЕАЛЬНЫЕ ИСТОЧНИКИ&nbsp;&nbsp;•&nbsp;&nbsp; БЕЗ ПЕРЕЕЗДА&nbsp;&nbsp;•&nbsp;&nbsp; БЕЗ ВАХТЫ&nbsp;&nbsp;•&nbsp;&nbsp; ТОЛЬКО СПАССК-ДАЛЬНИЙ&nbsp;&nbsp;•&nbsp;&nbsp; РЕАЛЬНЫЕ ИСТОЧНИКИ&nbsp;&nbsp;•&nbsp;&nbsp;</div></div>
-  </header>
-
-  <main>
-    <section class="today shell section" id="today">
-      <div class="section-title reveal-on-scroll"><div><span class="section-index">01</span><p class="eyebrow">КРАТКИЙ СПИСОК</p><h2>Начни с этих.</h2></div><p>Три вакансии, которые стоит открыть первыми с учётом опыта, образования, зарплаты и ваших интересов.</p></div>
-      <div class="today-grid" id="todayGrid"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
-    </section>
-
-    <section class="catalog section" id="vacancies">
-      <div class="shell">
-        <div class="section-title reveal-on-scroll"><div><span class="section-index">02</span><p class="eyebrow">ПОИСК</p><h2>Все варианты.</h2></div><div class="results-meta"><strong id="resultCount">Загружаем данные…</strong><span>Только точный город</span></div></div>
-
-        <div class="search-dock reveal-on-scroll">
-          <label class="search"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Должность, компания или адрес" autocomplete="off"><kbd>⌘ K</kbd></label>
-          <select id="sort" aria-label="Сортировка"><option value="opportunity">Лучшие для меня</option><option value="new">Сначала свежие</option><option value="salary">Выше зарплата</option></select>
-          <div class="essential-filters" aria-label="Фильтры">
-            <label><input id="fGood" type="checkbox"><span>Подходит мне</span></label>
-            <label><input id="fNoExp" type="checkbox"><span>Без опыта</span></label>
-            <label><input id="fSalary" type="checkbox"><span>Есть зарплата</span></label>
-            <label><input id="fFav" type="checkbox"><span>★ Избранное</span></label>
-            <button id="clearFilters" type="button" hidden>Сбросить</button>
-          </div>
-        </div>
-
-        <div class="market-pulse" aria-label="Последние изменения"><span class="pulse-label"><i></i> Последнее обновление</span><span><strong id="cNew">0</strong> новых</span><span><strong id="cChanged">0</strong> изменились</span><span><strong id="cClosed">0</strong> закрылись</span><div id="changeFeed" hidden></div></div>
-        <div id="vacancyList" class="vacancy-list" aria-live="polite"></div>
-        <button id="loadMore" class="load-more" type="button" hidden>Показать ещё <span>↓</span></button>
-        <div id="empty" class="empty" hidden><span>0</span><strong>Ничего не найдено</strong><p>Попробуйте другое слово или сбросьте фильтры.</p><button type="button" class="button button-primary" id="emptyReset">Сбросить фильтры</button></div>
-      </div>
-    </section>
-
-    <section class="catalog remote-section section" id="remoteVacancies" hidden>
-      <div class="shell"><div class="section-title"><div><p class="eyebrow">ОТДЕЛЬНО</p><h2>Удалённая работа.</h2></div><p id="remoteCount">Загружаем данные…</p></div><p class="section-note">Эти вакансии не входят в число рабочих мест по городу. Проверяйте работодателя особенно внимательно.</p><div id="remoteList" class="vacancy-list"></div></div>
-    </section>
-
-    <section class="transparency section" id="sources">
-      <div class="shell">
-        <details class="data-panel reveal-on-scroll">
-          <summary><div><span class="section-index">03</span><p class="eyebrow">ПРОЗРАЧНОСТЬ</p><h2>Откуда данные?</h2></div><span class="summary-action">Открыть отчёт <i>+</i></span></summary>
-          <div class="data-content">
-            <div class="data-intro"><p>Автоматически подключаем только официальные API и открытые публичные страницы. CAPTCHA, авторизацию и запреты robots.txt не обходим.</p><div class="secondary-metrics"><div><strong id="mRejected">—</strong><span>не прошли геофильтр</span></div><div><strong id="mNoHigher">—</strong><span>без требования высшего</span></div><div><strong id="mSalary">—</strong><span>с указанной зарплатой</span></div><div><strong id="mNew">—</strong><span>новых</span></div><div><strong id="mOpportunity">—</strong><span>срочно посмотреть</span></div></div></div>
-            <div id="sourceList" class="source-list"></div>
-            <div class="utility-bar"><div><strong>Открытые данные</strong><span>JSON, CSV, история и личный трекер</span></div><a href="data/vacancies.json" download>JSON</a><a href="data/vacancies.csv" download>CSV</a><a href="data/import-report.md">Отчёт</a><button id="trackerExport" type="button">Экспорт трекера</button><label class="file-button">Импорт<input id="trackerImport" type="file" accept="application/json"></label></div>
-          </div>
-        </details>
-      </div>
-    </section>
-  </main>
-
-  <footer><div class="shell footer-inner"><a class="brand" href="#top"><span class="brand-mark">РС</span><span>РАБОТА<span class="brand-dot">.</span>СПАССК</span></a><p>Независимый бесплатный проект. Никаких откликов от вашего имени.</p><a href="#top">Наверх ↑</a></div></footer>
-
-  <template id="cardTemplate">
-    <article class="vacancy-card reveal-card">
-      <div class="card-main">
-        <div class="card-top"><div class="badges"></div><button class="favorite" aria-label="Добавить в избранное" title="Избранное">☆</button></div>
-        <div class="job-heading"><div><h3></h3><p class="employer"></p></div><div class="salary"></div></div>
-        <div class="facts"></div><p class="description"></p>
-        <details class="job-details"><summary>Условия и мой отклик <span>+</span></summary><div class="details-grid"><div><span>Образование</span><strong class="education"></strong></div><div><span>График</span><strong class="schedule"></strong></div><div><span>Источник</span><strong class="source"></strong></div></div><div class="reasons"></div><div class="warnings"></div><div class="tracker"><label>Статус<select class="application-status"></select></label><label>Заметка<textarea class="note" rows="2" placeholder="Например: позвонить во вторник"></textarea></label></div></details>
-      </div>
-      <aside class="card-side"><div class="match-ring"><strong></strong><span>совпадение</span></div><p class="fit"></p><p class="opportunity"></p><a class="original" target="_blank" rel="noopener noreferrer">Открыть вакансию <span>↗</span></a></aside>
-    </article>
-  </template>
-  <script type="module" src="assets/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f5f5f7" />
+    <meta name="description" content="Актуальные вакансии только в Спасске-Дальнем — поиск, подбор и личный трекер откликов." />
+    <title>Работа в Спасске-Дальнем</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

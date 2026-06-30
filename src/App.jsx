@@ -1,0 +1,764 @@
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {
+  ArrowDown,
+  ArrowUpRight,
+  BadgeCheck,
+  BriefcaseBusiness,
+  Check,
+  ChevronDown,
+  CircleAlert,
+  Clock3,
+  Database,
+  Download,
+  FileJson,
+  FileSpreadsheet,
+  GraduationCap,
+  Heart,
+  MapPin,
+  RefreshCw,
+  Search,
+  SlidersHorizontal,
+  Sparkles,
+  Upload,
+  Wifi,
+  X,
+} from 'lucide-react';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const BASE = import.meta.env.BASE_URL;
+const PAGE_SIZE = 24;
+const STORE_KEY = 'spassk-jobs-tracker-v1';
+const STATUSES = [
+  'не смотрел',
+  'интересно',
+  'хочу откликнуться',
+  'откликнулся',
+  'позвонил',
+  'жду ответа',
+  'пригласили',
+  'отказ',
+  'не подходит',
+];
+
+const ease = [0.22, 1, 0.36, 1];
+
+const isNoExperience = (job) => /без опыта|не требуется|готовы обуч|обучение|стаж[её]р|ученик/iu.test(`${job.experience} ${job.description}`);
+const hasSalary = (job) => Boolean(job.salary && !/не указан/iu.test(job.salary));
+const noHigherEducation = (job) => !/высш(?:ее|его)|бакалавр|магистр/iu.test(`${job.education} ${job.description}`);
+const salaryValue = (job) => Math.max(0, ...String(job.salary || '').match(/\d[\d\s]*/g)?.map((value) => Number(value.replace(/\s/g, ''))) || [0]);
+const dateValue = (job) => Date.parse(job.firstSeenAt || job.publishedAt || job.checkedAt || 0) || 0;
+const safeUrl = (value) => {
+  try {
+    const url = new URL(value);
+    return ['http:', 'https:'].includes(url.protocol) ? url.href : '#';
+  } catch {
+    return '#';
+  }
+};
+
+function readTracker() {
+  try {
+    return JSON.parse(localStorage.getItem(STORE_KEY) || '{}');
+  } catch {
+    return {};
+  }
+}
+
+function formatUpdate(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return 'время уточняется';
+  return new Intl.DateTimeFormat('ru-RU', {
+    day: 'numeric',
+    month: 'long',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Asia/Vladivostok',
+  }).format(date);
+}
+
+function downloadJson(value, name) {
+  const url = URL.createObjectURL(new Blob([JSON.stringify(value, null, 2)], { type: 'application/json' }));
+  const anchor = document.createElement('a');
+  anchor.href = url;
+  anchor.download = name;
+  anchor.click();
+  URL.revokeObjectURL(url);
+}
+
+function BlurIn({ children, delay = 0, className = '', as = 'div' }) {
+  const Component = motion[as] || motion.div;
+  const reduced = useReducedMotion();
+  return (
+    <Component
+      className={className}
+      initial={reduced ? false : { opacity: 0, y: 24, filter: 'blur(14px)' }}
+      whileInView={reduced ? undefined : { opacity: 1, y: 0, filter: 'blur(0px)' }}
+      viewport={{ once: true, margin: '-8%' }}
+      transition={{ duration: 0.85, delay, ease }}
+    >
+      {children}
+    </Component>
+  );
+}
+
+function CountUp({ value }) {
+  const [shown, setShown] = useState(0);
+  const reduced = useReducedMotion();
+
+  useEffect(() => {
+    if (reduced) {
+      setShown(value);
+      return undefined;
+    }
+    let frame;
+    const started = performance.now();
+    const tick = (now) => {
+      const progress = Math.min(1, (now - started) / 1200);
+      const eased = 1 - Math.pow(1 - progress, 4);
+      setShown(Math.round(value * eased));
+      if (progress < 1) frame = requestAnimationFrame(tick);
+    };
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
+  }, [value, reduced]);
+
+  return shown.toLocaleString('ru-RU');
+}
+
+function App() {
+  const [payload, setPayload] = useState(null);
+  const [error, setError] = useState('');
+  const [tracker, setTracker] = useState(readTracker);
+  const [query, setQuery] = useState('');
+  const [filters, setFilters] = useState({ good: false, noExperience: false, salary: false, favorite: false });
+  const [sort, setSort] = useState('fit');
+  const [visible, setVisible] = useState(PAGE_SIZE);
+  const [selected, setSelected] = useState(null);
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const searchRef = useRef(null);
+  const reduced = useReducedMotion();
+
+  useEffect(() => {
+    let live = true;
+    fetch(`${BASE}data/vacancies.json?ts=${Date.now()}`, { cache: 'no-store' })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((data) => live && setPayload(data))
+      .catch(() => live && setError('Не удалось загрузить базу. Обновите страницу через минуту.'));
+    return () => { live = false; };
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem(STORE_KEY, JSON.stringify(tracker));
+  }, [tracker]);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 16);
+    const onKey = (event) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+        event.preventDefault();
+        searchRef.current?.focus();
+        document.querySelector('#vacancies')?.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+      }
+      if (event.key === 'Escape') setSelected(null);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('keydown', onKey);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('keydown', onKey);
+    };
+  }, [reduced]);
+
+  useEffect(() => {
+    document.body.classList.toggle('modal-open', Boolean(selected));
+    return () => document.body.classList.remove('modal-open');
+  }, [selected]);
+
+  useLayoutEffect(() => {
+    if (!payload || reduced) return undefined;
+    const context = gsap.context(() => {
+      gsap.to('.hero-orb--one', {
+        yPercent: 28,
+        xPercent: 10,
+        ease: 'none',
+        scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1.2 },
+      });
+      gsap.to('.hero-product', {
+        y: 90,
+        scale: 0.96,
+        opacity: 0.55,
+        ease: 'none',
+        scrollTrigger: { trigger: '.hero', start: '30% top', end: 'bottom top', scrub: 1 },
+      });
+      gsap.from('.feature-card', {
+        y: 60,
+        opacity: 0,
+        stagger: 0.12,
+        duration: 1,
+        ease: 'power4.out',
+        scrollTrigger: { trigger: '.feature-grid', start: 'top 80%' },
+      });
+    });
+    return () => context.revert();
+  }, [payload, reduced]);
+
+  const jobs = payload?.vacancies || [];
+  const meta = payload?.meta || {};
+  const stats = meta.stats || {};
+
+  const featured = useMemo(() => [...jobs]
+    .filter((job) => job.score >= 75)
+    .sort((a, b) => (b.opportunityScore || 0) - (a.opportunityScore || 0) || b.score - a.score)
+    .slice(0, 3), [jobs]);
+
+  const filtered = useMemo(() => {
+    const needle = query.trim().toLocaleLowerCase('ru-RU');
+    const result = jobs.filter((job) => {
+      const haystack = `${job.name} ${job.employer} ${job.description} ${job.address} ${job.source}`.toLocaleLowerCase('ru-RU');
+      return (!needle || haystack.includes(needle))
+        && (!filters.good || job.score >= 75)
+        && (!filters.noExperience || isNoExperience(job))
+        && (!filters.salary || hasSalary(job))
+        && (!filters.favorite || tracker[job.id]?.favorite);
+    });
+    return result.sort((a, b) => {
+      if (sort === 'fresh') return dateValue(b) - dateValue(a);
+      if (sort === 'salary') return salaryValue(b) - salaryValue(a);
+      return b.score - a.score || (b.opportunityScore || 0) - (a.opportunityScore || 0);
+    });
+  }, [jobs, query, filters, sort, tracker]);
+
+  useEffect(() => setVisible(PAGE_SIZE), [query, filters, sort]);
+
+  const patchTracker = (id, patch) => setTracker((current) => ({
+    ...current,
+    [id]: { ...current[id], ...patch },
+  }));
+
+  const toggleFilter = (name) => setFilters((current) => ({ ...current, [name]: !current[name] }));
+  const resetFilters = () => {
+    setQuery('');
+    setFilters({ good: false, noExperience: false, salary: false, favorite: false });
+    setSort('fit');
+  };
+  const hasActiveFilters = query || Object.values(filters).some(Boolean);
+
+  if (error) return <ErrorState message={error} />;
+  if (!payload) return <LoadingState />;
+
+  return (
+    <div className="app-shell">
+      <a className="skip-link" href="#vacancies">Перейти к вакансиям</a>
+      <Header scrolled={scrolled} onSearch={() => {
+        document.querySelector('#vacancies')?.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+        setTimeout(() => searchRef.current?.focus({ preventScroll: true }), 450);
+      }} />
+
+      <main>
+        <Hero meta={meta} stats={stats} onStart={() => document.querySelector('#vacancies')?.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' })} />
+        <Featured jobs={featured} onOpen={setSelected} tracker={tracker} patchTracker={patchTracker} />
+
+        <section className="catalog" id="vacancies">
+          <div className="section-wrap">
+            <BlurIn className="section-heading catalog-heading">
+              <div>
+                <span className="eyebrow">Все вакансии</span>
+                <h2>Найдите свою.</h2>
+              </div>
+              <p><strong>{filtered.length}</strong> из {jobs.length} вакансий</p>
+            </BlurIn>
+
+            <div className={`search-console ${scrolled ? 'is-ready' : ''}`}>
+              <label className="search-field" htmlFor="job-search">
+                <Search aria-hidden="true" />
+                <input
+                  id="job-search"
+                  ref={searchRef}
+                  type="search"
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  placeholder="Должность, компания или навык"
+                  autoComplete="off"
+                />
+                <kbd>⌘K</kbd>
+              </label>
+              <button className={`filter-toggle ${filtersOpen ? 'active' : ''}`} type="button" onClick={() => setFiltersOpen((value) => !value)} aria-expanded={filtersOpen}>
+                <SlidersHorizontal aria-hidden="true" />
+                Фильтры
+              </button>
+              <label className="sort-field">
+                <span className="sr-only">Сортировка</span>
+                <select value={sort} onChange={(event) => setSort(event.target.value)}>
+                  <option value="fit">Сначала подходящие</option>
+                  <option value="fresh">Сначала свежие</option>
+                  <option value="salary">Выше зарплата</option>
+                </select>
+                <ChevronDown aria-hidden="true" />
+              </label>
+            </div>
+
+            <AnimatePresence initial={false}>
+              {filtersOpen && (
+                <motion.div
+                  className="filter-panel"
+                  initial={{ opacity: 0, height: 0, y: -10 }}
+                  animate={{ opacity: 1, height: 'auto', y: 0 }}
+                  exit={{ opacity: 0, height: 0, y: -10 }}
+                  transition={{ duration: 0.4, ease }}
+                >
+                  <FilterButton active={filters.good} onClick={() => toggleFilter('good')}>Подходит мне</FilterButton>
+                  <FilterButton active={filters.noExperience} onClick={() => toggleFilter('noExperience')}>Без опыта</FilterButton>
+                  <FilterButton active={filters.salary} onClick={() => toggleFilter('salary')}>Есть зарплата</FilterButton>
+                  <FilterButton active={filters.favorite} onClick={() => toggleFilter('favorite')} icon={<Heart />}>Избранное</FilterButton>
+                  {hasActiveFilters && <button className="clear-button" type="button" onClick={resetFilters}>Сбросить</button>}
+                </motion.div>
+              )}
+            </AnimatePresence>
+
+            <div className="city-notice">
+              <BadgeCheck aria-hidden="true" />
+              <span>Показаны только вакансии в Спасске-Дальнем. Вакансии из других городов скрыты.</span>
+            </div>
+
+            {filtered.length ? (
+              <motion.div className="job-list" layout>
+                <AnimatePresence mode="popLayout">
+                  {filtered.slice(0, visible).map((job, index) => (
+                    <JobRow
+                      key={job.id}
+                      job={job}
+                      index={index}
+                      favorite={Boolean(tracker[job.id]?.favorite)}
+                      onFavorite={() => patchTracker(job.id, { favorite: !tracker[job.id]?.favorite })}
+                      onOpen={() => setSelected(job)}
+                    />
+                  ))}
+                </AnimatePresence>
+              </motion.div>
+            ) : (
+              <div className="empty-state">
+                <Search aria-hidden="true" />
+                <h3>Ничего не нашлось.</h3>
+                <p>Попробуйте другой запрос или сбросьте фильтры.</p>
+                <button className="primary-button" type="button" onClick={resetFilters}>Показать все вакансии</button>
+              </div>
+            )}
+
+            {visible < filtered.length && (
+              <button className="load-more" type="button" onClick={() => setVisible((count) => count + PAGE_SIZE)}>
+                Показать ещё {Math.min(PAGE_SIZE, filtered.length - visible)}
+                <ArrowDown aria-hidden="true" />
+              </button>
+            )}
+          </div>
+        </section>
+
+        <TrustSection meta={meta} stats={stats} tracker={tracker} setTracker={setTracker} />
+      </main>
+
+      <Footer />
+      <MobileDock onSearch={() => {
+        document.querySelector('#vacancies')?.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+        setTimeout(() => searchRef.current?.focus({ preventScroll: true }), 350);
+      }} onFilters={() => {
+        setFiltersOpen(true);
+        document.querySelector('#vacancies')?.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+      }} onFavorites={() => {
+        setFilters((current) => ({ ...current, favorite: true }));
+        setFiltersOpen(true);
+        document.querySelector('#vacancies')?.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+      }} />
+
+      <AnimatePresence>
+        {selected && (
+          <JobModal
+            job={selected}
+            state={tracker[selected.id] || {}}
+            onPatch={(patch) => patchTracker(selected.id, patch)}
+            onClose={() => setSelected(null)}
+          />
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+function Header({ scrolled, onSearch }) {
+  return (
+    <header className={`site-header ${scrolled ? 'site-header--scrolled' : ''}`}>
+      <nav className="nav-wrap" aria-label="Главная навигация">
+        <a className="brand" href="#top" aria-label="Работа в Спасске-Дальнем — на главную">
+          <span className="brand-mark">СД</span>
+          <span>Работа рядом</span>
+        </a>
+        <div className="nav-links">
+          <a href="#today">Для вас</a>
+          <a href="#vacancies">Вакансии</a>
+          <a href="#data">О данных</a>
+        </div>
+        <button className="nav-action" type="button" onClick={onSearch}>Найти работу</button>
+      </nav>
+    </header>
+  );
+}
+
+function Hero({ meta, stats, onStart }) {
+  const reduced = useReducedMotion();
+  const onMove = (event) => {
+    if (reduced) return;
+    const rect = event.currentTarget.getBoundingClientRect();
+    event.currentTarget.style.setProperty('--pointer-x', `${((event.clientX - rect.left) / rect.width) * 100}%`);
+    event.currentTarget.style.setProperty('--pointer-y', `${((event.clientY - rect.top) / rect.height) * 100}%`);
+  };
+
+  return (
+    <section className="hero" id="top" onPointerMove={onMove}>
+      <div className="hero-glow" aria-hidden="true" />
+      <div className="hero-orb hero-orb--one" aria-hidden="true" />
+      <div className="hero-orb hero-orb--two" aria-hidden="true" />
+      <div className="hero-content">
+        <motion.div className="live-pill" initial={reduced ? false : { opacity: 0, y: -12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+          <span />
+          База обновляется каждые 3 часа
+        </motion.div>
+        <motion.h1 initial={reduced ? false : { opacity: 0, y: 40, filter: 'blur(18px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 1.1, ease }}>
+          Работа, которая<br />действительно <span>рядом.</span>
+        </motion.h1>
+        <motion.p className="hero-copy" initial={reduced ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.22, ease }}>
+          Все найденные вакансии Спасска-Дальнего — без Владивостока, вахт, переезда и лишнего шума.
+        </motion.p>
+        <motion.div className="hero-actions" initial={reduced ? false : { opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.36, ease }}>
+          <button className="primary-button" type="button" onClick={onStart}>Смотреть вакансии</button>
+          <a className="text-link" href="#today">Что выбрать сегодня <ArrowUpRight /></a>
+        </motion.div>
+
+        <motion.div className="hero-product" initial={reduced ? false : { opacity: 0, y: 70, scale: 0.94 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 1.25, delay: 0.25, ease }}>
+          <div className="product-topline">
+            <div>
+              <span className="product-kicker">Спасск-Дальний</span>
+              <strong><CountUp value={stats.active || 0} /> вакансий</strong>
+            </div>
+            <span className="product-status"><Wifi /> Онлайн</span>
+          </div>
+          <div className="product-search"><Search /> Должность, компания или навык <kbd>⌘ K</kbd></div>
+          <div className="metric-grid">
+            <Metric value={stats.goodFit || 0} label="хорошо подходят" tone="blue" />
+            <Metric value={stats.noExperience || 0} label="без опыта" tone="violet" />
+            <Metric value={stats.withSalary || 0} label="с зарплатой" tone="pink" />
+            <Metric value={meta.sourcesChecked || 0} label="источников" tone="green" />
+          </div>
+          <div className="product-footer">
+            <span><RefreshCw /> Обновлено {formatUpdate(meta.generatedAt)}</span>
+            <span>Только точный город <Check /></span>
+          </div>
+        </motion.div>
+      </div>
+      <a className="scroll-cue" href="#today" aria-label="Прокрутить к рекомендациям"><span /><ArrowDown /></a>
+    </section>
+  );
+}
+
+function Metric({ value, label, tone }) {
+  return (
+    <div className={`metric metric--${tone}`}>
+      <strong><CountUp value={value} /></strong>
+      <span>{label}</span>
+    </div>
+  );
+}
+
+function Featured({ jobs, onOpen, tracker, patchTracker }) {
+  return (
+    <section className="featured" id="today">
+      <div className="section-wrap">
+        <BlurIn className="section-heading section-heading--dark">
+          <div>
+            <span className="eyebrow">Подобрано для вас</span>
+            <h2>С чего начать сегодня.</h2>
+          </div>
+          <p>Три сильных варианта с учётом опыта, образования и ваших интересов.</p>
+        </BlurIn>
+        <div className="feature-grid">
+          {jobs.map((job, index) => (
+            <article className={`feature-card feature-card--${index + 1}`} key={job.id}>
+              <div className="feature-card__top">
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <button type="button" aria-label={tracker[job.id]?.favorite ? 'Убрать из избранного' : 'Добавить в избранное'} onClick={() => patchTracker(job.id, { favorite: !tracker[job.id]?.favorite })}>
+                  <Heart className={tracker[job.id]?.favorite ? 'filled' : ''} />
+                </button>
+              </div>
+              <div className="feature-score"><Sparkles /> {job.score}% совпадение</div>
+              <h3>{job.name}</h3>
+              <p>{job.employer}</p>
+              <strong className="feature-salary">{job.salary}</strong>
+              <button className="feature-open" type="button" onClick={() => onOpen(job)}>Подробнее <ArrowUpRight /></button>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FilterButton({ active, onClick, children, icon }) {
+  return (
+    <button className={`filter-chip ${active ? 'active' : ''}`} type="button" aria-pressed={active} onClick={onClick}>
+      {icon}
+      {active && <Check aria-hidden="true" />}
+      {children}
+    </button>
+  );
+}
+
+function JobRow({ job, index, favorite, onFavorite, onOpen }) {
+  const reduced = useReducedMotion();
+  return (
+    <motion.article
+      className="job-row"
+      layout
+      initial={reduced ? false : { opacity: 0, y: 22 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, scale: 0.98 }}
+      transition={{ duration: 0.45, delay: Math.min(index, 7) * 0.035, ease }}
+    >
+      <button className="job-row__main" type="button" onClick={onOpen}>
+        <div className="job-row__title">
+          <div className="job-badges">
+            {job.score >= 75 && <span className="badge badge--fit">Подходит вам</span>}
+            {isNoExperience(job) && <span className="badge">Без опыта</span>}
+            {job.isNew && <span className="badge badge--new">Новая</span>}
+          </div>
+          <h3>{job.name}</h3>
+          <p>{job.employer}</p>
+        </div>
+        <div className="job-row__meta">
+          <strong>{job.salary}</strong>
+          <span><MapPin /> {job.address || job.city}</span>
+        </div>
+        <div className="job-row__score">
+          <span>{job.score}%</span>
+          <ArrowUpRight />
+        </div>
+      </button>
+      <button className={`favorite-button ${favorite ? 'active' : ''}`} type="button" onClick={onFavorite} aria-label={favorite ? 'Убрать из избранного' : 'Добавить в избранное'}>
+        <Heart />
+      </button>
+    </motion.article>
+  );
+}
+
+function JobModal({ job, state, onPatch, onClose }) {
+  const reduced = useReducedMotion();
+  return (
+    <motion.div className="modal-layer" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.28 }}>
+      <button className="modal-backdrop" type="button" onClick={onClose} aria-label="Закрыть карточку" />
+      <motion.section
+        className="job-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="job-modal-title"
+        initial={reduced ? { opacity: 0 } : { opacity: 0, x: '100%' }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={reduced ? { opacity: 0 } : { opacity: 0, x: '100%' }}
+        transition={{ duration: 0.55, ease }}
+      >
+        <div className="modal-header">
+          <span>Карточка вакансии</span>
+          <button type="button" onClick={onClose} aria-label="Закрыть"><X /></button>
+        </div>
+        <div className="modal-body">
+          <div className="modal-score"><Sparkles /> {job.score}% совпадение · {job.fit}</div>
+          <h2 id="job-modal-title">{job.name}</h2>
+          <p className="modal-employer">{job.employer}</p>
+          <div className="modal-salary">{job.salary}</div>
+
+          <div className="detail-grid">
+            <Detail icon={<MapPin />} label="Место" value={job.address || job.city} />
+            <Detail icon={<BriefcaseBusiness />} label="Опыт" value={job.experience} />
+            <Detail icon={<GraduationCap />} label="Образование" value={job.education} />
+            <Detail icon={<Clock3 />} label="График" value={job.schedule} />
+          </div>
+
+          <div className="modal-section">
+            <h3>О вакансии</h3>
+            <p className="description">{job.description}</p>
+          </div>
+
+          {job.reasons?.length > 0 && (
+            <div className="modal-section">
+              <h3>Почему такой результат</h3>
+              <ul className="reason-list">{job.reasons.map((reason) => <li key={reason}><Check /> {reason}</li>)}</ul>
+            </div>
+          )}
+
+          {job.warnings?.length > 0 && (
+            <div className="warning-box"><CircleAlert /> <span>{job.warnings.join(' · ')}</span></div>
+          )}
+
+          <div className="modal-section tracker-section">
+            <div className="tracker-title">
+              <h3>Мой отклик</h3>
+              <button className={`modal-favorite ${state.favorite ? 'active' : ''}`} type="button" onClick={() => onPatch({ favorite: !state.favorite })}>
+                <Heart /> {state.favorite ? 'В избранном' : 'В избранное'}
+              </button>
+            </div>
+            <label>
+              <span>Статус</span>
+              <select value={state.status || STATUSES[0]} onChange={(event) => onPatch({ status: event.target.value })}>
+                {STATUSES.map((status) => <option key={status}>{status}</option>)}
+              </select>
+            </label>
+            <label>
+              <span>Заметка</span>
+              <textarea value={state.note || ''} onChange={(event) => onPatch({ note: event.target.value })} placeholder="Например: позвонить после 15:00" rows="4" />
+            </label>
+          </div>
+        </div>
+        <div className="modal-footer">
+          <div><span>Источник</span><strong>{job.source}</strong></div>
+          <a className="primary-button" href={safeUrl(job.url)} target="_blank" rel="noreferrer">Открыть оригинал <ArrowUpRight /></a>
+        </div>
+      </motion.section>
+    </motion.div>
+  );
+}
+
+function Detail({ icon, label, value }) {
+  return <div className="detail-item">{icon}<div><span>{label}</span><strong>{value || 'Не указано'}</strong></div></div>;
+}
+
+function TrustSection({ meta, stats, tracker, setTracker }) {
+  const inputRef = useRef(null);
+  const sourceRuns = meta.sourceRuns || [];
+  const importTracker = async (event) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    try {
+      const parsed = JSON.parse(await file.text());
+      setTracker(parsed.tracker || parsed);
+    } catch {
+      window.alert('Не удалось прочитать JSON трекера');
+    }
+    event.target.value = '';
+  };
+
+  return (
+    <section className="trust" id="data">
+      <div className="section-wrap">
+        <BlurIn className="section-heading">
+          <div>
+            <span className="eyebrow">Прозрачность</span>
+            <h2>Ничего не спрятано.</h2>
+          </div>
+          <p>Данные, ограничения источников и ваши личные статусы остаются под контролем.</p>
+        </BlurIn>
+
+        <div className="trust-grid">
+          <BlurIn className="trust-card trust-card--wide" delay={0.05}>
+            <div className="trust-icon"><Database /></div>
+            <span>Состояние базы</span>
+            <strong>{stats.active || 0} активных вакансий</strong>
+            <p>{meta.updateStatus}</p>
+            <div className="source-chips">
+              {sourceRuns.map((source) => (
+                <span key={source.name} className={source.status === 'ok' ? 'ok' : 'blocked'}>
+                  <i /> {source.name}
+                </span>
+              ))}
+            </div>
+          </BlurIn>
+
+          <BlurIn className="trust-card" delay={0.1}>
+            <div className="trust-icon"><BadgeCheck /></div>
+            <span>Фильтрация</span>
+            <strong>{(meta.rejected?.otherCity || 0) + (meta.rejected?.imprecise || 0)} скрыто</strong>
+            <p>Другие города и объявления без точного места не попадают в основной список.</p>
+          </BlurIn>
+
+          <BlurIn className="trust-card" delay={0.15}>
+            <div className="trust-icon"><RefreshCw /></div>
+            <span>Обновление</span>
+            <strong>Каждые 3 часа</strong>
+            <p>GitHub Actions бесплатно обновляет данные и заново публикует сайт.</p>
+          </BlurIn>
+
+          <BlurIn className="trust-card trust-card--downloads" delay={0.2}>
+            <div className="trust-icon"><Download /></div>
+            <span>Экспорт данных</span>
+            <strong>Заберите всё.</strong>
+            <div className="download-links">
+              <a href={`${BASE}data/vacancies.json`} download><FileJson /> JSON</a>
+              <a href={`${BASE}data/vacancies.csv`} download><FileSpreadsheet /> CSV</a>
+            </div>
+          </BlurIn>
+
+          <BlurIn className="trust-card trust-card--tracker" delay={0.25}>
+            <div className="trust-icon"><Heart /></div>
+            <span>Личный трекер</span>
+            <strong>Только в браузере.</strong>
+            <p>Избранное, статусы и заметки никуда не отправляются.</p>
+            <div className="tracker-actions">
+              <button type="button" onClick={() => downloadJson({ exportedAt: new Date().toISOString(), tracker }, 'spassk-jobs-tracker.json')}><Download /> Экспорт</button>
+              <button type="button" onClick={() => inputRef.current?.click()}><Upload /> Импорт</button>
+              <input ref={inputRef} type="file" accept="application/json" onChange={importTracker} hidden />
+            </div>
+          </BlurIn>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MobileDock({ onSearch, onFilters, onFavorites }) {
+  return (
+    <nav className="mobile-dock" aria-label="Быстрые действия">
+      <button type="button" onClick={onSearch}><Search /><span>Поиск</span></button>
+      <button type="button" onClick={onFilters}><SlidersHorizontal /><span>Фильтры</span></button>
+      <button type="button" onClick={onFavorites}><Heart /><span>Избранное</span></button>
+    </nav>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="site-footer">
+      <div className="section-wrap footer-inner">
+        <div><span className="brand-mark">СД</span><strong>Работа рядом</strong></div>
+        <p>Бесплатный некоммерческий агрегатор вакансий Спасска-Дальнего.</p>
+        <a href="#top">Наверх <ArrowUpRight /></a>
+      </div>
+    </footer>
+  );
+}
+
+function LoadingState() {
+  return (
+    <div className="loading-state">
+      <div className="loading-mark">СД</div>
+      <div className="loading-line"><span /></div>
+      <p>Собираем вакансии рядом</p>
+    </div>
+  );
+}
+
+function ErrorState({ message }) {
+  return (
+    <div className="error-state">
+      <CircleAlert />
+      <h1>Данные временно недоступны.</h1>
+      <p>{message}</p>
+      <button className="primary-button" type="button" onClick={() => location.reload()}>Повторить</button>
+    </div>
+  );
+}
+
+export default App;
