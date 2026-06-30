@@ -10,7 +10,8 @@ function vacancyLinks(html) {
   return matches.flatMap(match => {
     const url = absolute(match[1]);
     const name = stripHtml(match[4]);
-    if (!url || seen.has(url) || !name || /^(?:подробнее|откликнуться)$/iu.test(name)) return [];
+    let parsed, decodedPath; try { parsed=new URL(url); decodedPath=decodeURIComponent(parsed.pathname); } catch { return []; }
+    if (!url || parsed.hostname !== 'gderabota.ru' || !decodedPath.startsWith('/вакансии/') || seen.has(url) || !name || /^(?:подробнее|откликнуться)$/iu.test(name)) return [];
     seen.add(url);
     return [{ match, url, id:match[3], name }];
   });

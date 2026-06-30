@@ -32,9 +32,9 @@ export function parseTelegramMessages(html, channel, now = Date.now()) {
     if (publishedAt && now - Date.parse(publishedAt) > MAX_AGE_MS) continue;
     if (channel !== 'Vakansii_Spasske_dalnem_RF' && !/спасск[\s‑–—-]*дальн/iu.test(text)) continue;
     const lines=text.split(/\n|[.!?]\s+/).map(x=>x.trim()).filter(Boolean);
-    const title=(lines.find(line=>JOB_RX.test(line))||text.split(/\s+(?=(?:\d[\d\s]*\s*₽|Заработная\s+плата|Обязанности:|Требования:|Описание:))/iu)[0]||lines[0]||'Вакансия из Telegram').slice(0,150);
+    const title=(lines.find(line=>JOB_RX.test(line))||text.split(/\s+(?=(?:\d[\d\s]*(?:[–—-]\s*\d[\d\s]*)?\s*(?:₽|руб)|Заработная\s+плата|Обязанности:|Требования:|Описание:))/iu)[0]||lines[0]||'Вакансия из Telegram').slice(0,150);
     const pay=text.match(/(?:от|до)?\s*\d[\d\s]*(?:[–—-]\s*\d[\d\s]*)?\s*(?:₽|руб)/iu)?.[0]||'Не указана';
-    const address=text.match(/Спасск[\s‑–—-]*Дальн(?:ий|ем|его)\s*,\s*[А-ЯЁа-яё\s‑–—-]+,\s*\d+[А-ЯЁа-яё]?/u)?.[0] || 'Спасск-Дальний (адрес уточнить в посте)';
+    const address=text.match(/Спасск[\s‑–—-]*Дальн(?:ий|ем|его)\s*,\s*[А-ЯЁа-яё\s‑–—-]+,\s*\d+(?:\/\d+)?[А-ЯЁа-яё]*/u)?.[0] || 'Спасск-Дальний (адрес уточнить в посте)';
     const knownEmployer = text.match(/Пят[её]рочк\w*|Российские железные дороги|РЖД|МТС|Ростелеком|Красное\s+и\s+Белое|ВинЛаб|DNS/iu)?.[0];
     rows.push({id:`tg-${post.replace('/','-')}`,name:title,employer:knownEmployer||`Telegram @${channel}`,salary:pay,city:'Спасск-Дальний',address,experience:/без опыта|опыт не требуется/iu.test(text)?'Без опыта':'Не указано',education:'Не указано',schedule:/вахт/iu.test(text)?'Вахта':/удал[её]н/iu.test(text)?'Удалённо':'Не указано',description:text.slice(0,1200),source:`Telegram @${channel}`,url:`https://t.me/${post}`,publishedAt,checkedAt:new Date().toISOString(),warnings:['Проверьте работодателя и условия до передачи персональных данных']});
   }
