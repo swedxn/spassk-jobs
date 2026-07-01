@@ -12,6 +12,7 @@ import { importTrudvsem } from '../src/importers/trudvsem.mjs';
 import { robotsAllows, stripHtml } from '../src/importers/web-utils.mjs';
 import { addOpportunityScores, pruneHistory, reconcileHistory } from '../src/history.mjs';
 import { cleanFarpostDescription } from '../src/farpost-clean.mjs';
+import { parseFarpostPublishedAt, parseSourceDate, publicationInfo } from '../src/date.mjs';
 
 const local = { id:'1', name:'Оператор техподдержки', employer:'Тест', city:'Спасск-Дальний', address:'Спасск-Дальний, Советская, 1', experience:'Без опыта', education:'СПО', salary:'50 000 ₽', description:'Обучение на месте', source:'HeadHunter', url:'https://hh.ru/vacancy/1' };
 
@@ -122,8 +123,16 @@ test('проект не содержит обязательных платных
 });
 
 test('публичная выдача FarPost преобразуется в вакансии с оригинальной ссылкой', () => {
-  const html='<article>от 50 000 ₽ <a href="/spassk-dalnii/rabota/vacansii/kladovschik-123456.html">Кладовщик</a> ООО Склад. Улица Советская 1 Без опыта</article>';
-  const rows=parseFarpost(html); assert.equal(rows.length,1); assert.equal(rows[0].source,'FarPost'); assert.match(rows[0].url,/123456\.html/);
+  const html='<article>от 50 000 ₽ <a href="/spassk-dalnii/rabota/vacansii/kladovschik-123456.html">Кладовщик</a> ООО Склад. Улица Советская 1 Без опыта вчера в 09:51 600</article>';
+  const rows=parseFarpost(html,new Date('2026-07-01T02:00:00Z')); assert.equal(rows.length,1); assert.equal(rows[0].source,'FarPost'); assert.match(rows[0].url,/123456\.html/); assert.equal(rows[0].publishedAt,'2026-06-30T09:51:00+10:00');
+});
+
+test('даты публикации понимают русские даты и честный fallback', () => {
+  assert.match(parseSourceDate('29 июня 2026').toISOString(),/^2026-06-29/u);
+  assert.equal(parseFarpostPublishedAt('сегодня в 10:15',new Date('2026-07-01T02:00:00Z')),'2026-07-01T10:15:00+10:00');
+  assert.equal(parseFarpostPublishedAt('19 июня 5234',new Date('2026-07-01T02:00:00Z')),'2026-06-19');
+  assert.equal(publicationInfo({publishedAt:'2026-06-29'}).label,'Опубликована на сайте');
+  assert.equal(publicationInfo({firstSeenAt:'2026-06-30T01:00:00Z'}).label,'Дата на сайте не указана');
 });
 
 test('история различает новые, изменившиеся и исчезнувшие вакансии', () => {

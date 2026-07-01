@@ -4,11 +4,13 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { normalizeSalaryText, salaryNumber } from './salary.mjs';
 import { cleanFarpostDescription } from './farpost-clean.mjs';
+import { parseSourceDate, publicationInfo } from './date.mjs';
 import {
   ArrowDown,
   ArrowUpRight,
   BadgeCheck,
   BriefcaseBusiness,
+  CalendarDays,
   Check,
   ChevronDown,
   CircleAlert,
@@ -51,7 +53,7 @@ const ease = [0.22, 1, 0.36, 1];
 const isNoExperience = (job) => /без опыта|не требуется|готовы обуч|обучение|стаж[её]р|ученик/iu.test(`${job.experience} ${job.description}`);
 const hasSalary = (job) => Boolean(job.salary && !/не указан/iu.test(job.salary));
 const noHigherEducation = (job) => !/высш(?:ее|его)|бакалавр|магистр/iu.test(`${job.education} ${job.description}`);
-const dateValue = (job) => Date.parse(job.firstSeenAt || job.publishedAt || job.checkedAt || 0) || 0;
+const dateValue = (job) => parseSourceDate(job.publishedAt || job.firstSeenAt || job.checkedAt)?.getTime() || 0;
 const safeUrl = (value) => {
   try {
     const url = new URL(value);
@@ -465,6 +467,7 @@ function FilterButton({ active, onClick, children, icon }) {
 
 function JobRow({ job, index, favorite, onFavorite, onOpen }) {
   const reduced = useReducedMotion();
+  const publication = publicationInfo(job);
   return (
     <motion.article
       className="job-row"
@@ -483,6 +486,7 @@ function JobRow({ job, index, favorite, onFavorite, onOpen }) {
           </div>
           <h3>{job.name}</h3>
           <p>{job.employer}</p>
+          <span className="job-date"><CalendarDays /> {publication.short}</span>
         </div>
         <div className="job-row__meta">
           <strong>{normalizeSalaryText(job.salary)}</strong>
@@ -502,6 +506,7 @@ function JobRow({ job, index, favorite, onFavorite, onOpen }) {
 
 function JobModal({ job, state, onPatch, onClose }) {
   const reduced = useReducedMotion();
+  const publication = publicationInfo(job);
   return (
     <motion.div className="modal-layer" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.28 }}>
       <button className="modal-backdrop" type="button" onClick={onClose} aria-label="Закрыть карточку" />
@@ -530,6 +535,7 @@ function JobModal({ job, state, onPatch, onClose }) {
             <Detail icon={<BriefcaseBusiness />} label="Опыт" value={job.experience} />
             <Detail icon={<GraduationCap />} label="Образование" value={job.education} />
             <Detail icon={<Clock3 />} label="График" value={job.schedule} />
+            <Detail icon={<CalendarDays />} label={publication.label} value={publication.full} wide />
           </div>
 
           <div className="modal-section">
@@ -576,8 +582,8 @@ function JobModal({ job, state, onPatch, onClose }) {
   );
 }
 
-function Detail({ icon, label, value }) {
-  return <div className="detail-item">{icon}<div><span>{label}</span><strong>{value || 'Не указано'}</strong></div></div>;
+function Detail({ icon, label, value, wide = false }) {
+  return <div className={`detail-item ${wide ? 'detail-item--wide' : ''}`}>{icon}<div><span>{label}</span><strong>{value || 'Не указано'}</strong></div></div>;
 }
 
 function TrustSection({ meta, stats, tracker, setTracker }) {

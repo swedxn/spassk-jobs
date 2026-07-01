@@ -1,13 +1,14 @@
 import { assertRobotsAllowed, fetchText, sleep, stripHtml } from './web-utils.mjs';
 import { cleanFarpostDescription } from '../farpost-clean.mjs';
 import { extractSalaryText } from '../salary.mjs';
+import { parseFarpostPublishedAt } from '../date.mjs';
 
 const BASE = 'https://www.farpost.ru/spassk-dalnii/rabota/vacansii/';
 
 function absolute(href) { try { const url=new URL(href,BASE); url.search=''; url.hash=''; return url.href; } catch { return null; } }
 function salary(text) { return extractSalaryText(text); }
 
-export function parseFarpost(html) {
+export function parseFarpost(html, now = new Date()) {
   const rows = [];
   const rx = /<a\b[^>]*href=["']([^"']*\/spassk-dalnii\/rabota\/vacansii\/[^"'#?]+\.html[^"']*)["'][^>]*>([\s\S]*?)<\/a>/giu;
   for (const match of html.matchAll(rx)) {
@@ -23,7 +24,7 @@ export function parseFarpost(html) {
     const context = stripHtml(fragment);
     const employer = context.match(/(?:ООО|АО|ПАО|ИП|ФКУ|КГБУЗ|КГБУСО|ТС)\s*[«"']?[^.·]{2,90}/u)?.[0]?.trim() || 'Работодатель указан в оригинале';
     const address = context.match(/(?:Спасск[\s‑–—-]*Дальн(?:ий|его|ем)[^,.]{0,20}[,.]?\s*)?(?:ул(?:ица)?\.?|пер(?:еулок)?\.?|проспект|микрорайон)\s+[А-ЯЁа-яё0-9\s‑–—-]+(?:,?\s*\d+[а-яА-ЯёЁ\/]*)?/u)?.[0]?.trim() || 'Спасск-Дальний';
-    rows.push({ id:`farpost-${url.match(/-(\d+)\.html/)?.[1] || Buffer.from(url).toString('base64url').slice(-18)}`, name, employer, salary:salary(context), city:'Спасск-Дальний', address:`Спасск-Дальний${address === 'Спасск-Дальний' ? '' : ', ' + address}`, experience:/без опыта/iu.test(context)?'Без опыта':'Не указано', education:/средн(?:ее|е-специальное)|без высшего/iu.test(context)?'Без высшего образования':'Не указано', schedule:/посмен/iu.test(context)?'Посменный':/дневн/iu.test(context)?'Дневной':'Не указано', description:cleanFarpostDescription(context,name).slice(0,900), source:'FarPost', url, checkedAt:new Date().toISOString() });
+    rows.push({ id:`farpost-${url.match(/-(\d+)\.html/)?.[1] || Buffer.from(url).toString('base64url').slice(-18)}`, name, employer, salary:salary(context), city:'Спасск-Дальний', address:`Спасск-Дальний${address === 'Спасск-Дальний' ? '' : ', ' + address}`, experience:/без опыта/iu.test(context)?'Без опыта':'Не указано', education:/средн(?:ее|е-специальное)|без высшего/iu.test(context)?'Без высшего образования':'Не указано', schedule:/посмен/iu.test(context)?'Посменный':/дневн/iu.test(context)?'Дневной':'Не указано', description:cleanFarpostDescription(context,name).slice(0,900), source:'FarPost', url, publishedAt:parseFarpostPublishedAt(context,now), checkedAt:new Date().toISOString() });
   }
   return [...new Map(rows.map(row => [row.url,row])).values()];
 }

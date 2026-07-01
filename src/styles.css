@@ -833,6 +833,21 @@ svg {
   white-space: nowrap;
 }
 
+.job-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  color: #86868b;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.job-date svg {
+  width: 14px;
+  height: 14px;
+}
+
 .job-row__meta {
   display: flex;
   min-width: 0;
@@ -1277,6 +1292,11 @@ svg {
   padding: 18px;
   border-radius: 18px;
   background: var(--soft);
+}
+
+.detail-item--wide {
+  grid-column: 1 / -1;
+  min-height: 90px;
 }
 
 .detail-item > svg {
