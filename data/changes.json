@@ -1,40 +1,26 @@
 {
-  "generatedAt": "2026-07-01T04:02:32.147Z",
+  "generatedAt": "2026-07-01T04:15:31.666Z",
   "summary": {
-    "new": 7,
-    "changed": 16,
-    "closed": 5
+    "new": 0,
+    "changed": 6,
+    "closed": 0
   },
   "events": [
     {
-      "type": "new",
+      "type": "changed",
       "vacancyId": "farpost-136608206",
       "name": "МЕНЕДЖЕР ПО ПРОДАЖАМ",
       "source": "FarPost",
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "new",
-      "vacancyId": "farpost-136175032",
-      "name": "Кассир еженедельные выплаты",
-      "source": "FarPost",
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-136063428",
-      "name": "Выкладчик",
-      "source": "FarPost",
       "fields": [
-        "salary"
+        "employer"
       ],
       "before": {
-        "salary": "от 250 ₽"
+        "employer": "ИП Богодилов Руслан Александрович 6"
       },
       "after": {
-        "salary": "Не указана"
+        "employer": "ИП Богодилов Руслан Александрович 12"
       },
-      "at": "2026-07-01T04:02:32.147Z"
+      "at": "2026-07-01T04:15:31.666Z"
     },
     {
       "type": "changed",
@@ -45,90 +31,28 @@
         "employer"
       ],
       "before": {
-        "employer": "ООО \"ЧОА\"Вымпел\" вчера в 11:15 3503"
-      },
-      "after": {
         "employer": "ООО \"ЧОА\"Вымпел\" вчера в 11:15 3507"
       },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "new",
-      "vacancyId": "farpost-131604563",
-      "name": "Водитель самосвала (вахта)",
-      "source": "FarPost",
-      "at": "2026-07-01T04:02:32.147Z"
+      "after": {
+        "employer": "ООО \"ЧОА\"Вымпел\" вчера в 11:15 3509"
+      },
+      "at": "2026-07-01T04:15:31.666Z"
     },
     {
       "type": "changed",
-      "vacancyId": "farpost-104396837",
-      "name": "Заместитель управляющего, старший продавец, продавец",
+      "vacancyId": "farpost-136193656",
+      "name": "Мастер дорожный на Корфовскую",
       "source": "FarPost",
       "fields": [
         "employer"
       ],
       "before": {
-        "employer": "ООО \"Альбион 2002\" 29 июня 4514"
+        "employer": "АО \"РЖД\" вчера в 08:53 110"
       },
       "after": {
-        "employer": "ООО \"Альбион 2002\" 29 июня 4518"
+        "employer": "АО \"РЖД\" вчера в 08:53 111"
       },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-132429316",
-      "name": "Продавец-консультант ул. Красногвардейская д. 81/2",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ПАО \"ВинЛаб\" 25 июня 331"
-      },
-      "after": {
-        "employer": "ПАО \"ВинЛаб\" 25 июня 332"
-      },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-126851422",
-      "name": "Сторож",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ИП Папикян АА 25 июня 1602"
-      },
-      "after": {
-        "employer": "ИП Папикян АА 25 июня 1603"
-      },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-129611256",
-      "name": "Сиделка",
-      "source": "FarPost",
-      "fields": [
-        "salary"
-      ],
-      "before": {
-        "salary": "600 ₽"
-      },
-      "after": {
-        "salary": "Не указана"
-      },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "new",
-      "vacancyId": "farpost-134936271",
-      "name": "Водитель автобетоносмесителя (вахта)",
-      "source": "FarPost",
-      "at": "2026-07-01T04:02:32.147Z"
+      "at": "2026-07-01T04:15:31.666Z"
     },
     {
       "type": "changed",
@@ -139,141 +63,28 @@
         "employer"
       ],
       "before": {
-        "employer": "ООО \"ФГ-Логистика\" 24 июня 177"
-      },
-      "after": {
         "employer": "ООО \"ФГ-Логистика\" 24 июня 180"
       },
-      "at": "2026-07-01T04:02:32.147Z"
+      "after": {
+        "employer": "ООО \"ФГ-Логистика\" 24 июня 181"
+      },
+      "at": "2026-07-01T04:15:31.666Z"
     },
     {
       "type": "changed",
-      "vacancyId": "farpost-108614800",
-      "name": "Водитель категорий В",
+      "vacancyId": "farpost-135548005",
+      "name": "Помощник машиниста автомотрисы",
       "source": "FarPost",
       "fields": [
         "employer"
       ],
       "before": {
-        "employer": "ООО \"РесурсТранс\" 24 июня 7864"
+        "employer": "АО \"РЖД\" 18 июня 304"
       },
       "after": {
-        "employer": "ООО \"РесурсТранс\" 24 июня 7868"
+        "employer": "АО \"РЖД\" 18 июня 305"
       },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-133148010",
-      "name": "Продавец-консультант ул. Советская д. 79",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ПАО \"ВинЛаб\" 23 июня 732"
-      },
-      "after": {
-        "employer": "ПАО \"ВинЛаб\" 23 июня 733"
-      },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-135408228",
-      "name": "Водитель-экспедитор категории СЕ",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ООО Русагро-Ресурс 23 июня 579"
-      },
-      "after": {
-        "employer": "ООО Русагро-Ресурс 23 июня 580"
-      },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-111281540",
-      "name": "Автомеханик",
-      "source": "FarPost",
-      "fields": [
-        "name",
-        "salary"
-      ],
-      "before": {
-        "name": "Сварщик",
-        "salary": "от 3 300 ₽"
-      },
-      "after": {
-        "name": "Автомеханик",
-        "salary": "от 3 000 ₽"
-      },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-119856347",
-      "name": "Плотник. Строитель",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ООО \"КОВЧЕГ\" 21 июня 2394"
-      },
-      "after": {
-        "employer": "ООО \"КОВЧЕГ\" 21 июня 2395"
-      },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-78744723",
-      "name": "Пекарь-тестовод",
-      "source": "FarPost",
-      "fields": [
-        "address"
-      ],
-      "before": {
-        "address": "Спасск-Дальний, ул Дорожное 1 21 июня 4930"
-      },
-      "after": {
-        "address": "Спасск-Дальний, ул Дорожное 1 21 июня 4931"
-      },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "new",
-      "vacancyId": "farpost-136355819",
-      "name": "Повар-шаурмист в столовую на вахту",
-      "source": "FarPost",
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-136340702",
-      "name": "Водитель автомобиля",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "АО ДРСК Приморские электрические сети 17 июня 176"
-      },
-      "after": {
-        "employer": "АО ДРСК Приморские электрические сети 17 июня 179"
-      },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "new",
-      "vacancyId": "farpost-136313543",
-      "name": "Повар мясного цеха в столовую на вахту",
-      "source": "FarPost",
-      "at": "2026-07-01T04:02:32.147Z"
+      "at": "2026-07-01T04:15:31.666Z"
     },
     {
       "type": "changed",
@@ -284,70 +95,12 @@
         "address"
       ],
       "before": {
-        "address": "Спасск-Дальний, Спасск-Дальний, улица Андреевская 10 15 июня 346"
-      },
-      "after": {
         "address": "Спасск-Дальний, Спасск-Дальний, улица Андреевская 10 15 июня 348"
       },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "new",
-      "vacancyId": "farpost-120502170",
-      "name": "Разнорабочий/рабочий/рабочий подсобный(вахта, питание, проживание). Покупаем билеты!",
-      "source": "FarPost",
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-136288393",
-      "name": "Разнорабочий-строитель",
-      "source": "FarPost",
-      "fields": [
-        "address"
-      ],
-      "before": {
-        "address": "Спасск-Дальний, улица Родниковая 31 14 июня 115"
-      },
       "after": {
-        "address": "Спасск-Дальний, улица Родниковая 31 14 июня 116"
+        "address": "Спасск-Дальний, Спасск-Дальний, улица Андреевская 10 15 июня 349"
       },
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "closed",
-      "vacancyId": "farpost-136041984",
-      "name": "Помощник машиниста тепловоза",
-      "source": "FarPost",
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "closed",
-      "vacancyId": "farpost-135759743",
-      "name": "Сигналист",
-      "source": "FarPost",
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "closed",
-      "vacancyId": "farpost-135760105",
-      "name": "Монтер пути",
-      "source": "FarPost",
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "closed",
-      "vacancyId": "farpost-135760276",
-      "name": "Бригадир (освобожденный) по текущему содержанию и ремонту пути и искусственных сооружений",
-      "source": "FarPost",
-      "at": "2026-07-01T04:02:32.147Z"
-    },
-    {
-      "type": "closed",
-      "vacancyId": "farpost-135760563",
-      "name": "Мастер дорожный",
-      "source": "FarPost",
-      "at": "2026-07-01T04:02:32.147Z"
+      "at": "2026-07-01T04:15:31.666Z"
     }
   ]
 }
