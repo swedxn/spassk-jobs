@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T04:15:31.666Z",
+  "generatedAt": "2026-07-01T04:26:40.279Z",
   "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Rabota1000, ЦентрРабота",
   "fallback": false,
   "sourcesChecked": 39,
@@ -23,7 +23,7 @@
       "name": "FarPost",
       "mode": "auto",
       "status": "ok",
-      "found": 185
+      "found": 186
     },
     {
       "name": "Публичный Telegram",
@@ -48,7 +48,7 @@
       "mode": "auto",
       "status": "blocked",
       "found": 0,
-      "error": "robots.txt запрещает путь /spassk-dalni"
+      "error": "robots.txt недоступен — импорт отменён безопасно: rabota1000.ru HTTP 403"
     },
     {
       "name": "ЦентрРабота",
@@ -72,8 +72,8 @@
       "found": 28
     }
   ],
-  "raw": 485,
-  "accepted": 363,
+  "raw": 486,
+  "accepted": 364,
   "remote": 0,
   "rejected": {
     "otherCity": 21,
@@ -82,18 +82,18 @@
     "duplicate": 71
   },
   "stats": {
-    "active": 363,
+    "active": 364,
     "noExperience": 100,
-    "noHigherEducation": 333,
-    "withSalary": 348,
+    "noHigherEducation": 334,
+    "withSalary": 349,
     "goodFit": 160,
-    "newVacancies": 0,
-    "changedVacancies": 6,
+    "newVacancies": 1,
+    "changedVacancies": 0,
     "strongOpportunities": 1
   },
   "changes": {
-    "new": 0,
-    "changed": 6,
+    "new": 1,
+    "changed": 0,
     "closed": 0
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."

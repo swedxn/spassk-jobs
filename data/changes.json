@@ -1,106 +1,17 @@
 {
-  "generatedAt": "2026-07-01T04:15:31.666Z",
+  "generatedAt": "2026-07-01T04:26:40.279Z",
   "summary": {
-    "new": 0,
-    "changed": 6,
+    "new": 1,
+    "changed": 0,
     "closed": 0
   },
   "events": [
     {
-      "type": "changed",
-      "vacancyId": "farpost-136608206",
-      "name": "МЕНЕДЖЕР ПО ПРОДАЖАМ",
+      "type": "new",
+      "vacancyId": "farpost-136610638",
+      "name": "Фармацевт",
       "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ИП Богодилов Руслан Александрович 6"
-      },
-      "after": {
-        "employer": "ИП Богодилов Руслан Александрович 12"
-      },
-      "at": "2026-07-01T04:15:31.666Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-118491396",
-      "name": "Охранник",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ООО \"ЧОА\"Вымпел\" вчера в 11:15 3507"
-      },
-      "after": {
-        "employer": "ООО \"ЧОА\"Вымпел\" вчера в 11:15 3509"
-      },
-      "at": "2026-07-01T04:15:31.666Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-136193656",
-      "name": "Мастер дорожный на Корфовскую",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "АО \"РЖД\" вчера в 08:53 110"
-      },
-      "after": {
-        "employer": "АО \"РЖД\" вчера в 08:53 111"
-      },
-      "at": "2026-07-01T04:15:31.666Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-136476567",
-      "name": "Менеджер по логистике",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ООО \"ФГ-Логистика\" 24 июня 180"
-      },
-      "after": {
-        "employer": "ООО \"ФГ-Логистика\" 24 июня 181"
-      },
-      "at": "2026-07-01T04:15:31.666Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-135548005",
-      "name": "Помощник машиниста автомотрисы",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "АО \"РЖД\" 18 июня 304"
-      },
-      "after": {
-        "employer": "АО \"РЖД\" 18 июня 305"
-      },
-      "at": "2026-07-01T04:15:31.666Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-136302826",
-      "name": "Мойщик посуды",
-      "source": "FarPost",
-      "fields": [
-        "address"
-      ],
-      "before": {
-        "address": "Спасск-Дальний, Спасск-Дальний, улица Андреевская 10 15 июня 348"
-      },
-      "after": {
-        "address": "Спасск-Дальний, Спасск-Дальний, улица Андреевская 10 15 июня 349"
-      },
-      "at": "2026-07-01T04:15:31.666Z"
+      "at": "2026-07-01T04:26:40.279Z"
     }
   ]
 }
