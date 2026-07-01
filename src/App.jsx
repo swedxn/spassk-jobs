@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { normalizeSalaryText, salaryNumber } from './salary.mjs';
 import {
   ArrowDown,
   ArrowUpRight,
@@ -49,7 +50,6 @@ const ease = [0.22, 1, 0.36, 1];
 const isNoExperience = (job) => /без опыта|не требуется|готовы обуч|обучение|стаж[её]р|ученик/iu.test(`${job.experience} ${job.description}`);
 const hasSalary = (job) => Boolean(job.salary && !/не указан/iu.test(job.salary));
 const noHigherEducation = (job) => !/высш(?:ее|его)|бакалавр|магистр/iu.test(`${job.education} ${job.description}`);
-const salaryValue = (job) => Math.max(0, ...String(job.salary || '').match(/\d[\d\s]*/g)?.map((value) => Number(value.replace(/\s/g, ''))) || [0]);
 const dateValue = (job) => Date.parse(job.firstSeenAt || job.publishedAt || job.checkedAt || 0) || 0;
 const safeUrl = (value) => {
   try {
@@ -192,21 +192,6 @@ function App() {
         ease: 'none',
         scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1.2 },
       });
-      gsap.to('.hero-product', {
-        y: 90,
-        scale: 0.96,
-        opacity: 0.55,
-        ease: 'none',
-        scrollTrigger: { trigger: '.hero', start: '30% top', end: 'bottom top', scrub: 1 },
-      });
-      gsap.from('.feature-card', {
-        y: 60,
-        opacity: 0,
-        stagger: 0.12,
-        duration: 1,
-        ease: 'power4.out',
-        scrollTrigger: { trigger: '.feature-grid', start: 'top 80%' },
-      });
     });
     return () => context.revert();
   }, [payload, reduced]);
@@ -214,11 +199,6 @@ function App() {
   const jobs = payload?.vacancies || [];
   const meta = payload?.meta || {};
   const stats = meta.stats || {};
-
-  const featured = useMemo(() => [...jobs]
-    .filter((job) => job.score >= 75)
-    .sort((a, b) => (b.opportunityScore || 0) - (a.opportunityScore || 0) || b.score - a.score)
-    .slice(0, 3), [jobs]);
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase('ru-RU');
@@ -232,7 +212,7 @@ function App() {
     });
     return result.sort((a, b) => {
       if (sort === 'fresh') return dateValue(b) - dateValue(a);
-      if (sort === 'salary') return salaryValue(b) - salaryValue(a);
+      if (sort === 'salary') return salaryNumber(b.salary) - salaryNumber(a.salary);
       return b.score - a.score || (b.opportunityScore || 0) - (a.opportunityScore || 0);
     });
   }, [jobs, query, filters, sort, tracker]);
@@ -265,8 +245,6 @@ function App() {
 
       <main>
         <Hero meta={meta} stats={stats} onStart={() => document.querySelector('#vacancies')?.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' })} />
-        <Featured jobs={featured} onOpen={setSelected} tracker={tracker} patchTracker={patchTracker} />
-
         <section className="catalog" id="vacancies">
           <div className="section-wrap">
             <BlurIn className="section-heading catalog-heading">
@@ -401,7 +379,6 @@ function Header({ scrolled, onSearch }) {
           <span>Работа рядом</span>
         </a>
         <div className="nav-links">
-          <a href="#today">Для вас</a>
           <a href="#vacancies">Вакансии</a>
           <a href="#data">О данных</a>
         </div>
@@ -438,7 +415,6 @@ function Hero({ meta, stats, onStart }) {
         </motion.p>
         <motion.div className="hero-actions" initial={reduced ? false : { opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.36, ease }}>
           <button className="primary-button" type="button" onClick={onStart}>Смотреть вакансии</button>
-          <a className="text-link" href="#today">Что выбрать сегодня <ArrowUpRight /></a>
         </motion.div>
 
         <motion.div className="hero-product" initial={reduced ? false : { opacity: 0, y: 70, scale: 0.94 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 1.25, delay: 0.25, ease }}>
@@ -462,7 +438,7 @@ function Hero({ meta, stats, onStart }) {
           </div>
         </motion.div>
       </div>
-      <a className="scroll-cue" href="#today" aria-label="Прокрутить к рекомендациям"><span /><ArrowDown /></a>
+      <a className="scroll-cue" href="#vacancies" aria-label="Прокрутить к вакансиям"><span /><ArrowDown /></a>
     </section>
   );
 }
@@ -473,39 +449,6 @@ function Metric({ value, label, tone }) {
       <strong><CountUp value={value} /></strong>
       <span>{label}</span>
     </div>
-  );
-}
-
-function Featured({ jobs, onOpen, tracker, patchTracker }) {
-  return (
-    <section className="featured" id="today">
-      <div className="section-wrap">
-        <BlurIn className="section-heading section-heading--dark">
-          <div>
-            <span className="eyebrow">Подобрано для вас</span>
-            <h2>С чего начать сегодня.</h2>
-          </div>
-          <p>Три сильных варианта с учётом опыта, образования и ваших интересов.</p>
-        </BlurIn>
-        <div className="feature-grid">
-          {jobs.map((job, index) => (
-            <article className={`feature-card feature-card--${index + 1}`} key={job.id}>
-              <div className="feature-card__top">
-                <span>{String(index + 1).padStart(2, '0')}</span>
-                <button type="button" aria-label={tracker[job.id]?.favorite ? 'Убрать из избранного' : 'Добавить в избранное'} onClick={() => patchTracker(job.id, { favorite: !tracker[job.id]?.favorite })}>
-                  <Heart className={tracker[job.id]?.favorite ? 'filled' : ''} />
-                </button>
-              </div>
-              <div className="feature-score"><Sparkles /> {job.score}% совпадение</div>
-              <h3>{job.name}</h3>
-              <p>{job.employer}</p>
-              <strong className="feature-salary">{job.salary}</strong>
-              <button className="feature-open" type="button" onClick={() => onOpen(job)}>Подробнее <ArrowUpRight /></button>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
   );
 }
 
@@ -541,7 +484,7 @@ function JobRow({ job, index, favorite, onFavorite, onOpen }) {
           <p>{job.employer}</p>
         </div>
         <div className="job-row__meta">
-          <strong>{job.salary}</strong>
+          <strong>{normalizeSalaryText(job.salary)}</strong>
           <span><MapPin /> {job.address || job.city}</span>
         </div>
         <div className="job-row__score">
@@ -579,7 +522,7 @@ function JobModal({ job, state, onPatch, onClose }) {
           <div className="modal-score"><Sparkles /> {job.score}% совпадение · {job.fit}</div>
           <h2 id="job-modal-title">{job.name}</h2>
           <p className="modal-employer">{job.employer}</p>
-          <div className="modal-salary">{job.salary}</div>
+          <div className="modal-salary">{normalizeSalaryText(job.salary)}</div>
 
           <div className="detail-grid">
             <Detail icon={<MapPin />} label="Место" value={job.address || job.city} />

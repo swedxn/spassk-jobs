@@ -1,4 +1,7 @@
 import crypto from 'node:crypto';
+import { normalizeSalaryText } from './salary.mjs';
+
+export { normalizeSalaryText } from './salary.mjs';
 
 const CITY_RX = /спасск[\s‑–—-]*(дальн(?:ий|ем|его)|дальн)/iu;
 const OTHER_CITIES = ['владивосток','уссурийск','артём','артем','находка','дальнереченск','лесозаводск','арсеньев','партизанск','дальнегорск','большой камень','фокино','лучегорск','кировский','сибирцево','черниговка','хороль','покровка','камень-рыболов','кавалерово','славянка','ольга','терней','липовцы','михайловка','раздольное','новошахтинский','светлогорье','благовещенск','магадан','хабаровск','москва','санкт-петербург'];
@@ -31,7 +34,7 @@ export function normalizeVacancy(raw) {
   const employer = clean(raw.employer?.name || raw.employer || raw.company || 'Работодатель не указан');
   const address = clean(raw.address?.raw || raw.address || raw.location || raw.city || 'Спасск-Дальний');
   const city = clean(raw.area?.name || raw.city || (CITY_RX.test(address) ? 'Спасск-Дальний' : address));
-  const salary = typeof raw.salary === 'string' ? raw.salary : formatSalary(raw.salary);
+  const salary = typeof raw.salary === 'string' ? normalizeSalaryText(raw.salary) : formatSalary(raw.salary);
   const experience = clean(raw.experience?.name || raw.experience || 'Не указано');
   const education = clean(raw.education || 'Не указано');
   const schedule = clean(raw.schedule?.name || raw.schedule || 'Не указано');
@@ -46,8 +49,9 @@ export function normalizeVacancy(raw) {
 
 export function formatSalary(salary) {
   if (!salary) return 'Не указана';
-  const fmt = n => n == null ? '' : new Intl.NumberFormat('ru-RU').format(n);
+  const fmt = n => n == null ? '' : new Intl.NumberFormat('ru-RU').format(n).replace(/\u00a0/g, ' ');
   const currency = salary.currency === 'RUR' ? '₽' : clean(salary.currency || '₽');
+  if (salary.from && salary.to && Number(salary.from) === Number(salary.to)) return `${fmt(salary.from)} ${currency}`;
   if (salary.from && salary.to) return `${fmt(salary.from)}–${fmt(salary.to)} ${currency}`;
   if (salary.from) return `от ${fmt(salary.from)} ${currency}`;
   if (salary.to) return `до ${fmt(salary.to)} ${currency}`;

@@ -1,4 +1,5 @@
 import { assertRobotsAllowed, fetchText, sleep, stripHtml } from './web-utils.mjs';
+import { extractSalaryText } from '../salary.mjs';
 
 const BASE = 'https://gderabota.ru/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8/%D1%81%D0%BF%D0%B0%D1%81%D1%81%D0%BA-%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9';
 
@@ -23,7 +24,7 @@ export function parseGdeRabota(html) {
     const fragment = html.slice(card.match.index, links[index+1]?.match.index ?? Math.min(html.length, card.match.index+14000));
     const context = stripHtml(fragment).split(/Заполните квиз|Соседние города/iu)[0].trim();
     if (!/спасск[\s‑–—-]*дальн/iu.test(context) || card.name.length > 180) return [];
-    const salary = context.match(/(?:от|до)?\s*\d[\d\s]*(?:[–—-]\s*\d[\d\s]*)?\s*₽/u)?.[0]?.replace(/\s+/g,' ').trim() || 'Не указана';
+    const salary = extractSalaryText(context);
     const experience = context.match(/без опыта|от\s+\d+\s+(?:года|лет)(?:\s+до\s+\d+\s+лет)?/iu)?.[0] || 'Не указано';
     const schedule = context.match(/полный день|сменный график|гибкий график|удал[её]нн\w*|вахт\w*/iu)?.[0] || 'Не указано';
     const employer = context.match(/(?:\.\.\.|…)\s+(.{2,180}?)\s+Спасск[\s‑–—-]*Дальн/iu)?.[1]?.trim() || 'Работодатель указан в оригинале';
