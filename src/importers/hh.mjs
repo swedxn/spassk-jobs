@@ -1,4 +1,5 @@
-const UA = 'SpasskJobs/1.0 (https://github.com/swedxn/spassk-jobs/issues)';
+// HH requires an application name and a contact email in User-Agent.
+const UA = 'SpasskJobs/1.0 (spassk-jobs-bot@users.noreply.github.com)';
 
 async function json(url) {
   let response;

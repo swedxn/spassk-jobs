@@ -1,5 +1,6 @@
 import { assertRobotsAllowed, fetchText, sleep, stripHtml } from './web-utils.mjs';
 import { extractSalaryText } from '../salary.mjs';
+import { cleanGdeRabotaDescription } from '../gderabota-clean.mjs';
 
 const BASE = 'https://gderabota.ru/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8/%D1%81%D0%BF%D0%B0%D1%81%D1%81%D0%BA-%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9';
 
@@ -29,7 +30,7 @@ export function parseGdeRabota(html) {
     const schedule = context.match(/полный день|сменный график|гибкий график|удал[её]нн\w*|вахт\w*/iu)?.[0] || 'Не указано';
     const employer = context.match(/(?:\.\.\.|…)\s+(.{2,180}?)\s+Спасск[\s‑–—-]*Дальн/iu)?.[1]?.trim() || 'Работодатель указан в оригинале';
     const publishedAt = context.match(/(\d{1,2})\s+(января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря)\s+(20\d{2})/iu)?.[0] || null;
-    return [{ id:`gderabota-${card.id}`, name:card.name, employer, salary, city:'Спасск-Дальний', address:'Спасск-Дальний (точный адрес — в оригинале)', experience, education:'Не указано', schedule, description:context.slice(0,1200), source:'ГдеРабота', url:card.url, publishedAt, checkedAt:new Date().toISOString(), warnings:['Агрегированная карточка: проверьте источник и актуальность перед откликом'] }];
+    return [{ id:`gderabota-${card.id}`, name:card.name, employer, salary, city:'Спасск-Дальний', address:'Спасск-Дальний (точный адрес — в оригинале)', experience, education:'Не указано', schedule, description:cleanGdeRabotaDescription(context,card.name).slice(0,1200), source:'ГдеРабота', url:card.url, publishedAt, checkedAt:new Date().toISOString(), warnings:['Агрегированная карточка: проверьте источник и актуальность перед откликом'] }];
   });
 }
 

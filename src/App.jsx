@@ -3,8 +3,11 @@ import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { normalizeSalaryText, salaryNumber } from './salary.mjs';
+import { isNoExperienceVacancy } from './qualification.mjs';
 import { cleanFarpostDescription } from './farpost-clean.mjs';
 import { jobDateValue, publicationInfo } from './date.mjs';
+import { sanitizeTracker, TRACKER_STATUSES } from './tracker.mjs';
+import { sourceLinkLabel } from './source-link.mjs';
 import {
   ArrowDown,
   ArrowUpRight,
@@ -36,23 +39,9 @@ gsap.registerPlugin(ScrollTrigger);
 const BASE = import.meta.env.BASE_URL;
 const PAGE_SIZE = 24;
 const STORE_KEY = 'spassk-jobs-tracker-v1';
-const STATUSES = [
-  'не смотрел',
-  'интересно',
-  'хочу откликнуться',
-  'откликнулся',
-  'позвонил',
-  'жду ответа',
-  'пригласили',
-  'отказ',
-  'не подходит',
-];
-
 const ease = [0.22, 1, 0.36, 1];
 
-const isNoExperience = (job) => /без опыта|не требуется|готовы обуч|обучение|стаж[её]р|ученик/iu.test(`${job.experience} ${job.description}`);
-const hasSalary = (job) => Boolean(job.salary && !/не указан/iu.test(job.salary));
-const noHigherEducation = (job) => !/высш(?:ее|его)|бакалавр|магистр/iu.test(`${job.education} ${job.description}`);
+const hasSalary = (job) => salaryNumber(job.salary) > 0;
 const safeUrl = (value) => {
   try {
     const url = new URL(value);
@@ -64,7 +53,7 @@ const safeUrl = (value) => {
 
 function readTracker() {
   try {
-    return JSON.parse(localStorage.getItem(STORE_KEY) || '{}');
+    return sanitizeTracker(JSON.parse(localStorage.getItem(STORE_KEY) || '{}'));
   } catch {
     return {};
   }
@@ -158,7 +147,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem(STORE_KEY, JSON.stringify(tracker));
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(tracker)); } catch { /* tracker stays usable in memory */ }
   }, [tracker]);
 
   useEffect(() => {
@@ -199,6 +188,7 @@ function App() {
   }, [payload, reduced]);
 
   const jobs = payload?.vacancies || [];
+  const remoteJobs = payload?.remote || [];
   const meta = payload?.meta || {};
   const stats = meta.stats || {};
 
@@ -208,7 +198,7 @@ function App() {
       const haystack = `${job.name} ${job.employer} ${job.description} ${job.address} ${job.source}`.toLocaleLowerCase('ru-RU');
       return (!needle || haystack.includes(needle))
         && (!filters.good || job.score >= 75)
-        && (!filters.noExperience || isNoExperience(job))
+        && (!filters.noExperience || isNoExperienceVacancy(job))
         && (!filters.salary || hasSalary(job))
         && (!filters.favorite || tracker[job.id]?.favorite);
     });
@@ -264,6 +254,7 @@ function App() {
                   id="job-search"
                   ref={searchRef}
                   type="search"
+                  aria-label="Поиск вакансий"
                   value={query}
                   onChange={(event) => setQuery(event.target.value)}
                   placeholder="Должность, компания или навык"
@@ -342,6 +333,15 @@ function App() {
           </div>
         </section>
 
+        {remoteJobs.length > 0 && (
+          <RemoteSection
+            jobs={remoteJobs}
+            tracker={tracker}
+            onFavorite={(job) => patchTracker(job.id,{favorite:!tracker[job.id]?.favorite})}
+            onOpen={setSelected}
+          />
+        )}
+
         <TrustSection meta={meta} stats={stats} tracker={tracker} setTracker={setTracker} />
       </main>
 
@@ -369,6 +369,23 @@ function App() {
         )}
       </AnimatePresence>
     </div>
+  );
+}
+
+function RemoteSection({jobs,tracker,onFavorite,onOpen}) {
+  return (
+    <section className="remote-catalog" id="remote-vacancies">
+      <div className="section-wrap">
+        <BlurIn className="section-heading">
+          <div><span className="eyebrow">Отдельно от города</span><h2>Полностью удалённая работа.</h2></div>
+          <p><strong>{jobs.length}</strong> проверенных удалённых вакансий</p>
+        </BlurIn>
+        <div className="remote-notice"><CircleAlert aria-hidden="true" /><span>Эти вакансии не входят в основной городской список. Перед откликом проверьте работодателя и условия.</span></div>
+        <div className="job-list">
+          {jobs.map((job,index)=><JobRow key={job.id} job={job} index={index} favorite={Boolean(tracker[job.id]?.favorite)} onFavorite={()=>onFavorite(job)} onOpen={()=>onOpen(job)} />)}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -480,7 +497,7 @@ function JobRow({ job, index, favorite, onFavorite, onOpen }) {
         <div className="job-row__title">
           <div className="job-badges">
             {job.score >= 75 && <span className="badge badge--fit">Подходит вам</span>}
-            {isNoExperience(job) && <span className="badge">Без опыта</span>}
+            {isNoExperienceVacancy(job) && <span className="badge">Без опыта</span>}
             {job.isNew && <span className="badge badge--new">Новая</span>}
           </div>
           <h3>{job.name}</h3>
@@ -562,8 +579,8 @@ function JobModal({ job, state, onPatch, onClose }) {
             </div>
             <label>
               <span>Статус</span>
-              <select value={state.status || STATUSES[0]} onChange={(event) => onPatch({ status: event.target.value })}>
-                {STATUSES.map((status) => <option key={status}>{status}</option>)}
+              <select value={state.status || TRACKER_STATUSES[0]} onChange={(event) => onPatch({ status: event.target.value })}>
+                {TRACKER_STATUSES.map((status) => <option key={status}>{status}</option>)}
               </select>
             </label>
             <label>
@@ -574,7 +591,7 @@ function JobModal({ job, state, onPatch, onClose }) {
         </div>
         <div className="modal-footer">
           <div><span>Источник</span><strong>{job.source}</strong></div>
-          <a className="primary-button" href={safeUrl(job.url)} target="_blank" rel="noreferrer">Открыть оригинал <ArrowUpRight /></a>
+          <a className="primary-button" href={safeUrl(job.url)} target="_blank" rel="noreferrer">{sourceLinkLabel(job)} <ArrowUpRight /></a>
         </div>
       </motion.section>
     </motion.div>
@@ -593,7 +610,7 @@ function TrustSection({ meta, stats, tracker, setTracker }) {
     if (!file) return;
     try {
       const parsed = JSON.parse(await file.text());
-      setTracker(parsed.tracker || parsed);
+      setTracker(sanitizeTracker(parsed.tracker || parsed));
     } catch {
       window.alert('Не удалось прочитать JSON трекера');
     }

@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "import": "node scripts/import.mjs",
+    "audit:data": "node scripts/audit-data.mjs",
     "test": "node --test",
     "dev": "vite",
     "build": "vite build && node scripts/copy-static.mjs",

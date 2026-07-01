@@ -1,17 +1,33 @@
 {
-  "generatedAt": "2026-07-01T04:26:40.279Z",
+  "generatedAt": "2026-07-01T09:22:47.524Z",
   "summary": {
-    "new": 1,
-    "changed": 0,
-    "closed": 0
+    "new": 0,
+    "changed": 1,
+    "closed": 1
   },
   "events": [
     {
-      "type": "new",
-      "vacancyId": "farpost-136610638",
-      "name": "Фармацевт",
+      "type": "changed",
+      "vacancyId": "pomogatel-sitter-2026",
+      "name": "Сиделка по уходу за лежачим больным",
+      "source": "Помогатель",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "500 ₽ /час"
+      },
+      "after": {
+        "salary": "500 ₽ за час"
+      },
+      "at": "2026-07-01T09:22:47.524Z"
+    },
+    {
+      "type": "closed",
+      "vacancyId": "farpost-136193656",
+      "name": "Мастер дорожный на Корфовскую",
       "source": "FarPost",
-      "at": "2026-07-01T04:26:40.279Z"
+      "at": "2026-07-01T09:22:47.524Z"
     }
   ]
 }

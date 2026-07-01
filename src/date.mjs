@@ -20,6 +20,10 @@ const vladivostokParts = (value = new Date()) => Object.fromEntries(
 );
 
 const isoDay = (year,month,day) => `${year}-${String(month+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+const validCalendarDate = (year,month,day) => {
+  const date=new Date(Date.UTC(year,month,day,12));
+  return date.getUTCFullYear()===year && date.getUTCMonth()===month && date.getUTCDate()===day ? date : null;
+};
 
 export function parseSourceDate(value) {
   if (!value) return null;
@@ -27,8 +31,10 @@ export function parseSourceDate(value) {
   const russian=text.match(/^(\d{1,2})\s+([а-яё.]+)(?:\s+(20\d{2}))?/iu);
   if (russian) {
     const month=MONTHS[russian[2].replace(/\.$/u,'')];
-    if (month !== undefined) return new Date(Date.UTC(Number(russian[3] || new Date().getUTCFullYear()),month,Number(russian[1]),12));
+    if (month !== undefined) return validCalendarDate(Number(russian[3] || vladivostokParts().year),month,Number(russian[1]));
   }
+  const iso=text.match(/^(\d{4})-(\d{2})-(\d{2})(?:$|t)/iu);
+  if (iso && !validCalendarDate(Number(iso[1]),Number(iso[2])-1,Number(iso[3]))) return null;
   const parsed=new Date(value);
   return Number.isNaN(parsed.getTime()) ? null : parsed;
 }
@@ -41,6 +47,7 @@ export function parseFarpostPublishedAt(text, now = new Date()) {
     const base=new Date(Date.UTC(current.year,current.month-1,current.day,12));
     if (relative[1].toLocaleLowerCase('ru-RU') === 'вчера') base.setUTCDate(base.getUTCDate()-1);
     const date=isoDay(base.getUTCFullYear(),base.getUTCMonth(),base.getUTCDate());
+    if(relative[2] && (Number(relative[2])>23 || Number(relative[3])>59)) return null;
     return relative[2] ? `${date}T${String(relative[2]).padStart(2,'0')}:${relative[3]}:00+10:00` : date;
   }
 
@@ -53,10 +60,12 @@ export function parseFarpostPublishedAt(text, now = new Date()) {
   // as "2035" must not become the publication year.
   const hasCredibleYear=Boolean(explicitYear && explicitYear <= current.year);
   let year=hasCredibleYear ? explicitYear : current.year;
-  const candidate=new Date(Date.UTC(year,month,Number(absolute[1]),12));
+  const day=Number(absolute[1]);
+  const candidate=validCalendarDate(year,month,day);
+  if(!candidate) return null;
   const today=new Date(Date.UTC(current.year,current.month-1,current.day,12));
   if (!hasCredibleYear && candidate.getTime() > today.getTime()+31*86400000) year-=1;
-  return isoDay(year,month,Number(absolute[1]));
+  return isoDay(year,month,day);
 }
 
 export function plausiblePublishedDate(value, now = new Date()) {

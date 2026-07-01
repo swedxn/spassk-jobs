@@ -30,7 +30,7 @@ export function parseTelegramMessages(html, channel, now = Date.now()) {
     const signaled = JOB_RX.test(text) || (DEDICATED.has(channel) && ROLE_RX.test(text));
     if (!post || !text || !signaled || !ROLE_RX.test(text) || SCAM_RX.test(text)) continue;
     if (publishedAt && now - Date.parse(publishedAt) > MAX_AGE_MS) continue;
-    if (channel !== 'Vakansii_Spasske_dalnem_RF' && !/спасск[\s‑–—-]*дальн/iu.test(text)) continue;
+    if (!/спасск[\s‑–—-]*дальн/iu.test(text)) continue;
     const lines=text.split(/\n|[.!?]\s+/).map(x=>x.trim()).filter(Boolean);
     const title=(lines.find(line=>JOB_RX.test(line))||text.split(/\s+(?=(?:\d[\d\s]*(?:[–—-]\s*\d[\d\s]*)?\s*(?:₽|руб)|Заработная\s+плата|Обязанности:|Требования:|Описание:))/iu)[0]||lines[0]||'Вакансия из Telegram').slice(0,150);
     const pay=text.match(/(?:от|до)?\s*\d[\d\s]*(?:[–—-]\s*\d[\d\s]*)?\s*(?:₽|руб)/iu)?.[0]||'Не указана';

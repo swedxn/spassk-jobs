@@ -744,6 +744,28 @@ svg {
   font-size: 13px;
 }
 
+.remote-catalog {
+  padding: 110px 0;
+  background: #fff;
+  border-top: 1px solid var(--line);
+}
+
+.remote-notice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 22px;
+  color: #6e6e73;
+  font-size: 13px;
+}
+
+.remote-notice svg {
+  width: 17px;
+  height: 17px;
+  color: #ff9f0a;
+  flex: 0 0 auto;
+}
+
 .city-notice svg {
   width: 17px;
   height: 17px;

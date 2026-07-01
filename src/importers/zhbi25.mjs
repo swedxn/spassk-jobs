@@ -7,7 +7,7 @@ export function parseZhbi25(html) {
   const headings=[...section.matchAll(/<h3\b[^>]*>([\s\S]*?)<\/h3>/giu)];
   return headings.flatMap((match,index)=>{
     const heading=stripHtml(match[1]);
-    const title=heading.replace(/\s*(?:\(|\b)от\s+\d[\d\s]*\s*р\)?\s*$/iu,'').trim();
+    const title=heading.replace(/\s+(?:\(\s*)?от\s+\d[\d\s]*\s*р\)?\s*$/iu,'').trim();
     if(!title || title.length>180) return [];
     const fragment=section.slice(match.index,headings[index+1]?.index ?? section.length);
     const description=stripHtml(fragment).replace(heading,'').trim().slice(0,1400);

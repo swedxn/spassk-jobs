@@ -35,7 +35,9 @@ const sourceMatches = {
   'FarPost': source => source === 'FarPost',
   'Публичный Telegram': source => source.startsWith('Telegram @'),
   'ГдеРабота': source => source === 'ГдеРабота',
-  'Спасский завод ЖБИ': source => source === 'Спасский завод ЖБИ — сайт работодателя'
+  'Спасский завод ЖБИ': source => source === 'Спасский завод ЖБИ — сайт работодателя',
+  'Rabota1000': source => source === 'Rabota1000',
+  'ЦентрРабота': source => source === 'ЦентрРабота'
 };
 for (const run of runs) {
   const matches=sourceMatches[run.source.name];
@@ -53,15 +55,14 @@ for (const run of runs) {
 for (const run of runs.filter(run=>run.source.status==='blocked')) {
   const matches=sourceMatches[run.source.name]; if(!matches) continue;
   const retained=(previousData.vacancies||[]).filter(v=>matches(v.source) && freshSnapshot(v));
-  if(retained.length){ collected.push(...retained.map(v=>({...v,warnings:[...(v.warnings||[]),'Источник временно недоступен; сохранён последний успешный срез']}))); run.source.retained=retained.length; }
+  if(retained.length){ collected.push(...retained.map(v=>({...v,warnings:[...new Set([...(v.warnings||[]),'Источник временно недоступен; сохранён последний успешный срез'])]}))); run.source.retained=retained.length; }
 }
 
 const curatedAll = await read('data/curated-public.json');
 const farpostRun = runs.find(run => run.source.name === 'FarPost');
-const liveSources = new Set(runs.filter(run=>run.rows.length).map(run=>run.source.name));
 const availableSources = new Set(runs.filter(run=>run.rows.length || run.source.retained).map(run=>run.source.name));
 const curatedFresh = curatedAll.filter(freshSnapshot);
-const curated = curatedFresh.filter(row => !(row.source === 'FarPost' && availableSources.has('FarPost')) && !(row.source === 'ГдеРабота' && availableSources.has('ГдеРабота')) && !(row.source === 'Спасский завод ЖБИ — сайт работодателя' && liveSources.has('Спасский завод ЖБИ')));
+const curated = curatedFresh.filter(row => !(row.source === 'FarPost' && availableSources.has('FarPost')) && !(row.source === 'ГдеРабота' && availableSources.has('ГдеРабота')) && !(row.source === 'Спасский завод ЖБИ — сайт работодателя' && availableSources.has('Спасский завод ЖБИ')));
 collected.push(...curated);
 sources.push({ name:'Проверенные публичные страницы работодателей', mode:'curated', status:'ok', found:curated.length, expired:curatedAll.length-curatedFresh.length, note:farpostRun?.rows.length ? 'Ручной FarPost-срез отключён, так как живой импорт успешен' : 'Включён страховочный FarPost-срез; снимки старше 14 дней не показываются' });
 
