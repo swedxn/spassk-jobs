@@ -1,33 +1,29 @@
 {
-  "generatedAt": "2026-07-01T09:22:47.524Z",
-  "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Работа России, FarPost, ГдеРабота, Спасский завод ЖБИ, Rabota1000, ЦентрРабота",
+  "generatedAt": "2026-07-01T09:24:30.066Z",
+  "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Rabota1000, ЦентрРабота",
   "fallback": false,
   "sourcesChecked": 39,
-  "sourcesConnected": 3,
+  "sourcesConnected": 7,
   "sourceRuns": [
     {
       "name": "HeadHunter",
       "mode": "auto",
       "status": "blocked",
       "found": 0,
-      "error": "HH /areas: fetch failed",
+      "error": "HH /vacancies HTTP 403",
       "retained": 25
     },
     {
       "name": "Работа России",
       "mode": "auto",
-      "status": "blocked",
-      "found": 0,
-      "error": "Работа России недоступна: fetch failed; fetch failed",
-      "retained": 34
+      "status": "ok",
+      "found": 66
     },
     {
       "name": "FarPost",
       "mode": "auto",
-      "status": "blocked",
-      "found": 0,
-      "error": "robots.txt недоступен — импорт отменён безопасно: fetch failed",
-      "retained": 133
+      "status": "ok",
+      "found": 191
     },
     {
       "name": "Публичный Telegram",
@@ -38,32 +34,28 @@
     {
       "name": "ГдеРабота",
       "mode": "auto",
-      "status": "blocked",
-      "found": 0,
-      "error": "robots.txt недоступен — импорт отменён безопасно: fetch failed",
-      "retained": 135
+      "status": "ok",
+      "found": 146
     },
     {
       "name": "Спасский завод ЖБИ",
       "mode": "auto",
-      "status": "blocked",
-      "found": 0,
-      "error": "robots.txt недоступен — импорт отменён безопасно: fetch failed",
-      "retained": 3
+      "status": "ok",
+      "found": 3
     },
     {
       "name": "Rabota1000",
       "mode": "auto",
       "status": "blocked",
       "found": 0,
-      "error": "robots.txt недоступен — импорт отменён безопасно: fetch failed"
+      "error": "robots.txt запрещает путь /spassk-dalni"
     },
     {
       "name": "ЦентрРабота",
       "mode": "auto",
       "status": "blocked",
       "found": 0,
-      "error": "robots.txt недоступен — импорт отменён безопасно: fetch failed"
+      "error": "robots.txt недоступен — импорт отменён безопасно: centrrabota.ru HTTP 403"
     },
     {
       "name": "Проверенные публичные страницы работодателей",
@@ -71,7 +63,7 @@
       "status": "ok",
       "found": 11,
       "expired": 0,
-      "note": "Включён страховочный FarPost-срез; снимки старше 14 дней не показываются"
+      "note": "Ручной FarPost-срез отключён, так как живой импорт успешен"
     },
     {
       "name": "HeadHunter — последний проверенный срез",
@@ -80,29 +72,29 @@
       "found": 28
     }
   ],
-  "raw": 390,
-  "accepted": 350,
+  "raw": 491,
+  "accepted": 353,
   "remote": 0,
   "rejected": {
-    "otherCity": 1,
-    "imprecise": 0,
+    "otherCity": 35,
+    "imprecise": 30,
     "remote": 0,
-    "duplicate": 39
+    "duplicate": 73
   },
   "stats": {
-    "active": 350,
+    "active": 353,
     "noExperience": 109,
-    "noHigherEducation": 320,
-    "withSalary": 334,
-    "goodFit": 159,
-    "newVacancies": 0,
-    "changedVacancies": 1,
-    "strongOpportunities": 1
+    "noHigherEducation": 323,
+    "withSalary": 339,
+    "goodFit": 160,
+    "newVacancies": 8,
+    "changedVacancies": 14,
+    "strongOpportunities": 3
   },
   "changes": {
-    "new": 0,
-    "changed": 1,
-    "closed": 1
+    "new": 8,
+    "changed": 14,
+    "closed": 5
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
 }
