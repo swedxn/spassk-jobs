@@ -32,7 +32,6 @@ import {
   Sparkles,
   Sun,
   Upload,
-  Wifi,
   X,
 } from 'lucide-react';
 
@@ -320,11 +319,6 @@ function App() {
               )}
             </AnimatePresence>
 
-            <div className="city-notice">
-              <BadgeCheck aria-hidden="true" />
-              <span>Показаны только вакансии в Спасске-Дальнем. Вакансии из других городов скрыты.</span>
-            </div>
-
             {filtered.length ? (
               <motion.div className="job-list" layout>
                 <AnimatePresence mode="popLayout">
@@ -418,9 +412,9 @@ function Header({ scrolled, theme, onTheme, onSearch }) {
   return (
     <header className={`site-header ${scrolled ? 'site-header--scrolled' : ''}`}>
       <nav className="nav-wrap" aria-label="Главная навигация">
-        <a className="brand" href="#top" aria-label="Работа в Спасске-Дальнем — на главную">
-          <span className="brand-mark">СД</span>
-          <span>Работа рядом</span>
+        <a className="brand" href="#top" aria-label="Точка — вакансии Спасска-Дальнего, на главную">
+          <img className="brand-mark" src={`${BASE}assets/brand-mark.webp`} alt="" />
+          <span>Точка</span>
         </a>
         <div className="nav-links">
           <a href="#vacancies">Вакансии</a>
@@ -457,17 +451,14 @@ function Hero({ meta, stats, onStart }) {
       <div className="hero-orb hero-orb--two" aria-hidden="true" />
       <div className="hero-content">
         <motion.div className="live-pill" initial={reduced ? false : { opacity: 0, y: -12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-          <span />
-          База обновляется каждые 3 часа
+          <span className="live-orbit" aria-hidden="true"><i /></span>
+          Свежие вакансии каждые 3 часа
         </motion.div>
         <motion.h1 initial={reduced ? false : { opacity: 0, y: 40, filter: 'blur(18px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 1.1, ease }}>
-          Работа, которая<br />действительно <span>рядом.</span>
+          Следующий шаг —<br /><span>здесь.</span>
         </motion.h1>
-        <motion.p className="hero-copy" initial={reduced ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.22, ease }}>
-          Все найденные вакансии Спасска-Дальнего — без Владивостока, вахт, переезда и лишнего шума.
-        </motion.p>
         <motion.div className="hero-actions" initial={reduced ? false : { opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.36, ease }}>
-          <button className="primary-button" type="button" onClick={onStart}>Смотреть вакансии</button>
+          <button className="primary-button" type="button" onClick={onStart}>Найти свою</button>
         </motion.div>
 
         <motion.div className="hero-product" initial={reduced ? false : { opacity: 0, y: 70, scale: 0.94 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 1.25, delay: 0.25, ease }}>
@@ -476,7 +467,7 @@ function Hero({ meta, stats, onStart }) {
               <span className="product-kicker">Спасск-Дальний</span>
               <strong><CountUp value={stats.active || 0} /> вакансий</strong>
             </div>
-            <span className="product-status"><Wifi /> Онлайн</span>
+            <span className="product-status"><span className="status-radar" aria-hidden="true"><i /></span> В эфире</span>
           </div>
           <div className="product-search"><Search /> Должность, компания или навык <kbd>⌘ K</kbd></div>
           <div className="metric-grid">
@@ -487,7 +478,6 @@ function Hero({ meta, stats, onStart }) {
           </div>
           <div className="product-footer">
             <span><RefreshCw /> Обновлено {formatUpdate(meta.generatedAt)}</span>
-            <span>Только точный город <Check /></span>
           </div>
         </motion.div>
       </div>
@@ -591,10 +581,7 @@ function JobModal({ job, state, onPatch, onClose }) {
         exit={reduced ? { opacity: 0 } : { opacity: 0, y: 26, scale: 0.97, filter: 'blur(8px)' }}
         transition={{ duration: 0.52, ease }}
       >
-        <div className="modal-header">
-          <span><i /> Вакансия в Спасске-Дальнем</span>
-          <button data-modal-close type="button" onClick={onClose} aria-label="Закрыть"><X /></button>
-        </div>
+        <button className="modal-close" data-modal-close type="button" onClick={onClose} aria-label="Закрыть"><X /></button>
         <div className="modal-body">
           <div className="modal-hero">
             <div className="modal-score"><Sparkles /> {job.score}% совпадение · {job.fit}</div>
@@ -755,7 +742,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="section-wrap footer-inner">
-        <div><span className="brand-mark">СД</span><strong>Работа рядом</strong></div>
+        <div><img className="brand-mark" src={`${BASE}assets/brand-mark.webp`} alt="" /><strong>Точка</strong></div>
         <p>Бесплатный некоммерческий агрегатор вакансий Спасска-Дальнего.</p>
         <a href="#top">Наверх <ArrowUpRight /></a>
       </div>
@@ -766,9 +753,9 @@ function Footer() {
 function LoadingState() {
   return (
     <div className="loading-state">
-      <div className="loading-mark">СД</div>
+      <div className="loading-mark"><img src={`${BASE}assets/brand-mark.webp`} alt="Точка" /></div>
       <div className="loading-line"><span /></div>
-      <p>Собираем вакансии рядом</p>
+      <p>Обновляем вакансии</p>
     </div>
   );
 }
