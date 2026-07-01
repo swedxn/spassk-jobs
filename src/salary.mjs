@@ -1,6 +1,7 @@
 const AMOUNT_SOURCE = String.raw`(?:\d{1,3}(?:[\s\u00a0\u202f]\d{3})+|\d{4,9})`;
 const SALARY_RX = new RegExp(String.raw`(?:^|[^\d])(?:(от|до)\s*)?(${AMOUNT_SOURCE})(?:\s*[–—-]\s*(${AMOUNT_SOURCE}))?\s*(₽|руб(?:\.|ля|лей)?|р\b)?`, 'iu');
 const EMBEDDED_SALARY_RX = new RegExp(String.raw`(?:от|до)?\s*${AMOUNT_SOURCE}(?:\s*[–—-]\s*${AMOUNT_SOURCE})?\s*(?:₽|руб(?:\.|ля|лей)?|р\b)`, 'iu');
+const LEADING_SALARY_RX = new RegExp(String.raw`^(?:от|до)?\s*${AMOUNT_SOURCE}(?:\s*[–—-]\s*${AMOUNT_SOURCE})?\s*(?:₽|руб(?:\.|ля|лей)?|р\b)?\s*`, 'iu');
 
 const amount = value => Number(String(value || '').replace(/\D/g, '')) || 0;
 const formatAmount = value => new Intl.NumberFormat('ru-RU').format(value).replace(/\u00a0/g, ' ');
@@ -30,4 +31,8 @@ export function salaryNumber(value) {
 export function extractSalaryText(value) {
   const match = String(value ?? '').match(EMBEDDED_SALARY_RX);
   return match ? normalizeSalaryText(match[0]) : 'Не указана';
+}
+
+export function stripLeadingSalary(value) {
+  return String(value ?? '').replace(LEADING_SALARY_RX, '').trim();
 }

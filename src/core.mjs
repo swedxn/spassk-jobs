@@ -1,5 +1,6 @@
 import crypto from 'node:crypto';
 import { normalizeSalaryText } from './salary.mjs';
+import { cleanFarpostDescription } from './farpost-clean.mjs';
 
 export { normalizeSalaryText } from './salary.mjs';
 
@@ -38,8 +39,9 @@ export function normalizeVacancy(raw) {
   const experience = clean(raw.experience?.name || raw.experience || 'Не указано');
   const education = clean(raw.education || 'Не указано');
   const schedule = clean(raw.schedule?.name || raw.schedule || 'Не указано');
-  const description = clean(raw.description || raw.snippet?.requirement || raw.snippet?.responsibility || 'Подробности — в оригинале вакансии.');
   const source = clean(raw.source?.name || raw.source || 'Источник');
+  const rawDescription = clean(raw.description || raw.snippet?.requirement || raw.snippet?.responsibility || 'Подробности — в оригинале вакансии.');
+  const description = source === 'FarPost' ? cleanFarpostDescription(rawDescription,name) : rawDescription;
   const candidateUrl = raw.alternate_url || raw.url || raw.vac_url || '#';
   let url='#';
   try { const parsed=new URL(candidateUrl); if (['http:','https:'].includes(parsed.protocol)) url=parsed.href; } catch { /* invalid and unsafe URLs stay disabled */ }

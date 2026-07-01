@@ -3,6 +3,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { normalizeSalaryText, salaryNumber } from './salary.mjs';
+import { cleanFarpostDescription } from './farpost-clean.mjs';
 import {
   ArrowDown,
   ArrowUpRight,
@@ -533,7 +534,7 @@ function JobModal({ job, state, onPatch, onClose }) {
 
           <div className="modal-section">
             <h3>О вакансии</h3>
-            <p className="description">{job.description}</p>
+            <p className="description">{job.source === 'FarPost' ? cleanFarpostDescription(job.description, job.name) : job.description}</p>
           </div>
 
           {job.reasons?.length > 0 && (
