@@ -1,31 +1,657 @@
 {
-  "generatedAt": "2026-06-30T23:24:16.593Z",
+  "generatedAt": "2026-07-01T01:31:03.555Z",
   "summary": {
-    "new": 3,
-    "changed": 10,
+    "new": 1,
+    "changed": 264,
     "closed": 2
   },
   "events": [
     {
-      "type": "new",
-      "vacancyId": "farpost-122041717",
-      "name": "Менеджер по работе с клиентами",
+      "type": "changed",
+      "vacancyId": "trudvsem-340133d8-5263-11f1-b37c-614806db9c9b",
+      "name": "ведущий специалист 1 разряда отдела организации работы комиссии по делам несовершеннолетних и защите их прав",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 50000"
+      },
+      "after": {
+        "salary": "от 50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-1325b668-5261-11f1-b37c-614806db9c9b",
+      "name": "ведущий специалист 1 разряда управления имущественных отношений",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 58000"
+      },
+      "after": {
+        "salary": "от 58 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-d9e99fc8-7113-11f1-b55b-1f6a79e1a270",
+      "name": "Технический руководитель",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 50000"
+      },
+      "after": {
+        "salary": "от 50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-cdeca718-7110-11f1-8ebd-35060bb86e5d",
+      "name": "Инженер-метролог",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 40000"
+      },
+      "after": {
+        "salary": "от 40 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-bcc39ca8-21a6-11f1-9ac8-d164183f71d4",
+      "name": "Уборщик территорий",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 40640"
+      },
+      "after": {
+        "salary": "от 40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-85065168-219a-11f1-9ac8-d164183f71d4",
+      "name": "Уборщик территорий",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 40640"
+      },
+      "after": {
+        "salary": "от 40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-c0b6f388-684a-11f1-a95e-05a97d193f2d",
+      "name": "учитель информатики",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 50000"
+      },
+      "after": {
+        "salary": "от 50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-8e50052f-3f92-11f1-af40-15277f213853",
+      "name": "учитель географии",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 65000"
+      },
+      "after": {
+        "salary": "от 65 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-316ee080-62c7-11f1-875d-37533a592c34",
+      "name": "Уборщик производственных и служебных помещений",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 40640"
+      },
+      "after": {
+        "salary": "от 40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-4cf3cd68-1e71-11f1-99d5-5f9d65125ca1",
+      "name": "Уборщик территорий",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 40640"
+      },
+      "after": {
+        "salary": "от 40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-428b2f6d-3890-11f1-889f-09fcf7d79153",
+      "name": "Социальный педагог",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 55000"
+      },
+      "after": {
+        "salary": "от 55 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-4e0ffccd-3891-11f1-8817-f343e38ace6a",
+      "name": "учитель информатики",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 65000"
+      },
+      "after": {
+        "salary": "от 65 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-82278f0c-3891-11f1-8817-f343e38ace6a",
+      "name": "учитель истории",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 65000"
+      },
+      "after": {
+        "salary": "от 65 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-e6ea0aef-3890-11f1-889f-09fcf7d79153",
+      "name": "учитель математики",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 65000"
+      },
+      "after": {
+        "salary": "от 65 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-f744f70f-2bd0-11f1-b896-f7acc8f2fb19",
+      "name": "учитель-логопед",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 45000"
+      },
+      "after": {
+        "salary": "от 45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-49efdf58-241b-11f1-ba68-e7fd5bf5650b",
+      "name": "Уборщик территорий",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 40640"
+      },
+      "after": {
+        "salary": "от 40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-81feaaf3-6abd-11f1-bc65-eb3e74f52215",
+      "name": "уборщик служебных помещений",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 40640"
+      },
+      "after": {
+        "salary": "от 40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-93e8f758-688a-11f1-87b6-774ea53b3c76",
+      "name": "Учитель Географии",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 40640"
+      },
+      "after": {
+        "salary": "от 40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-42671238-688b-11f1-9198-073774f6909c",
+      "name": "Учитель математики",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 45000"
+      },
+      "after": {
+        "salary": "от 45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-fd2a0498-5f14-11f1-aaeb-750452cc88fa",
+      "name": "Дефектолог/ Логопед-дефектолог",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 48700"
+      },
+      "after": {
+        "salary": "от 48 700 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-56fd3470-234b-11f1-8d48-d52d8860c0e6",
+      "name": "Уборщик территорий",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 40640"
+      },
+      "after": {
+        "salary": "от 40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-423df678-21aa-11f1-9ac8-d164183f71d4",
+      "name": "Уборщик территорий",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 40640"
+      },
+      "after": {
+        "salary": "от 40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-c1da7248-5e41-11f1-aaeb-750452cc88fa",
+      "name": "Учитель начальных классов",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 42000"
+      },
+      "after": {
+        "salary": "от 42 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-fb753118-5e42-11f1-aaeb-750452cc88fa",
+      "name": "воспитатель",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 42000"
+      },
+      "after": {
+        "salary": "от 42 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-bcf8ae78-5e43-11f1-aaeb-750452cc88fa",
+      "name": "учитель химии",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 50000"
+      },
+      "after": {
+        "salary": "от 50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-50fa15f8-5e44-11f1-aaeb-750452cc88fa",
+      "name": "учитель технологии",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 45000"
+      },
+      "after": {
+        "salary": "от 45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-9d1ef428-5e42-11f1-aaeb-750452cc88fa",
+      "name": "учитель физики",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 50000"
+      },
+      "after": {
+        "salary": "от 50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-9b11a420-0870-11f1-b61c-b780d0024235",
+      "name": "Начальник отдела (управления кадрами и трудовыми отношениями)",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 48278"
+      },
+      "after": {
+        "salary": "от 48 278 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-acec4c39-2d65-11f1-8ac2-61ac2858f806",
+      "name": "ведущий инженер по безопасности",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 47067"
+      },
+      "after": {
+        "salary": "от 47 067 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-575e53e7-7109-11f1-8093-61b073a087e6",
+      "name": "Руководитель центра обучения",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 50000"
+      },
+      "after": {
+        "salary": "от 50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-73b8bae0-5fbd-11f1-ae65-05b28ac604d6",
+      "name": "Рабочий по комплексному обслуживанию и ремонту зданий",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 40640"
+      },
+      "after": {
+        "salary": "от 40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-b43d44ef-7107-11f1-b55b-1f6a79e1a270",
+      "name": "Директор по персоналу / HR-директор",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 45000"
+      },
+      "after": {
+        "salary": "от 45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-f0cac904-6914-11f1-9c38-bd48021b08e2",
+      "name": "Монтер пути",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 73000"
+      },
+      "after": {
+        "salary": "от 73 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "trudvsem-983bf093-710b-11f1-8ebd-35060bb86e5d",
+      "name": "Методист",
+      "source": "Работа России",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "от 40000"
+      },
+      "after": {
+        "salary": "от 40 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-126422391",
+      "name": "SMM-специалист/Менеджер",
       "source": "FarPost",
-      "at": "2026-06-30T23:24:16.593Z"
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "15 000 – 80 000 ₽"
+      },
+      "after": {
+        "salary": "15 000–80 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-129727590",
+      "name": "Администратор ПВЗ OZON",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "2 000 – 3 500 ₽"
+      },
+      "after": {
+        "salary": "2 000–3 500 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-104544094",
+      "name": "Требуется Мастер по Наращиванию ресниц (Лашмейкер, Лешмейкер) в VP Studio",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "80 000 – 150 000 ₽"
+      },
+      "after": {
+        "salary": "80 000–150 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
       "type": "new",
-      "vacancyId": "farpost-136195827",
-      "name": "Инженер-конструктор КМД",
+      "vacancyId": "farpost-133719175",
+      "name": "Уборщица, уборщик",
       "source": "FarPost",
-      "at": "2026-06-30T23:24:16.593Z"
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
-      "type": "new",
-      "vacancyId": "farpost-128542215",
-      "name": "Электрогазосварщик",
+      "type": "changed",
+      "vacancyId": "farpost-127179800",
+      "name": "Водитель автобуса",
       "source": "FarPost",
-      "at": "2026-06-30T23:24:16.593Z"
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 000 – 160 000 ₽"
+      },
+      "after": {
+        "salary": "60 000–160 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-124677476",
+      "name": "Инструктор-кинолог кинологического отделения",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "48 000 – 80 000 ₽"
+      },
+      "after": {
+        "salary": "48 000–80 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-105840476",
+      "name": "Продавец-кассир (р-он Цемзавода, р-он Стоматологии)",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "55 774 – 63 543 ₽"
+      },
+      "after": {
+        "salary": "55 774–63 543 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
       "type": "changed",
@@ -36,12 +662,44 @@
         "employer"
       ],
       "before": {
-        "employer": "ООО \"ЧОА\"Вымпел\" вчера в 11:15 3493"
-      },
-      "after": {
         "employer": "ООО \"ЧОА\"Вымпел\" вчера в 11:15 3500"
       },
-      "at": "2026-06-30T23:24:16.593Z"
+      "after": {
+        "employer": "ООО \"ЧОА\"Вымпел\" вчера в 11:15 3503"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-135472146",
+      "name": "Оператор РБУ",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 000 – 100 000 ₽"
+      },
+      "after": {
+        "salary": "60 000–100 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-121448734",
+      "name": "Продавец-консультант",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 000 – 90 000 ₽"
+      },
+      "after": {
+        "salary": "40 000–90 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
       "type": "changed",
@@ -52,12 +710,255 @@
         "employer"
       ],
       "before": {
-        "employer": "АО \"РЖД\" вчера в 08:53 105"
-      },
-      "after": {
         "employer": "АО \"РЖД\" вчера в 08:53 108"
       },
-      "at": "2026-06-30T23:24:16.593Z"
+      "after": {
+        "employer": "АО \"РЖД\" вчера в 08:53 110"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-117587701",
+      "name": "Управляющий магазином",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 – 100 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–100 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-104396837",
+      "name": "Заместитель управляющего, старший продавец, продавец",
+      "source": "FarPost",
+      "fields": [
+        "employer",
+        "salary"
+      ],
+      "before": {
+        "employer": "ООО \"Альбион 2002\" 29 июня 4512",
+        "salary": "60 774 – 68 543 ₽"
+      },
+      "after": {
+        "employer": "ООО \"Альбион 2002\" 29 июня 4514",
+        "salary": "60 774–68 543 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-133078554",
+      "name": "Охранник / стрелок / контролер КПП",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "110 000 – 120 000 ₽"
+      },
+      "after": {
+        "salary": "110 000–120 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-125446683",
+      "name": "Риелтор, агент по недвижимости",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "30 000 – 100 000 ₽"
+      },
+      "after": {
+        "salary": "30 000–100 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136122544",
+      "name": "Водитель (категории С, СЕ)",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "70 000 – 250 000 ₽"
+      },
+      "after": {
+        "salary": "70 000–250 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-107106242",
+      "name": "Младший инспектор отдела охраны, кинолог",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 000 – 70 000 ₽"
+      },
+      "after": {
+        "salary": "40 000–70 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-130891662",
+      "name": "Водитель такси .Яндекс,Везет,Uber Без Самозанятости.Без выписки , Подключаем всех !",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "120 000 – 250 000 ₽"
+      },
+      "after": {
+        "salary": "120 000–250 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-98893548",
+      "name": "Водитель-курьер",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "100 – 5 000 ₽"
+      },
+      "after": {
+        "salary": "5 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136517001",
+      "name": "Бариста",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "27 000 – 38 000 ₽"
+      },
+      "after": {
+        "salary": "27 000–38 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-112616356",
+      "name": "Пекарь (г. Спасск-Дальний, ул. Вокзальная, д. 45)",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "56 200 – 61 800 ₽"
+      },
+      "after": {
+        "salary": "56 200–61 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-134410532",
+      "name": "Директор магазина - партнер (г. Спасск-Дальний, ул Парковая, д 64 )",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 700 – 100 000 ₽"
+      },
+      "after": {
+        "salary": "60 700–100 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-124694458",
+      "name": "Администратор магазина (ул. Советская, 132а)",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "64 600 – 80 800 ₽"
+      },
+      "after": {
+        "salary": "64 600–80 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-127554708",
+      "name": "Пекарь (ул. Краснознамённая, 31)",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "56 200 – 61 800 ₽"
+      },
+      "after": {
+        "salary": "56 200–61 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-125719420",
+      "name": "Администратор магазина (ул. Парковая, 64)",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "64 600 – 80 800 ₽"
+      },
+      "after": {
+        "salary": "64 600–80 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-129313637",
+      "name": "Оператор фронтального погрузчика",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 000 – 50 000 ₽"
+      },
+      "after": {
+        "salary": "40 000–50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
       "type": "changed",
@@ -68,28 +969,60 @@
         "employer"
       ],
       "before": {
-        "employer": "ПАО \"ВинЛаб\" 25 июня 329"
-      },
-      "after": {
         "employer": "ПАО \"ВинЛаб\" 25 июня 330"
       },
-      "at": "2026-06-30T23:24:16.593Z"
+      "after": {
+        "employer": "ПАО \"ВинЛаб\" 25 июня 331"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
       "type": "changed",
-      "vacancyId": "farpost-126851422",
-      "name": "Сторож",
+      "vacancyId": "farpost-130215526",
+      "name": "Электромонтер связи и радиофикации",
       "source": "FarPost",
       "fields": [
-        "employer"
+        "salary"
       ],
       "before": {
-        "employer": "ИП Папикян АА 25 июня 1601"
+        "salary": "70 000 – 80 000 ₽"
       },
       "after": {
-        "employer": "ИП Папикян АА 25 июня 1602"
+        "salary": "70 000–80 000 ₽"
       },
-      "at": "2026-06-30T23:24:16.593Z"
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-134108484",
+      "name": "Повар",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 000 – 80 000 ₽"
+      },
+      "after": {
+        "salary": "60 000–80 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-133670756",
+      "name": "Кадастровый инженер, помощник кадастрового инженера",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 000 – 80 000 ₽"
+      },
+      "after": {
+        "salary": "60 000–80 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
       "type": "changed",
@@ -100,28 +1033,268 @@
         "address"
       ],
       "before": {
-        "address": "Спасск-Дальний, Спасск-Дальний, улица Парковая 29 24 июня 705"
-      },
-      "after": {
         "address": "Спасск-Дальний, Спасск-Дальний, улица Парковая 29 24 июня 707"
       },
-      "at": "2026-06-30T23:24:16.593Z"
+      "after": {
+        "address": "Спасск-Дальний, Спасск-Дальний, улица Парковая 29 24 июня 708"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
       "type": "changed",
-      "vacancyId": "farpost-119856347",
-      "name": "Плотник. Строитель",
+      "vacancyId": "farpost-118394146",
+      "name": "Повар в детский лагерь на летний период",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "90 000 – 110 000 ₽"
+      },
+      "after": {
+        "salary": "90 000–110 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136476567",
+      "name": "Менеджер по логистике",
       "source": "FarPost",
       "fields": [
         "employer"
       ],
       "before": {
-        "employer": "ООО \"КОВЧЕГ\" 21 июня 2393"
+        "employer": "ООО \"ФГ-Логистика\" 24 июня 174"
       },
       "after": {
-        "employer": "ООО \"КОВЧЕГ\" 21 июня 2394"
+        "employer": "ООО \"ФГ-Логистика\" 24 июня 177"
       },
-      "at": "2026-06-30T23:24:16.593Z"
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136475894",
+      "name": "Медсестра младшая, медбрат младший",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "53 914 – 58 033 ₽"
+      },
+      "after": {
+        "salary": "53 914–58 033 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-108614800",
+      "name": "Водитель категорий В",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "ООО \"РесурсТранс\" 24 июня 7860"
+      },
+      "after": {
+        "employer": "ООО \"РесурсТранс\" 24 июня 7864"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-66593145",
+      "name": "Официант",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "20 000 – 30 000 ₽"
+      },
+      "after": {
+        "salary": "20 000–30 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-84753874",
+      "name": "Уборщик, мойщик посуды",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "29 000 – 35 000 ₽"
+      },
+      "after": {
+        "salary": "29 000–35 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-133148010",
+      "name": "Продавец-консультант ул. Советская д. 79",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "ПАО \"ВинЛаб\" 23 июня 731"
+      },
+      "after": {
+        "employer": "ПАО \"ВинЛаб\" 23 июня 732"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136462212",
+      "name": "Специалист операционно-кассового отдела",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "47 300 – 54 900 ₽"
+      },
+      "after": {
+        "salary": "47 300–54 900 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136462134",
+      "name": "Грузчик-экспедитор",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 – 55 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–55 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-135408228",
+      "name": "Водитель-экспедитор категории СЕ",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "ООО Русагро-Ресурс 23 июня 578"
+      },
+      "after": {
+        "employer": "ООО Русагро-Ресурс 23 июня 579"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136077826",
+      "name": "Санитар",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 000 – 45 000 ₽"
+      },
+      "after": {
+        "salary": "40 000–45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-133279671",
+      "name": "Офис менеджер коммерческого отдела",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "100 000 – 150 000 ₽"
+      },
+      "after": {
+        "salary": "100 000–150 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-133537031",
+      "name": "Заместитель коммерческого директора",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "150 000 – 200 000 ₽"
+      },
+      "after": {
+        "salary": "150 000–200 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136442009",
+      "name": "Повар-универсал",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "4 500 – 6 000 ₽"
+      },
+      "after": {
+        "salary": "4 500–6 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-135503443",
+      "name": "Электромеханик ШЧ-6",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "80 000 – 100 000 ₽"
+      },
+      "after": {
+        "salary": "80 000–100 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-57589318",
+      "name": "Кочегар-сторож",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "2 000 – 2 500 ₽"
+      },
+      "after": {
+        "salary": "2 000–2 500 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
       "type": "changed",
@@ -129,15 +1302,194 @@
       "name": "Пекарь-тестовод",
       "source": "FarPost",
       "fields": [
+        "salary",
         "address"
       ],
       "before": {
-        "address": "Спасск-Дальний, ул Дорожное 1 21 июня 4928"
-      },
-      "after": {
+        "salary": "45 000 – 55 000 ₽",
         "address": "Спасск-Дальний, ул Дорожное 1 21 июня 4929"
       },
-      "at": "2026-06-30T23:24:16.593Z"
+      "after": {
+        "salary": "45 000–55 000 ₽",
+        "address": "Спасск-Дальний, ул Дорожное 1 21 июня 4930"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-135680403",
+      "name": "Требуются повара, помощник повара, зарплата высокая, выплата каждую неделю",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "44 000 – 52 000 ₽"
+      },
+      "after": {
+        "salary": "44 000–52 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136418272",
+      "name": "HR Generalist (кадровый специалист)",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 – 55 000 ₽"
+      },
+      "after": {
+        "salary": "45 000–55 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136418241",
+      "name": "Руководитель центра обучения",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 – 85 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–85 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136418235",
+      "name": "Методист",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 000 – 55 000 ₽"
+      },
+      "after": {
+        "salary": "40 000–55 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136418231",
+      "name": "Инженер - метролог",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 000 – 55 000 ₽"
+      },
+      "after": {
+        "salary": "40 000–55 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136418215",
+      "name": "Специалист по документообороту",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "37 000 – 45 000 ₽"
+      },
+      "after": {
+        "salary": "37 000–45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136418209",
+      "name": "Технический руководитель",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 – 70 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–70 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-134596873",
+      "name": "Руководитель центра продаж",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 – 75 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–75 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136416129",
+      "name": "Рыбообработчик",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "120 000 – 170 000 ₽"
+      },
+      "after": {
+        "salary": "120 000–170 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-135310972",
+      "name": "Разнорабочий",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "150 000 – 250 000 ₽"
+      },
+      "after": {
+        "salary": "150 000–250 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-120443070",
+      "name": "Грузчик-комплектовщик (г. Спасск-Дальний)",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 000 – 90 000 ₽"
+      },
+      "after": {
+        "salary": "60 000–90 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
       "type": "changed",
@@ -145,15 +1497,210 @@
       "name": "Автослесарь",
       "source": "FarPost",
       "fields": [
-        "address"
+        "salary"
       ],
       "before": {
-        "address": "Спасск-Дальний, ул Ленинская 19 июня 415"
+        "salary": "65 000 – 70 000 ₽"
       },
       "after": {
-        "address": "Спасск-Дальний, ул Ленинская 19 июня 416"
+        "salary": "65 000–70 000 ₽"
       },
-      "at": "2026-06-30T23:24:16.593Z"
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-118874141",
+      "name": "Грузчик",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "1 500 – 4 000 ₽"
+      },
+      "after": {
+        "salary": "1 500–4 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-64692853",
+      "name": "Администратор кафе",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "30 000 – 45 000 ₽"
+      },
+      "after": {
+        "salary": "30 000–45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-79262628",
+      "name": "Помощник повара",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "26 000 – 35 000 ₽"
+      },
+      "after": {
+        "salary": "26 000–35 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-121706718",
+      "name": "Повар-пиццерист",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "26 000 – 35 000 ₽"
+      },
+      "after": {
+        "salary": "26 000–35 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136366633",
+      "name": "Инженер ОТК",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "38 000 – 50 000 ₽"
+      },
+      "after": {
+        "salary": "38 000–50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136365009",
+      "name": "Грузчик/Рабочий/Сборщик/Подработка/Почасовая оплата/Еженедельные выплаты",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "3 300 – 4 400 ₽"
+      },
+      "after": {
+        "salary": "3 300–4 400 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136363424",
+      "name": "Водитель",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 000 – 80 000 ₽"
+      },
+      "after": {
+        "salary": "60 000–80 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-135548005",
+      "name": "Помощник машиниста автомотрисы",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "АО \"РЖД\" 18 июня 303"
+      },
+      "after": {
+        "employer": "АО \"РЖД\" 18 июня 304"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136340702",
+      "name": "Водитель автомобиля",
+      "source": "FarPost",
+      "fields": [
+        "employer",
+        "salary"
+      ],
+      "before": {
+        "employer": "АО ДРСК Приморские электрические сети 17 июня 175",
+        "salary": "50 000 – 53 000 ₽"
+      },
+      "after": {
+        "employer": "АО ДРСК Приморские электрические сети 17 июня 176",
+        "salary": "50 000–53 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136339726",
+      "name": "Промоутер",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "750 – 1 100 ₽"
+      },
+      "after": {
+        "salary": "1 100 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-53464364",
+      "name": "Пекарь в хлебный цех в Спасске-Дальнем",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 000 – 80 000 ₽"
+      },
+      "after": {
+        "salary": "60 000–80 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-99669899",
+      "name": "Медсестра, оптик, оптометрист",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 000 – 100 000 ₽"
+      },
+      "after": {
+        "salary": "60 000–100 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
       "type": "changed",
@@ -161,45 +1708,2312 @@
       "name": "Мойщик посуды",
       "source": "FarPost",
       "fields": [
+        "salary",
         "address"
       ],
       "before": {
-        "address": "Спасск-Дальний, Спасск-Дальний, улица Андреевская 10 15 июня 343"
-      },
-      "after": {
+        "salary": "2 500 – 3 000 ₽",
         "address": "Спасск-Дальний, Спасск-Дальний, улица Андреевская 10 15 июня 345"
       },
-      "at": "2026-06-30T23:24:16.593Z"
+      "after": {
+        "salary": "2 500–3 000 ₽",
+        "address": "Спасск-Дальний, Спасск-Дальний, улица Андреевская 10 15 июня 346"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
       "type": "changed",
-      "vacancyId": "farpost-136288393",
-      "name": "Разнорабочий-строитель",
+      "vacancyId": "farpost-114322773",
+      "name": "Младший инспектор",
       "source": "FarPost",
       "fields": [
-        "address"
+        "salary"
       ],
       "before": {
-        "address": "Спасск-Дальний, улица Родниковая 31 14 июня 113"
+        "salary": "30 000 – 70 000 ₽"
       },
       "after": {
-        "address": "Спасск-Дальний, улица Родниковая 31 14 июня 115"
+        "salary": "30 000–70 000 ₽"
       },
-      "at": "2026-06-30T23:24:16.593Z"
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
-      "type": "closed",
-      "vacancyId": "farpost-125384069",
-      "name": "Менеджер по работе с клиентами",
+      "type": "changed",
+      "vacancyId": "farpost-125891656",
+      "name": "Охранник, охранник-водитель",
       "source": "FarPost",
-      "at": "2026-06-30T23:24:16.593Z"
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "93 000 – 104 000 ₽"
+      },
+      "after": {
+        "salary": "93 000–104 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     },
     {
-      "type": "closed",
-      "vacancyId": "farpost-103852079",
-      "name": "Грузчик-Кладовщик",
+      "type": "changed",
+      "vacancyId": "farpost-135946033",
+      "name": "Тракторист-машинист сельскохозяйственного производства",
       "source": "FarPost",
-      "at": "2026-06-30T23:24:16.593Z"
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "80 000 – 160 000 ₽"
+      },
+      "after": {
+        "salary": "80 000–160 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-116705363",
+      "name": "Риелтор, агент по недвижимости",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "20 000 – 110 000 ₽"
+      },
+      "after": {
+        "salary": "20 000–110 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136041984",
+      "name": "Помощник машиниста тепловоза",
+      "source": "FarPost",
+      "fields": [
+        "employer",
+        "salary"
+      ],
+      "before": {
+        "employer": "АО РЖД 11 июня 524",
+        "salary": "110 000 – 130 000 ₽"
+      },
+      "after": {
+        "employer": "АО РЖД 11 июня 525",
+        "salary": "110 000–130 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-135759743",
+      "name": "Сигналист",
+      "source": "FarPost",
+      "fields": [
+        "employer",
+        "salary"
+      ],
+      "before": {
+        "employer": "АО РЖД 11 июня 287",
+        "salary": "52 000 – 73 000 ₽"
+      },
+      "after": {
+        "employer": "АО РЖД 11 июня 288",
+        "salary": "52 000–73 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-135760105",
+      "name": "Монтер пути",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "73 000 – 85 000 ₽"
+      },
+      "after": {
+        "salary": "73 000–85 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-135760276",
+      "name": "Бригадир (освобожденный) по текущему содержанию и ремонту пути и искусственных сооружений",
+      "source": "FarPost",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "124 000 – 135 000 ₽"
+      },
+      "after": {
+        "salary": "124 000–135 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "tg-rabota_spassk_dalnyq-6658",
+      "name": "Продавец-кассир ( Спасск - Дальний , Краснознамённая, 31)",
+      "source": "Telegram @rabota_spassk_dalnyq",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": " 59200 ₽"
+      },
+      "after": {
+        "salary": "59 200 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "tg-rabota_spassk_dalnyq-6227",
+      "name": "Администратор магазина ( Спасск - Дальний , Парковая, 64зд)",
+      "source": "Telegram @rabota_spassk_dalnyq",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": " 64600 – 80800 руб"
+      },
+      "after": {
+        "salary": "64 600–80 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "tg-rabota_spassk_dalnyq-6265",
+      "name": "Администратор магазина ( Спасск - Дальний , Советская, 132а)",
+      "source": "Telegram @rabota_spassk_dalnyq",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": " 64600 – 80800 руб"
+      },
+      "after": {
+        "salary": "64 600–80 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "tg-rabota_spassk_dalnyq-6273",
+      "name": "Пекарь (Спасск-Дальний, Краснознамённая, 31)",
+      "source": "Telegram @rabota_spassk_dalnyq",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": " 56200 – 61800 руб"
+      },
+      "after": {
+        "salary": "56 200–61 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "tg-rabota_spassk_dalnyq-6274",
+      "name": "Пекарь (Спасск-Дальний, Советская, 132а)",
+      "source": "Telegram @rabota_spassk_dalnyq",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": " 61800 ₽"
+      },
+      "after": {
+        "salary": "61 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "tg-rabota_spassk_dalnyq-6289",
+      "name": "Продавец-кассир ( Спасск - Дальний , Вокзальная, 45)",
+      "source": "Telegram @rabota_spassk_dalnyq",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": " 53800 – 59200 руб"
+      },
+      "after": {
+        "salary": "53 800–59 200 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "tg-rabota_spassk_dalnyq-6290",
+      "name": "Пекарь ( Спасск - Дальний , Вокзальная, 45)",
+      "source": "Telegram @rabota_spassk_dalnyq",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": " 61800 ₽"
+      },
+      "after": {
+        "salary": "61 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "tg-rabota_spassk_dalnyq-6310",
+      "name": "Продавец-кассир ( Спасск - Дальний , Парковая, 64зд)",
+      "source": "Telegram @rabota_spassk_dalnyq",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": " 53800 – 59200 руб"
+      },
+      "after": {
+        "salary": "53 800–59 200 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "tg-rabota_spassk_dalnyq-6359",
+      "name": "Продавец-кассир ( Спасск - Дальний , Красногвардейская, 81/2)",
+      "source": "Telegram @rabota_spassk_dalnyq",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": " 53800 – 59200 руб"
+      },
+      "after": {
+        "salary": "53 800–59 200 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "tg-rabota_spassk_dalnyq-6403",
+      "name": "Администратор магазина ( Спасск - Дальний , Вокзальная, 45)",
+      "source": "Telegram @rabota_spassk_dalnyq",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": " 64600 – 80800 руб"
+      },
+      "after": {
+        "salary": "64 600–80 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "tg-rabota_spassk_dalnyq-6488",
+      "name": "Администратор магазина ( Спасск - Дальний , Красногвардейская, 81/2)",
+      "source": "Telegram @rabota_spassk_dalnyq",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": " 64600 – 80800 руб"
+      },
+      "after": {
+        "salary": "64 600–80 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-147874",
+      "name": "Воспитатель",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "42 000 - 45 000 ₽"
+      },
+      "after": {
+        "salary": "42 000–45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-108881",
+      "name": "Фармацевт",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "44 792 - 49 715 ₽"
+      },
+      "after": {
+        "salary": "44 792–49 715 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-73248",
+      "name": "Психолог в социальной сфере",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 60 000 ₽"
+      },
+      "after": {
+        "salary": "45 000–60 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-68446",
+      "name": "Экономист",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "59 213 - 59 213 ₽"
+      },
+      "after": {
+        "salary": "59 213 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-64540",
+      "name": "Продавец-кассир",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "42 000 - 46 000 ₽"
+      },
+      "after": {
+        "salary": "42 000–46 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-45571",
+      "name": "Продавец непродовольственных товаров",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-856734",
+      "name": "Водитель категории В в ООО РЕСУРСТРАНС",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "41 000 - 70 000 ₽"
+      },
+      "after": {
+        "salary": "41 000–70 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-885831",
+      "name": "Продавец-кассир в Пятерочку",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "53 800 - 59 200 ₽"
+      },
+      "after": {
+        "salary": "53 800–59 200 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-893257",
+      "name": "Младшая медсестра по уходу в Спасском доме-интернате",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "53 914 - 58 033 ₽"
+      },
+      "after": {
+        "salary": "53 914–58 033 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-900708",
+      "name": "Оператор ЭВМ (без опыта)",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "20 320 - 20 320 ₽"
+      },
+      "after": {
+        "salary": "20 320 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-873729",
+      "name": "Диспетчер полигона ТБО в ООО КАПИТАЛ",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "35 000 - 40 000 ₽"
+      },
+      "after": {
+        "salary": "35 000–40 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-115540",
+      "name": "Уборщик территорий в школу",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-917216",
+      "name": "Уборщик территорий в УК Эталон",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "23 900 - 27 400 ₽"
+      },
+      "after": {
+        "salary": "23 900–27 400 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-690318",
+      "name": "Администратор магазина в Пятерочку (Спасск-Дальний)",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "64 600 - 80 800 ₽"
+      },
+      "after": {
+        "salary": "64 600–80 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-360415",
+      "name": "Токарь-универсал на предприятие в Спасск-Дальний",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "77 000 - 77 000 ₽"
+      },
+      "after": {
+        "salary": "77 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-359007",
+      "name": "Медник в АО \"32 ремонтный завод средств обеспечения полетов\"",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "73 900 - 73 900 ₽"
+      },
+      "after": {
+        "salary": "73 900 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-430087",
+      "name": "Столяр в 32 Ремонтный завод средств обеспечения полетов",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "54 000 - 54 000 ₽"
+      },
+      "after": {
+        "salary": "54 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-143216",
+      "name": "Слесарь по ремонту авто на 32 Ремонтный завод",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "71 500 - 81 800 ₽"
+      },
+      "after": {
+        "salary": "71 500–81 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-913968",
+      "name": "Уборщик служебных помещений в школу № 1",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "1 40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-917082",
+      "name": "Покосчик травы в УК Эталон",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 000 - 50 000 ₽"
+      },
+      "after": {
+        "salary": "40 000–50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-907456",
+      "name": "Уборщик служебных помещений в колледж Спасска-Дальнего",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "28 448 - 28 448 ₽"
+      },
+      "after": {
+        "salary": "28 448 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-1017155",
+      "name": "Полицейский в Росгвардию (Спасск-Дальний)",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "42 000 - 65 000 ₽"
+      },
+      "after": {
+        "salary": "42 000–65 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-949542",
+      "name": "Учитель Географии в СОШ № 5",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "5 40 640 - 50 000 ₽"
+      },
+      "after": {
+        "salary": "40 640–50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-997152",
+      "name": "Учитель математики в СОШ № 5",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "5 45 000 - 50 000 ₽"
+      },
+      "after": {
+        "salary": "45 000–50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-938184",
+      "name": "Слесарь по ремонту автомобилей на завод",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "63 629 - 63 629 ₽"
+      },
+      "after": {
+        "salary": "63 629 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-943852",
+      "name": "Бригадир по текущему содержанию и ремонту пути в РЖД",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "124 000 - 135 000 ₽"
+      },
+      "after": {
+        "salary": "124 000–135 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-1016621",
+      "name": "Сигналист в РЖД с обучением",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "52 000 - 73 000 ₽"
+      },
+      "after": {
+        "salary": "52 000–73 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-889499",
+      "name": "Монтер пути в РЖД с бесплатным обучением",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "73 000 - 85 000 ₽"
+      },
+      "after": {
+        "salary": "73 000–85 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-560610",
+      "name": "Администратор в магазин «Пятерочка»",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "64 600 - 80 800 ₽"
+      },
+      "after": {
+        "salary": "64 600–80 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-980523",
+      "name": "Учитель информатики в Центр образования «Притяжение»",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 - 75 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–75 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-977625",
+      "name": "Учитель географии в Центр образования \"Притяжение\"",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "65 000 - 75 000 ₽"
+      },
+      "after": {
+        "salary": "65 000–75 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-1014661",
+      "name": "Уборщик помещений в образовательный центр",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-974391",
+      "name": "Дорожный мастер в РЖД",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "164 000 - 164 000 ₽"
+      },
+      "after": {
+        "salary": "164 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-999352",
+      "name": "Директор магазина-партнёр в Пятёрочку",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 700 - 100 000 ₽"
+      },
+      "after": {
+        "salary": "60 700–100 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-1003976",
+      "name": "Директор-партнёр в Пятёрочку",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 700 - 100 000 ₽"
+      },
+      "after": {
+        "salary": "60 700–100 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-955074",
+      "name": "Директор-партнёр магазина в Пятёрочку",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 700 - 100 000 ₽"
+      },
+      "after": {
+        "salary": "60 700–100 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-1008003",
+      "name": "Специалист по охране лесов без опыта в КИРОВСКЛЕС",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 45 000 ₽"
+      },
+      "after": {
+        "salary": "45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-918390",
+      "name": "Техник по подготовке производства на завод цинкования",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "70 000 - 70 000 ₽"
+      },
+      "after": {
+        "salary": "70 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-953675",
+      "name": "Электрогазосварщик на завод цинкования и металлоконструкций",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "85 000 - 85 000 ₽"
+      },
+      "after": {
+        "salary": "85 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-910004",
+      "name": "Инженер-конструктор на завод металлоконструкций",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "100 000 - 100 000 ₽"
+      },
+      "after": {
+        "salary": "100 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-993493",
+      "name": "Водитель мусоровоза в ООО КАПИТАЛ",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 000 - 70 000 ₽"
+      },
+      "after": {
+        "salary": "60 000–70 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-592695",
+      "name": "Мастер в сферу ЖКХ и эксплуатации",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "46 746 - 46 746 ₽"
+      },
+      "after": {
+        "salary": "46 746 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-561983",
+      "name": "Уборщик в образовательный центр города Спасск-Дальний",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-496897",
+      "name": "Уборщик территории в ООО \"ГОРСВЕТ\" (ЖКХ)",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "41 000 - 41 000 ₽"
+      },
+      "after": {
+        "salary": "41 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-494336",
+      "name": "Слесарь-монтажник с/т систем в ООО ГОРСВЕТ",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 - 70 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–70 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-582989",
+      "name": "Рабочий по ремонту и обслуживанию зданий в ООО ГОРСВЕТ",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 - 100 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–100 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-959588",
+      "name": "Рабочий по ремонту зданий в центр помощи детям",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-585778",
+      "name": "Логопед-дефектолог в СОШ № 5 Спасск-Дальний",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "48 700 - 48 700 ₽"
+      },
+      "after": {
+        "salary": "48 700 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-567797",
+      "name": "Испытатель двигателей в Спасск-Дальний",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "93 352 - 93 352 ₽"
+      },
+      "after": {
+        "salary": "93 352 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-585204",
+      "name": "Слесарь по топливной аппаратуре в АО \"32 РЕМОНТНЫЙ ЗАВОД\"",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "85 146 - 85 146 ₽"
+      },
+      "after": {
+        "salary": "85 146 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-151735",
+      "name": "Специалист по уборке территорий в школу № 15 Спасска-Дальнего",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-622417",
+      "name": "Учитель начальных классов в школу Спасск-Дальний",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "42 000 - 60 000 ₽"
+      },
+      "after": {
+        "salary": "42 000–60 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-622788",
+      "name": "Учитель химии в Спасск-Дальний",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 - 65 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–65 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-638728",
+      "name": "Учитель технологии в СОШ № 15 г. Спасск-Дальний",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 54 000 ₽"
+      },
+      "after": {
+        "salary": "45 000–54 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-625701",
+      "name": "Учитель физики в МБОУ СОШ № 15",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "15 50 000 - 65 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–65 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-626442",
+      "name": "Рабочий по благоустройству и озеленению в МАУ ГЦБ",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "63 295 - 63 295 ₽"
+      },
+      "after": {
+        "salary": "63 295 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-653199",
+      "name": "Санитарка (мойщица) в центр Милосердие",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 53 400 ₽"
+      },
+      "after": {
+        "salary": "40 640–53 400 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-623978",
+      "name": "Повар в АНО «Милосердие»",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 60 000 ₽"
+      },
+      "after": {
+        "salary": "45 000–60 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-620097",
+      "name": "Диспетчер АТСЦБ на ж/д станцию в Спасск-Дальний",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "110 000 - 110 000 ₽"
+      },
+      "after": {
+        "salary": "110 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-663751",
+      "name": "Электромонтер СЦБ в РЖД – обучение за счет компании",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "55 000 - 55 000 ₽"
+      },
+      "after": {
+        "salary": "55 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-967845",
+      "name": "Повар в ДЭСП-Спасск",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-537999",
+      "name": "Администратор в Дорожное Эксплуатационное Строительное Предприятие",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-995997",
+      "name": "Горничная в гостиницу (ДЭСП-Спасск)",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-697252",
+      "name": "Воспитатель в центр образования «Интеллект»",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "41 500 - 41 500 ₽"
+      },
+      "after": {
+        "salary": "41 500 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-691422",
+      "name": "Дробильщик на лесоперерабатывающий комплекс",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 45 000 ₽"
+      },
+      "after": {
+        "salary": "45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-650767",
+      "name": "Кладовщик в торговую компанию",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "55 000 - 65 000 ₽"
+      },
+      "after": {
+        "salary": "55 000–65 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-624807",
+      "name": "Продавец-кассир в торговлю Спасск-Дальний",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 55 000 ₽"
+      },
+      "after": {
+        "salary": "45 000–55 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-101141",
+      "name": "Повар по китайской кухне в ООО \"КИРА\" (Спасск-Дальний)",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 45 000 ₽"
+      },
+      "after": {
+        "salary": "45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-144147",
+      "name": "Повар без опыта в Спасск-Дальний",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-718621",
+      "name": "Инженер-технолог на завод цинкования",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "55 000 - 110 000 ₽"
+      },
+      "after": {
+        "salary": "55 000–110 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-722940",
+      "name": "Ведущий инженер по безопасности в МКУ г. Спасск-Дальний",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "47 067 - 47 067 ₽"
+      },
+      "after": {
+        "salary": "47 067 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-732946",
+      "name": "Младший инспектор в УФИЦ №4 г. Спасск-Дальний",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 65 000 ₽"
+      },
+      "after": {
+        "salary": "45 000–65 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-750428",
+      "name": "Полицейский (водитель) — Росгвардия",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "42 000 - 65 000 ₽"
+      },
+      "after": {
+        "salary": "42 000–65 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-751797",
+      "name": "Водитель автобуса в Автоколонну 1951 (Спасск-Дальний)",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 60 000 ₽"
+      },
+      "after": {
+        "salary": "40 640–60 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-716416",
+      "name": "Электромонтер в филиал Оборонэнерго",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "67 900 - 68 000 ₽"
+      },
+      "after": {
+        "salary": "67 900–68 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-790912",
+      "name": "Официант в ресторан (Спасск-Дальний)",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 41 000 ₽"
+      },
+      "after": {
+        "salary": "40 640–41 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-792094",
+      "name": "Инженер-энергетик в сфере ЖКХ",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 - 55 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–55 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-784599",
+      "name": "Плотник в ЖКХ",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 45 000 ₽"
+      },
+      "after": {
+        "salary": "40 640–45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-761026",
+      "name": "Начальник отдела эксплуатации в Спасске-Дальнем",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "70 000 - 80 000 ₽"
+      },
+      "after": {
+        "salary": "70 000–80 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-781780",
+      "name": "Ведущий инженер по пожарной безопасности и ГОЧС в ЖКХ",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "55 000 - 55 000 ₽"
+      },
+      "after": {
+        "salary": "55 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-792578",
+      "name": "Электрогазосварщик в сфере ЖКХ",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 50 000 ₽"
+      },
+      "after": {
+        "salary": "45 000–50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-782058",
+      "name": "Курьер с гибким графиком (ИП Лысенко)",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "135 000 - 190 000 ₽"
+      },
+      "after": {
+        "salary": "135 000–190 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-774393",
+      "name": "Шеф-повар китайской кухни в ресторан",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "47 000 - 47 000 ₽"
+      },
+      "after": {
+        "salary": "47 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-781766",
+      "name": "Официант в ресторан",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-779247",
+      "name": "Слесарь-сантехник в индустриально-экономический колледж",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-793619",
+      "name": "Младший судебный пристав в Спасске-Дальнем",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "65 000 - 85 000 ₽"
+      },
+      "after": {
+        "salary": "65 000–85 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-790165",
+      "name": "Водитель автобуса с категорией Д",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 55 000 ₽"
+      },
+      "after": {
+        "salary": "45 000–55 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-729123",
+      "name": "Слесарь по ремонту автомобилей",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 50 000 ₽"
+      },
+      "after": {
+        "salary": "40 640–50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-775085",
+      "name": "Оператор линий деревообработки в СПАССКИЙ ЛПК",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "43 000 - 43 000 ₽"
+      },
+      "after": {
+        "salary": "43 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-785673",
+      "name": "Укладчик пиломатериалов в лесоперерабатывающий комплекс",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "41 000 - 41 000 ₽"
+      },
+      "after": {
+        "salary": "41 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-771409",
+      "name": "Стропальщик на лесоперерабатывающий комплекс",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "43 000 - 43 000 ₽"
+      },
+      "after": {
+        "salary": "43 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-768143",
+      "name": "Младший инспектор 1 категории УФИЦ № 2",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "2 50 000 - 75 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–75 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-782753",
+      "name": "Уборщик территорий в центр образования \"Притяжение\"",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-797208",
+      "name": "Учитель информатики в центр образования",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "65 000 - 80 000 ₽"
+      },
+      "after": {
+        "salary": "65 000–80 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-796181",
+      "name": "Социальный педагог в МБОУ ЦО Притяжение",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "55 000 - 65 000 ₽"
+      },
+      "after": {
+        "salary": "55 000–65 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-801065",
+      "name": "Учитель математики в центр образования",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "65 000 - 75 000 ₽"
+      },
+      "after": {
+        "salary": "65 000–75 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-820250",
+      "name": "Учитель истории в Центр образования \"Притяжение\"",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "65 000 - 80 000 ₽"
+      },
+      "after": {
+        "salary": "65 000–80 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-785388",
+      "name": "Электромеханик в РЖД",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "80 000 - 100 000 ₽"
+      },
+      "after": {
+        "salary": "80 000–100 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-769751",
+      "name": "Электромонтер по ремонту и обслуживанию в УК Эталон",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 641 - 40 641 ₽"
+      },
+      "after": {
+        "salary": "40 641 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-831993",
+      "name": "Слесарь-сантехник в УК «Эталон»",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 - 70 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–70 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-781386",
+      "name": "Электромонтер по учету электроэнергии",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 - 52 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–52 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-809349",
+      "name": "Электрослесарь по ремонту распределительных устройств",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "50 000 - 53 000 ₽"
+      },
+      "after": {
+        "salary": "50 000–53 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-722441",
+      "name": "Младший инспектор в ИК-6 ГУФСИН",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 50 000 ₽"
+      },
+      "after": {
+        "salary": "45 000–50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-841399",
+      "name": "Инструктор-кинолог в ИК № 6",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "6 45 000 - 50 000 ₽"
+      },
+      "after": {
+        "salary": "45 000–50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-768326",
+      "name": "Оператор дежурной службы в ИК-6 ГУФСИН",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-796251",
+      "name": "Водитель автомобиля в ИК-6 ГУФСИН",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 45 000 ₽"
+      },
+      "after": {
+        "salary": "45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-808786",
+      "name": "Младший инспектор отдела охраны в ИК-6 ГУФСИН",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 50 000 ₽"
+      },
+      "after": {
+        "salary": "45 000–50 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-776213",
+      "name": "Мастер леса в ИК-6 ГУФСИН",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "45 000 - 45 000 ₽"
+      },
+      "after": {
+        "salary": "45 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-823608",
+      "name": "Стоматолог-хирург в КОСМОДЕНТ",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 000 - 60 000 ₽"
+      },
+      "after": {
+        "salary": "60 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-814471",
+      "name": "Машинист буровой установки в горнодобывающую компанию",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "100 000 - 140 000 ₽"
+      },
+      "after": {
+        "salary": "100 000–140 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-841312",
+      "name": "Эксперт-криминалист в полицию",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "60 000 - 90 000 ₽"
+      },
+      "after": {
+        "salary": "60 000–90 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-822083",
+      "name": "Начальник отдела кадров в Центр обеспечения образовательных учреждений",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "48 278 - 48 278 ₽"
+      },
+      "after": {
+        "salary": "48 278 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-815384",
+      "name": "Электросварщик ручной сварки на цементный завод",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "91 000 - 115 000 ₽"
+      },
+      "after": {
+        "salary": "91 000–115 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-719598",
+      "name": "Сварщик в строительную компанию",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "70 000 - 71 100 ₽"
+      },
+      "after": {
+        "salary": "70 000–71 100 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-820707",
+      "name": "Бетонщик в строительную компанию",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "70 000 - 80 000 ₽"
+      },
+      "after": {
+        "salary": "70 000–80 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-765821",
+      "name": "Врач-психиатр-нарколог в краевую психиатрическую больницу",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "80 000 - 150 000 ₽"
+      },
+      "after": {
+        "salary": "80 000–150 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-820730",
+      "name": "Медицинский психолог в ГБУЗ КПБ № 2",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "2 51 000 - 57 851 ₽"
+      },
+      "after": {
+        "salary": "51 000–57 851 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-85288",
+      "name": "Оператор электронно-вычислительных и вычислительных машин",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "20 320 - 20 320 ₽"
+      },
+      "after": {
+        "salary": "20 320 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-350583",
+      "name": "Уборщик территорий",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "40 640 - 40 640 ₽"
+      },
+      "after": {
+        "salary": "40 640 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-299237",
+      "name": "Администратор магазина",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "64 600 - 80 800 ₽"
+      },
+      "after": {
+        "salary": "64 600–80 800 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-690423",
+      "name": "Продавец-кассир",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "53 800 - 59 200 ₽"
+      },
+      "after": {
+        "salary": "53 800–59 200 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-306148",
+      "name": "Маляр окрасочного производства в автомобилестроении",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "73 100 - 73 100 ₽"
+      },
+      "after": {
+        "salary": "73 100 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-355514",
+      "name": "Токарь (токарь-универсал)",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "77 000 - 77 000 ₽"
+      },
+      "after": {
+        "salary": "77 000 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "gderabota-452414",
+      "name": "Медник",
+      "source": "ГдеРабота",
+      "fields": [
+        "salary"
+      ],
+      "before": {
+        "salary": "73 900 - 73 900 ₽"
+      },
+      "after": {
+        "salary": "73 900 ₽"
+      },
+      "at": "2026-07-01T01:31:03.555Z"
     }
   ]
 }
