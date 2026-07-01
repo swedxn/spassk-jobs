@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T09:24:30.066Z",
+  "generatedAt": "2026-07-01T10:51:39.225Z",
   "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Rabota1000, ЦентрРабота",
   "fallback": false,
   "sourcesChecked": 39,
@@ -17,7 +17,7 @@
       "name": "Работа России",
       "mode": "auto",
       "status": "ok",
-      "found": 66
+      "found": 68
     },
     {
       "name": "FarPost",
@@ -72,8 +72,8 @@
       "found": 28
     }
   ],
-  "raw": 491,
-  "accepted": 353,
+  "raw": 493,
+  "accepted": 355,
   "remote": 0,
   "rejected": {
     "otherCity": 35,
@@ -82,19 +82,19 @@
     "duplicate": 73
   },
   "stats": {
-    "active": 353,
+    "active": 355,
     "noExperience": 109,
-    "noHigherEducation": 323,
-    "withSalary": 339,
+    "noHigherEducation": 325,
+    "withSalary": 341,
     "goodFit": 160,
-    "newVacancies": 8,
-    "changedVacancies": 14,
-    "strongOpportunities": 3
+    "newVacancies": 2,
+    "changedVacancies": 7,
+    "strongOpportunities": 1
   },
   "changes": {
-    "new": 8,
-    "changed": 14,
-    "closed": 5
+    "new": 2,
+    "changed": 7,
+    "closed": 0
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
 }
