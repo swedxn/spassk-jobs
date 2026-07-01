@@ -25,10 +25,12 @@ import {
   GraduationCap,
   Heart,
   MapPin,
+  Moon,
   RefreshCw,
   Search,
   SlidersHorizontal,
   Sparkles,
+  Sun,
   Upload,
   Wifi,
   X,
@@ -39,6 +41,7 @@ gsap.registerPlugin(ScrollTrigger);
 const BASE = import.meta.env.BASE_URL;
 const PAGE_SIZE = 24;
 const STORE_KEY = 'spassk-jobs-tracker-v1';
+const THEME_KEY = 'spassk-jobs-theme-v1';
 const ease = [0.22, 1, 0.36, 1];
 
 const hasSalary = (job) => salaryNumber(job.salary) > 0;
@@ -57,6 +60,14 @@ function readTracker() {
   } catch {
     return {};
   }
+}
+
+function readTheme() {
+  try {
+    const saved = localStorage.getItem(THEME_KEY);
+    if (saved === 'light' || saved === 'dark') return saved;
+  } catch { /* use the system preference */ }
+  return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
 
 function formatUpdate(value) {
@@ -131,6 +142,7 @@ function App() {
   const [selected, setSelected] = useState(null);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [theme, setTheme] = useState(readTheme);
   const searchRef = useRef(null);
   const reduced = useReducedMotion();
 
@@ -149,6 +161,19 @@ function App() {
   useEffect(() => {
     try { localStorage.setItem(STORE_KEY, JSON.stringify(tracker)); } catch { /* tracker stays usable in memory */ }
   }, [tracker]);
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme;
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#000000' : '#f5f5f7');
+    try { localStorage.setItem(THEME_KEY, theme); } catch { /* preference remains active for this visit */ }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    const update = () => setTheme((current) => (current === 'dark' ? 'light' : 'dark'));
+    if (!reduced && document.startViewTransition) document.startViewTransition(update);
+    else update();
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -230,7 +255,7 @@ function App() {
   return (
     <div className="app-shell">
       <a className="skip-link" href="#vacancies">Перейти к вакансиям</a>
-      <Header scrolled={scrolled} onSearch={() => {
+      <Header scrolled={scrolled} theme={theme} onTheme={toggleTheme} onSearch={() => {
         document.querySelector('#vacancies')?.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
         setTimeout(() => searchRef.current?.focus({ preventScroll: true }), 450);
       }} />
@@ -389,7 +414,7 @@ function RemoteSection({jobs,tracker,onFavorite,onOpen}) {
   );
 }
 
-function Header({ scrolled, onSearch }) {
+function Header({ scrolled, theme, onTheme, onSearch }) {
   return (
     <header className={`site-header ${scrolled ? 'site-header--scrolled' : ''}`}>
       <nav className="nav-wrap" aria-label="Главная навигация">
@@ -401,7 +426,16 @@ function Header({ scrolled, onSearch }) {
           <a href="#vacancies">Вакансии</a>
           <a href="#data">О данных</a>
         </div>
-        <button className="nav-action" type="button" onClick={onSearch}>Найти работу</button>
+        <div className="nav-actions">
+          <button className="theme-toggle" type="button" onClick={onTheme} aria-label={theme === 'dark' ? 'Включить светлую тему' : 'Включить тёмную тему'} title={theme === 'dark' ? 'Светлая тема' : 'Тёмная тема'}>
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.span key={theme} initial={{ opacity: 0, rotate: -35, scale: 0.7 }} animate={{ opacity: 1, rotate: 0, scale: 1 }} exit={{ opacity: 0, rotate: 35, scale: 0.7 }} transition={{ duration: 0.22 }}>
+                {theme === 'dark' ? <Sun /> : <Moon />}
+              </motion.span>
+            </AnimatePresence>
+          </button>
+          <button className="nav-action" type="button" onClick={onSearch}>Найти работу</button>
+        </div>
       </nav>
     </header>
   );
@@ -523,28 +557,51 @@ function JobRow({ job, index, favorite, onFavorite, onOpen }) {
 function JobModal({ job, state, onPatch, onClose }) {
   const reduced = useReducedMotion();
   const publication = publicationInfo(job);
+  const dialogRef = useRef(null);
+
+  useEffect(() => {
+    const previous = document.activeElement;
+    const closeButton = dialogRef.current?.querySelector('[data-modal-close]');
+    closeButton?.focus({ preventScroll: true });
+    return () => previous?.focus?.({ preventScroll: true });
+  }, []);
+
+  const keepFocusInside = (event) => {
+    if (event.key !== 'Tab') return;
+    const focusable = [...dialogRef.current.querySelectorAll('a[href], button:not([disabled]), select, textarea, input')];
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  };
+
   return (
-    <motion.div className="modal-layer" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.28 }}>
+    <motion.div className="modal-layer" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
       <button className="modal-backdrop" type="button" onClick={onClose} aria-label="Закрыть карточку" />
       <motion.section
+        ref={dialogRef}
         className="job-modal"
         role="dialog"
         aria-modal="true"
         aria-labelledby="job-modal-title"
-        initial={reduced ? { opacity: 0 } : { opacity: 0, x: '100%' }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={reduced ? { opacity: 0 } : { opacity: 0, x: '100%' }}
-        transition={{ duration: 0.55, ease }}
+        onKeyDown={keepFocusInside}
+        initial={reduced ? { opacity: 0 } : { opacity: 0, y: 42, scale: 0.94, filter: 'blur(12px)' }}
+        animate={{ opacity: 1, y: 0, scale: 1, filter: 'blur(0px)' }}
+        exit={reduced ? { opacity: 0 } : { opacity: 0, y: 26, scale: 0.97, filter: 'blur(8px)' }}
+        transition={{ duration: 0.52, ease }}
       >
         <div className="modal-header">
-          <span>Карточка вакансии</span>
-          <button type="button" onClick={onClose} aria-label="Закрыть"><X /></button>
+          <span><i /> Вакансия в Спасске-Дальнем</span>
+          <button data-modal-close type="button" onClick={onClose} aria-label="Закрыть"><X /></button>
         </div>
         <div className="modal-body">
-          <div className="modal-score"><Sparkles /> {job.score}% совпадение · {job.fit}</div>
-          <h2 id="job-modal-title">{job.name}</h2>
-          <p className="modal-employer">{job.employer}</p>
-          <div className="modal-salary">{normalizeSalaryText(job.salary)}</div>
+          <div className="modal-hero">
+            <div className="modal-score"><Sparkles /> {job.score}% совпадение · {job.fit}</div>
+            <h2 id="job-modal-title">{job.name}</h2>
+            <p className="modal-employer">{job.employer}</p>
+            <div className="modal-salary">{normalizeSalaryText(job.salary)}</div>
+          </div>
 
           <div className="detail-grid">
             <Detail icon={<MapPin />} label="Место" value={job.address || job.city} />
