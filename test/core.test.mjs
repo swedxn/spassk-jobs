@@ -12,7 +12,7 @@ import { importTrudvsem } from '../src/importers/trudvsem.mjs';
 import { robotsAllows, stripHtml } from '../src/importers/web-utils.mjs';
 import { addOpportunityScores, pruneHistory, reconcileHistory } from '../src/history.mjs';
 import { cleanFarpostDescription } from '../src/farpost-clean.mjs';
-import { parseFarpostPublishedAt, parseSourceDate, publicationInfo } from '../src/date.mjs';
+import { jobDateValue, parseFarpostPublishedAt, parseSourceDate, publicationInfo } from '../src/date.mjs';
 
 const local = { id:'1', name:'Оператор техподдержки', employer:'Тест', city:'Спасск-Дальний', address:'Спасск-Дальний, Советская, 1', experience:'Без опыта', education:'СПО', salary:'50 000 ₽', description:'Обучение на месте', source:'HeadHunter', url:'https://hh.ru/vacancy/1' };
 
@@ -131,8 +131,17 @@ test('даты публикации понимают русские даты и 
   assert.match(parseSourceDate('29 июня 2026').toISOString(),/^2026-06-29/u);
   assert.equal(parseFarpostPublishedAt('сегодня в 10:15',new Date('2026-07-01T02:00:00Z')),'2026-07-01T10:15:00+10:00');
   assert.equal(parseFarpostPublishedAt('19 июня 5234',new Date('2026-07-01T02:00:00Z')),'2026-06-19');
+  assert.equal(parseFarpostPublishedAt('19 июня 2035',new Date('2026-07-01T02:00:00Z')),'2026-06-19');
   assert.equal(publicationInfo({publishedAt:'2026-06-29'}).label,'Опубликована на сайте');
   assert.equal(publicationInfo({firstSeenAt:'2026-06-30T01:00:00Z'}).label,'Дата на сайте не указана');
+});
+
+test('будущий счётчик FarPost не поднимает старую вакансию выше свежих', () => {
+  const now=new Date('2026-07-01T04:15:00Z');
+  const corrupted={publishedAt:'2035-06-19',firstSeenAt:'2026-06-30T00:06:03Z'};
+  const fresh={publishedAt:'2026-07-01T13:37:00+10:00',firstSeenAt:'2026-07-01T04:02:32Z'};
+  assert.ok(jobDateValue(fresh,now)>jobDateValue(corrupted,now));
+  assert.equal(publicationInfo(corrupted,now).label,'Дата на сайте не указана');
 });
 
 test('история различает новые, изменившиеся и исчезнувшие вакансии', () => {

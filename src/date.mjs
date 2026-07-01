@@ -48,22 +48,38 @@ export function parseFarpostPublishedAt(text, now = new Date()) {
   if (!absolute) return null;
   const month=MONTHS[absolute[2].toLocaleLowerCase('ru-RU').replace(/\.$/u,'')];
   if (month === undefined) return null;
-  let year=Number(absolute[3] || current.year);
+  const explicitYear=Number(absolute[3]);
+  // FarPost places the view counter immediately after the date. A counter such
+  // as "2035" must not become the publication year.
+  const hasCredibleYear=Boolean(explicitYear && explicitYear <= current.year);
+  let year=hasCredibleYear ? explicitYear : current.year;
   const candidate=new Date(Date.UTC(year,month,Number(absolute[1]),12));
   const today=new Date(Date.UTC(current.year,current.month-1,current.day,12));
-  if (!absolute[3] && candidate.getTime() > today.getTime()+31*86400000) year-=1;
+  if (!hasCredibleYear && candidate.getTime() > today.getTime()+31*86400000) year-=1;
   return isoDay(year,month,Number(absolute[1]));
 }
 
-function formatDate(value, options) {
+export function plausiblePublishedDate(value, now = new Date()) {
   const date=parseSourceDate(value);
+  if (!date) return null;
+  return date.getTime() <= now.getTime()+36*60*60*1000 ? date : null;
+}
+
+export function jobDateValue(job, now = new Date()) {
+  const published=plausiblePublishedDate(job.publishedAt,now);
+  return (published || parseSourceDate(job.firstSeenAt || job.checkedAt))?.getTime() || 0;
+}
+
+function formatDate(value, options, parsedDate = null) {
+  const date=parsedDate || parseSourceDate(value);
   if (!date) return null;
   return new Intl.DateTimeFormat('ru-RU', { timeZone:'Asia/Vladivostok', ...options }).format(date).replace(/\s+г\.$/u,'');
 }
 
-export function publicationInfo(job) {
-  const publishedFull=formatDate(job.publishedAt,{day:'numeric',month:'long',year:'numeric',...(String(job.publishedAt || '').includes('T') ? {hour:'2-digit',minute:'2-digit'} : {})});
-  const publishedShort=formatDate(job.publishedAt,{day:'numeric',month:'short'});
+export function publicationInfo(job, now = new Date()) {
+  const published=plausiblePublishedDate(job.publishedAt,now);
+  const publishedFull=published && formatDate(job.publishedAt,{day:'numeric',month:'long',year:'numeric',...(String(job.publishedAt || '').includes('T') ? {hour:'2-digit',minute:'2-digit'} : {})},published);
+  const publishedShort=published && formatDate(job.publishedAt,{day:'numeric',month:'short'},published);
   if (publishedFull) return { label:'Опубликована на сайте', full:publishedFull, short:`На сайте ${publishedShort}` };
 
   const seen=job.firstSeenAt || job.checkedAt;

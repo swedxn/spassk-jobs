@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { normalizeSalaryText, salaryNumber } from './salary.mjs';
 import { cleanFarpostDescription } from './farpost-clean.mjs';
-import { parseSourceDate, publicationInfo } from './date.mjs';
+import { jobDateValue, publicationInfo } from './date.mjs';
 import {
   ArrowDown,
   ArrowUpRight,
@@ -53,7 +53,6 @@ const ease = [0.22, 1, 0.36, 1];
 const isNoExperience = (job) => /без опыта|не требуется|готовы обуч|обучение|стаж[её]р|ученик/iu.test(`${job.experience} ${job.description}`);
 const hasSalary = (job) => Boolean(job.salary && !/не указан/iu.test(job.salary));
 const noHigherEducation = (job) => !/высш(?:ее|его)|бакалавр|магистр/iu.test(`${job.education} ${job.description}`);
-const dateValue = (job) => parseSourceDate(job.publishedAt || job.firstSeenAt || job.checkedAt)?.getTime() || 0;
 const safeUrl = (value) => {
   try {
     const url = new URL(value);
@@ -214,7 +213,7 @@ function App() {
         && (!filters.favorite || tracker[job.id]?.favorite);
     });
     return result.sort((a, b) => {
-      if (sort === 'fresh') return dateValue(b) - dateValue(a);
+      if (sort === 'fresh') return jobDateValue(b) - jobDateValue(a);
       if (sort === 'salary') return salaryNumber(b.salary) - salaryNumber(a.salary);
       return b.score - a.score || (b.opportunityScore || 0) - (a.opportunityScore || 0);
     });
