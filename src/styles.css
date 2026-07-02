@@ -423,9 +423,12 @@ svg {
 
 .hero-product {
   position: relative;
-  width: min(900px, 100%);
+  display: grid;
+  grid-template-columns: minmax(220px, .8fr) minmax(0, 1.2fr);
+  align-items: center;
+  width: min(820px, 100%);
   margin: 72px auto 0;
-  padding: 32px;
+  padding: 38px 42px;
   border: 1px solid rgba(255, 255, 255, 0.88);
   border-radius: 38px;
   text-align: left;
@@ -433,6 +436,88 @@ svg {
   box-shadow: 0 60px 120px rgba(29, 40, 70, 0.14), 0 10px 30px rgba(29, 40, 70, 0.06), inset 0 1px 0 #fff;
   -webkit-backdrop-filter: blur(24px) saturate(140%);
   backdrop-filter: blur(24px) saturate(140%);
+}
+
+.summary-main > span,
+.summary-main > p,
+.summary-facts span {
+  color: var(--muted);
+}
+
+.summary-main > span {
+  font-size: 13px;
+}
+
+.summary-main > strong {
+  display: block;
+  margin-top: 5px;
+  font-size: clamp(54px, 6vw, 76px);
+  line-height: .95;
+  letter-spacing: -.065em;
+}
+
+.summary-main > p {
+  margin: 10px 0 0;
+  font-size: 15px;
+}
+
+.summary-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  border-left: 1px solid var(--line);
+}
+
+.summary-facts > div {
+  display: flex;
+  min-width: 0;
+  min-height: 84px;
+  padding: 12px 22px;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid var(--line);
+}
+
+.summary-facts > div:last-child {
+  border-right: 0;
+}
+
+.summary-facts > div > strong {
+  font-size: 27px;
+  line-height: 1;
+  letter-spacing: -.04em;
+}
+
+.summary-facts > div > span {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.summary-facts .summary-update {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.summary-update > svg {
+  width: 17px;
+  height: 17px;
+  color: var(--blue);
+  animation: refresh-turn 6s cubic-bezier(.3,.7,.2,1) infinite;
+}
+
+.summary-update > span {
+  margin: 0;
+}
+
+.summary-update strong {
+  display: inline-block;
+  margin-top: 3px;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 .hero-product::before {
@@ -1396,6 +1481,7 @@ svg {
   font-size: 16px;
   line-height: 1.32;
   letter-spacing: -0.012em;
+  white-space: pre-line;
 }
 
 .modal-section {
@@ -1445,7 +1531,7 @@ svg {
   display: flex;
   gap: 12px;
   margin-top: 30px;
-  padding: 16px;
+  padding: 15px 17px;
   border-radius: 16px;
   color: #784b00;
   background: #fff7e6;
@@ -1540,9 +1626,9 @@ svg {
 }
 
 .modal-footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  justify-content: space-between;
   gap: 20px;
   padding: 16px 24px max(16px, env(safe-area-inset-bottom));
   border-top: 1px solid var(--line);
@@ -1566,12 +1652,14 @@ svg {
 }
 
 .modal-footer strong {
-  max-width: 210px;
   margin-top: 4px;
-  overflow: hidden;
   font-size: 12px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.modal-source {
+  padding-right: 24px;
 }
 
 .modal-footer .primary-button {
@@ -1796,9 +1884,35 @@ svg {
   }
 
   .hero-product {
+    display: block;
     margin-top: 60px;
     padding: 18px;
     border-radius: 28px;
+  }
+
+  .summary-main {
+    padding: 12px 12px 24px;
+  }
+
+  .summary-main > strong {
+    font-size: 58px;
+  }
+
+  .summary-facts {
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .summary-facts > div {
+    padding: 18px 12px;
+  }
+
+  .summary-facts .summary-update {
+    grid-column: 1 / -1;
+    min-height: 64px;
+    border-top: 1px solid var(--line);
+    border-right: 0;
   }
 
   .product-topline strong {

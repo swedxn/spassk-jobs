@@ -10,7 +10,6 @@ export function vacancyFacts(vacancy) {
       ? 'Высшее образование не требуется'
       : 'Высшее образование не указано');
   }
-  if (vacancy?.salary && !/не указан/iu.test(vacancy.salary)) facts.push('Зарплата указана');
   if (vacancy?.schedule && !/не указан/iu.test(vacancy.schedule)) facts.push(`График: ${vacancy.schedule}`);
   return facts;
 }

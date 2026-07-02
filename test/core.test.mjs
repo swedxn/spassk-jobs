@@ -170,8 +170,10 @@ test('даты публикации понимают русские даты и 
   assert.equal(parseFarpostPublishedAt('19 июня 2035',new Date('2026-07-01T02:00:00Z')),'2026-06-19');
   assert.equal(parseFarpostPublishedAt('сегодня в 29:99',new Date('2026-07-01T02:00:00Z')),null);
   assert.equal(parseFarpostPublishedAt('31 февраля 500',new Date('2026-07-01T02:00:00Z')),null);
-  assert.equal(publicationInfo({publishedAt:'2026-06-29'}).label,'Опубликована на сайте');
-  assert.equal(publicationInfo({firstSeenAt:'2026-06-30T01:00:00Z'}).label,'Дата на сайте не указана');
+  assert.equal(publicationInfo({publishedAt:'2026-06-29'}).label,'Дата');
+  assert.match(publicationInfo({publishedAt:'2026-06-29'}).full,/На сайте:/u);
+  assert.equal(publicationInfo({firstSeenAt:'2026-06-30T01:00:00Z'}).label,'Даты');
+  assert.match(publicationInfo({firstSeenAt:'2026-06-30T01:00:00Z'}).full,/На сайте: не указана\nДобавлена:/u);
   assert.equal(parseSourceDate('31 февраля 2026'),null);
   assert.equal(parseSourceDate('2026-02-30'),null);
 });
@@ -181,7 +183,7 @@ test('будущий счётчик FarPost не поднимает старую
   const corrupted={publishedAt:'2035-06-19',firstSeenAt:'2026-06-30T00:06:03Z'};
   const fresh={publishedAt:'2026-07-01T13:37:00+10:00',firstSeenAt:'2026-07-01T04:02:32Z'};
   assert.ok(jobDateValue(fresh,now)>jobDateValue(corrupted,now));
-  assert.equal(publicationInfo(corrupted,now).label,'Дата на сайте не указана');
+  assert.equal(publicationInfo(corrupted,now).label,'Даты');
 });
 
 test('история различает новые, изменившиеся и исчезнувшие вакансии', () => {

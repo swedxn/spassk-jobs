@@ -53,6 +53,18 @@ const safeUrl = (value) => {
   }
 };
 
+function friendlyWarnings(warnings = []) {
+  const text = warnings.join(' · ');
+  if (!text) return [];
+  if (/временно недоступ|последн(?:ий|его) успешн|прямая карточка/iu.test(text)) {
+    return ['Источник временно недоступен. Проверьте актуальность вакансии.'];
+  }
+  if (/агрегирован|проверьте источник|проверьте работодателя/iu.test(text)) {
+    return ['Проверьте условия и работодателя на сайте источника.'];
+  }
+  return [...new Set(warnings)].slice(0, 2);
+}
+
 function readTracker() {
   try {
     return sanitizeTracker(JSON.parse(localStorage.getItem(STORE_KEY) || '{}'));
@@ -72,13 +84,17 @@ function readTheme() {
 function formatUpdate(value) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return 'время уточняется';
-  return new Intl.DateTimeFormat('ru-RU', {
+  const day = new Intl.DateTimeFormat('ru-RU', {
     day: 'numeric',
     month: 'long',
+    timeZone: 'Asia/Vladivostok',
+  }).format(date);
+  const time = new Intl.DateTimeFormat('ru-RU', {
     hour: '2-digit',
     minute: '2-digit',
     timeZone: 'Asia/Vladivostok',
   }).format(date);
+  return `${day}, ${time}`;
 }
 
 function downloadJson(value, name) {
@@ -459,35 +475,20 @@ function Hero({ meta, stats, onStart }) {
         </motion.div>
 
         <motion.div className="hero-product" initial={reduced ? false : { opacity: 0, y: 70, scale: 0.94 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 1.25, delay: 0.25, ease }}>
-          <div className="product-topline">
-            <div>
-              <span className="product-kicker">Спасск-Дальний</span>
-              <strong><CountUp value={stats.active || 0} /> вакансий</strong>
-            </div>
+          <div className="summary-main">
+            <span>Сейчас доступно</span>
+            <strong><CountUp value={stats.active || 0} /></strong>
+            <p>вакансий в Спасске-Дальнем</p>
           </div>
-          <div className="product-search"><Search /> Должность, компания или навык <kbd>⌘ K</kbd></div>
-          <div className="metric-grid">
-            <Metric value={stats.noExperience || 0} label="без опыта" tone="blue" />
-            <Metric value={stats.noHigherEducation || 0} label="без высшего" tone="violet" />
-            <Metric value={stats.withSalary || 0} label="с зарплатой" tone="pink" />
-            <Metric value={meta.sourcesChecked || 0} label="источников" tone="green" />
-          </div>
-          <div className="product-footer">
-            <span><RefreshCw /> Обновлено {formatUpdate(meta.generatedAt)}</span>
+          <div className="summary-facts">
+            <div><strong><CountUp value={stats.noExperience || 0} /></strong><span>без опыта</span></div>
+            <div><strong><CountUp value={stats.noHigherEducation || 0} /></strong><span>без высшего</span></div>
+            <div className="summary-update"><RefreshCw /><span>Обновлено<br /><strong>{formatUpdate(meta.generatedAt)}</strong></span></div>
           </div>
         </motion.div>
       </div>
       <a className="scroll-cue" href="#vacancies" aria-label="Прокрутить к вакансиям"><span /><ArrowDown /></a>
     </section>
-  );
-}
-
-function Metric({ value, label, tone }) {
-  return (
-    <div className={`metric metric--${tone}`}>
-      <strong><CountUp value={value} /></strong>
-      <span>{label}</span>
-    </div>
   );
 }
 
@@ -541,6 +542,7 @@ function JobModal({ job, state, onPatch, onClose }) {
   const reduced = useReducedMotion();
   const publication = publicationInfo(job);
   const facts = vacancyFacts(job);
+  const warnings = friendlyWarnings(job.warnings);
   const dialogRef = useRef(null);
 
   useEffect(() => {
@@ -603,8 +605,8 @@ function JobModal({ job, state, onPatch, onClose }) {
             </div>
           )}
 
-          {job.warnings?.length > 0 && (
-            <div className="warning-box"><CircleAlert /> <span>{job.warnings.join(' · ')}</span></div>
+          {warnings.length > 0 && (
+            <div className="warning-box"><CircleAlert /> <span>{warnings.join(' ')}</span></div>
           )}
 
           <div className="modal-section tracker-section">
@@ -627,7 +629,7 @@ function JobModal({ job, state, onPatch, onClose }) {
           </div>
         </div>
         <div className="modal-footer">
-          <div><span>Источник</span><strong>{job.source}</strong></div>
+          <div className="modal-source"><span>Источник</span><strong title={job.source}>{job.source}</strong></div>
           <a className="primary-button" href={safeUrl(job.url)} target="_blank" rel="noreferrer">{sourceLinkLabel(job)} <ArrowUpRight /></a>
         </div>
       </motion.section>

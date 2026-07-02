@@ -87,16 +87,23 @@ function formatDate(value, options, parsedDate = null) {
 
 export function publicationInfo(job, now = new Date()) {
   const published=plausiblePublishedDate(job.publishedAt,now);
-  const publishedFull=published && formatDate(job.publishedAt,{day:'numeric',month:'long',year:'numeric',...(String(job.publishedAt || '').includes('T') ? {hour:'2-digit',minute:'2-digit'} : {})},published);
+  const publishedDate=published && formatDate(job.publishedAt,{day:'numeric',month:'long',year:'numeric'},published);
+  const publishedTime=published && String(job.publishedAt || '').includes('T')
+    ? formatDate(job.publishedAt,{hour:'2-digit',minute:'2-digit'},published)
+    : null;
   const publishedShort=published && formatDate(job.publishedAt,{day:'numeric',month:'short'},published);
-  if (publishedFull) return { label:'Опубликована на сайте', full:publishedFull, short:`На сайте ${publishedShort}` };
+  if (publishedDate) return {
+    label:'Дата',
+    full:`На сайте: ${publishedDate}${publishedTime ? `, ${publishedTime}` : ''}`,
+    short:`На сайте ${publishedShort}`,
+  };
 
   const seen=job.firstSeenAt || job.checkedAt;
   const seenFull=formatDate(seen,{day:'numeric',month:'long',year:'numeric'});
   const seenShort=formatDate(seen,{day:'numeric',month:'short'});
   return {
-    label:'Дата на сайте не указана',
-    full:seenFull ? `Найдена агрегатором ${seenFull}` : 'Дата публикации неизвестна',
+    label:'Даты',
+    full:seenFull ? `На сайте: не указана\nДобавлена: ${seenFull}` : 'Дата публикации: неизвестна',
     short:seenShort ? `Найдена ${seenShort}` : 'Дата неизвестна',
   };
 }
