@@ -340,6 +340,7 @@ function App() {
                       key={job.id}
                       job={job}
                       index={index}
+                      showNoHigher={filters.noHigher}
                       favorite={Boolean(tracker[job.id]?.favorite)}
                       onFavorite={() => patchTracker(job.id, { favorite: !tracker[job.id]?.favorite })}
                       onOpen={() => setSelected(job)}
@@ -502,7 +503,7 @@ function FilterButton({ active, onClick, children, icon }) {
   );
 }
 
-function JobRow({ job, index, favorite, onFavorite, onOpen }) {
+function JobRow({ job, index, favorite, onFavorite, onOpen, showNoHigher = false }) {
   const reduced = useReducedMotion();
   const publication = publicationInfo(job);
   return (
@@ -516,9 +517,10 @@ function JobRow({ job, index, favorite, onFavorite, onOpen }) {
     >
       <button className="job-row__main" type="button" onClick={onOpen}>
         <div className="job-row__title">
-          {(isNoExperienceVacancy(job) || job.isNew) && (
+          {(isNoExperienceVacancy(job) || (showNoHigher && isNoHigherEducationVacancy(job)) || job.isNew) && (
             <div className="job-badges">
               {isNoExperienceVacancy(job) && <span className="badge">Без опыта</span>}
+              {showNoHigher && isNoHigherEducationVacancy(job) && <span className="badge">Без высшего</span>}
               {job.isNew && <span className="badge badge--new">Новая</span>}
             </div>
           )}
