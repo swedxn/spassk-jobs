@@ -1,42 +1,9 @@
 {
-  "generatedAt": "2026-07-02T03:25:05.858Z",
+  "generatedAt": "2026-07-02T03:33:43.468Z",
   "summary": {
     "new": 0,
-    "changed": 2,
+    "changed": 0,
     "closed": 0
   },
-  "events": [
-    {
-      "type": "changed",
-      "vacancyId": "farpost-136041984",
-      "name": "Помощник машиниста тепловоза",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "АО РЖД сегодня в 09:25 538"
-      },
-      "after": {
-        "employer": "АО РЖД сегодня в 09:25 540"
-      },
-      "at": "2026-07-02T03:25:05.858Z"
-    },
-    {
-      "type": "changed",
-      "vacancyId": "farpost-136608206",
-      "name": "МЕНЕДЖЕР ПО ПРОДАЖАМ",
-      "source": "FarPost",
-      "fields": [
-        "employer"
-      ],
-      "before": {
-        "employer": "ИП Богодилов Руслан Александрович вчера в 12:44 83"
-      },
-      "after": {
-        "employer": "ИП Богодилов Руслан Александрович вчера в 12:44 86"
-      },
-      "at": "2026-07-02T03:25:05.858Z"
-    }
-  ]
+  "events": []
 }
