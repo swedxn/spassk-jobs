@@ -2,8 +2,9 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import brandMark from '../assets/brand-mark.webp';
 import { normalizeSalaryText, salaryNumber } from './salary.mjs';
-import { isNoExperienceVacancy } from './qualification.mjs';
+import { isNoExperienceVacancy, isNoHigherEducationVacancy, vacancyFacts } from './qualification.mjs';
 import { cleanFarpostDescription } from './farpost-clean.mjs';
 import { jobDateValue, publicationInfo } from './date.mjs';
 import { sanitizeTracker, TRACKER_STATUSES } from './tracker.mjs';
@@ -29,7 +30,6 @@ import {
   RefreshCw,
   Search,
   SlidersHorizontal,
-  Sparkles,
   Sun,
   Upload,
   X,
@@ -135,8 +135,8 @@ function App() {
   const [error, setError] = useState('');
   const [tracker, setTracker] = useState(readTracker);
   const [query, setQuery] = useState('');
-  const [filters, setFilters] = useState({ good: false, noExperience: false, salary: false, favorite: false });
-  const [sort, setSort] = useState('fit');
+  const [filters, setFilters] = useState({ noExperience: false, noHigher: false, favorite: false });
+  const [sort, setSort] = useState('fresh');
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [selected, setSelected] = useState(null);
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -221,15 +221,14 @@ function App() {
     const result = jobs.filter((job) => {
       const haystack = `${job.name} ${job.employer} ${job.description} ${job.address} ${job.source}`.toLocaleLowerCase('ru-RU');
       return (!needle || haystack.includes(needle))
-        && (!filters.good || job.score >= 75)
         && (!filters.noExperience || isNoExperienceVacancy(job))
-        && (!filters.salary || hasSalary(job))
+        && (!filters.noHigher || isNoHigherEducationVacancy(job))
         && (!filters.favorite || tracker[job.id]?.favorite);
     });
     return result.sort((a, b) => {
       if (sort === 'fresh') return jobDateValue(b) - jobDateValue(a);
       if (sort === 'salary') return salaryNumber(b.salary) - salaryNumber(a.salary);
-      return b.score - a.score || (b.opportunityScore || 0) - (a.opportunityScore || 0);
+      return jobDateValue(b) - jobDateValue(a);
     });
   }, [jobs, query, filters, sort, tracker]);
 
@@ -243,8 +242,8 @@ function App() {
   const toggleFilter = (name) => setFilters((current) => ({ ...current, [name]: !current[name] }));
   const resetFilters = () => {
     setQuery('');
-    setFilters({ good: false, noExperience: false, salary: false, favorite: false });
-    setSort('fit');
+    setFilters({ noExperience: false, noHigher: false, favorite: false });
+    setSort('fresh');
   };
   const hasActiveFilters = query || Object.values(filters).some(Boolean);
 
@@ -293,7 +292,6 @@ function App() {
               <label className="sort-field">
                 <span className="sr-only">Сортировка</span>
                 <select value={sort} onChange={(event) => setSort(event.target.value)}>
-                  <option value="fit">Сначала подходящие</option>
                   <option value="fresh">Сначала свежие</option>
                   <option value="salary">Выше зарплата</option>
                 </select>
@@ -310,9 +308,8 @@ function App() {
                   exit={{ opacity: 0, height: 0, y: -10 }}
                   transition={{ duration: 0.4, ease }}
                 >
-                  <FilterButton active={filters.good} onClick={() => toggleFilter('good')}>Подходит мне</FilterButton>
                   <FilterButton active={filters.noExperience} onClick={() => toggleFilter('noExperience')}>Без опыта</FilterButton>
-                  <FilterButton active={filters.salary} onClick={() => toggleFilter('salary')}>Есть зарплата</FilterButton>
+                  <FilterButton active={filters.noHigher} onClick={() => toggleFilter('noHigher')}>Без высшего образования</FilterButton>
                   <FilterButton active={filters.favorite} onClick={() => toggleFilter('favorite')} icon={<Heart />}>Избранное</FilterButton>
                   {hasActiveFilters && <button className="clear-button" type="button" onClick={resetFilters}>Сбросить</button>}
                 </motion.div>
@@ -412,9 +409,9 @@ function Header({ scrolled, theme, onTheme, onSearch }) {
   return (
     <header className={`site-header ${scrolled ? 'site-header--scrolled' : ''}`}>
       <nav className="nav-wrap" aria-label="Главная навигация">
-        <a className="brand" href="#top" aria-label="Точка — вакансии Спасска-Дальнего, на главную">
-          <img className="brand-mark" src={`${BASE}assets/brand-mark.webp`} alt="" />
-          <span>Точка</span>
+        <a className="brand" href="#top" aria-label="Работа в Спасске-Дальнем — на главную">
+          <img className="brand-mark" src={brandMark} alt="" />
+          <span>Работа в Спасске</span>
         </a>
         <div className="nav-links">
           <a href="#vacancies">Вакансии</a>
@@ -455,10 +452,10 @@ function Hero({ meta, stats, onStart }) {
           Свежие вакансии каждые 3 часа
         </motion.div>
         <motion.h1 initial={reduced ? false : { opacity: 0, y: 40, filter: 'blur(18px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 1.1, ease }}>
-          Следующий шаг —<br /><span>здесь.</span>
+          Работа в<br /><span>Спасске-Дальнем.</span>
         </motion.h1>
         <motion.div className="hero-actions" initial={reduced ? false : { opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.36, ease }}>
-          <button className="primary-button" type="button" onClick={onStart}>Найти свою</button>
+          <button className="primary-button" type="button" onClick={onStart}>Смотреть вакансии</button>
         </motion.div>
 
         <motion.div className="hero-product" initial={reduced ? false : { opacity: 0, y: 70, scale: 0.94 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 1.25, delay: 0.25, ease }}>
@@ -467,12 +464,11 @@ function Hero({ meta, stats, onStart }) {
               <span className="product-kicker">Спасск-Дальний</span>
               <strong><CountUp value={stats.active || 0} /> вакансий</strong>
             </div>
-            <span className="product-status"><span className="status-radar" aria-hidden="true"><i /></span> В эфире</span>
           </div>
           <div className="product-search"><Search /> Должность, компания или навык <kbd>⌘ K</kbd></div>
           <div className="metric-grid">
-            <Metric value={stats.goodFit || 0} label="хорошо подходят" tone="blue" />
-            <Metric value={stats.noExperience || 0} label="без опыта" tone="violet" />
+            <Metric value={stats.noExperience || 0} label="без опыта" tone="blue" />
+            <Metric value={stats.noHigherEducation || 0} label="без высшего" tone="violet" />
             <Metric value={stats.withSalary || 0} label="с зарплатой" tone="pink" />
             <Metric value={meta.sourcesChecked || 0} label="источников" tone="green" />
           </div>
@@ -519,11 +515,12 @@ function JobRow({ job, index, favorite, onFavorite, onOpen }) {
     >
       <button className="job-row__main" type="button" onClick={onOpen}>
         <div className="job-row__title">
-          <div className="job-badges">
-            {job.score >= 75 && <span className="badge badge--fit">Подходит вам</span>}
-            {isNoExperienceVacancy(job) && <span className="badge">Без опыта</span>}
-            {job.isNew && <span className="badge badge--new">Новая</span>}
-          </div>
+          {(isNoExperienceVacancy(job) || job.isNew) && (
+            <div className="job-badges">
+              {isNoExperienceVacancy(job) && <span className="badge">Без опыта</span>}
+              {job.isNew && <span className="badge badge--new">Новая</span>}
+            </div>
+          )}
           <h3>{job.name}</h3>
           <p>{job.employer}</p>
           <span className="job-date"><CalendarDays /> {publication.short}</span>
@@ -531,10 +528,6 @@ function JobRow({ job, index, favorite, onFavorite, onOpen }) {
         <div className="job-row__meta">
           <strong>{normalizeSalaryText(job.salary)}</strong>
           <span><MapPin /> {job.address || job.city}</span>
-        </div>
-        <div className="job-row__score">
-          <span>{job.score}%</span>
-          <ArrowUpRight />
         </div>
       </button>
       <button className={`favorite-button ${favorite ? 'active' : ''}`} type="button" onClick={onFavorite} aria-label={favorite ? 'Убрать из избранного' : 'Добавить в избранное'}>
@@ -547,6 +540,7 @@ function JobRow({ job, index, favorite, onFavorite, onOpen }) {
 function JobModal({ job, state, onPatch, onClose }) {
   const reduced = useReducedMotion();
   const publication = publicationInfo(job);
+  const facts = vacancyFacts(job);
   const dialogRef = useRef(null);
 
   useEffect(() => {
@@ -584,7 +578,6 @@ function JobModal({ job, state, onPatch, onClose }) {
         <button className="modal-close" data-modal-close type="button" onClick={onClose} aria-label="Закрыть"><X /></button>
         <div className="modal-body">
           <div className="modal-hero">
-            <div className="modal-score"><Sparkles /> {job.score}% совпадение · {job.fit}</div>
             <h2 id="job-modal-title">{job.name}</h2>
             <p className="modal-employer">{job.employer}</p>
             <div className="modal-salary">{normalizeSalaryText(job.salary)}</div>
@@ -603,10 +596,10 @@ function JobModal({ job, state, onPatch, onClose }) {
             <p className="description">{job.source === 'FarPost' ? cleanFarpostDescription(job.description, job.name) : job.description}</p>
           </div>
 
-          {job.reasons?.length > 0 && (
+          {facts.length > 0 && (
             <div className="modal-section">
-              <h3>Почему такой результат</h3>
-              <ul className="reason-list">{job.reasons.map((reason) => <li key={reason}><Check /> {reason}</li>)}</ul>
+              <h3>Коротко об условиях</h3>
+              <ul className="reason-list">{facts.map((fact) => <li key={fact}><Check /> {fact}</li>)}</ul>
             </div>
           )}
 
@@ -742,7 +735,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="section-wrap footer-inner">
-        <div><img className="brand-mark" src={`${BASE}assets/brand-mark.webp`} alt="" /><strong>Точка</strong></div>
+        <div><img className="brand-mark" src={brandMark} alt="" /><strong>Работа в Спасске</strong></div>
         <p>Бесплатный некоммерческий агрегатор вакансий Спасска-Дальнего.</p>
         <a href="#top">Наверх <ArrowUpRight /></a>
       </div>
@@ -753,7 +746,7 @@ function Footer() {
 function LoadingState() {
   return (
     <div className="loading-state">
-      <div className="loading-mark"><img src={`${BASE}assets/brand-mark.webp`} alt="Точка" /></div>
+      <div className="loading-mark"><img src={brandMark} alt="Работа в Спасске" /></div>
       <div className="loading-line"><span /></div>
       <p>Обновляем вакансии</p>
     </div>

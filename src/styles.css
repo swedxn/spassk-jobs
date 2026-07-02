@@ -314,8 +314,7 @@ svg {
   pointer-events: none;
 }
 
-.live-orbit,
-.status-radar {
+.live-orbit {
   position: relative;
   width: 16px;
   height: 16px;
@@ -324,8 +323,7 @@ svg {
   border: 1px solid rgba(52, 199, 89, 0.28);
 }
 
-.live-orbit::before,
-.status-radar::before {
+.live-orbit::before {
   position: absolute;
   inset: -1px;
   border: 1px solid rgba(52, 199, 89, 0.4);
@@ -334,8 +332,7 @@ svg {
   animation: signal-ring 2.4s cubic-bezier(.2,.7,.2,1) infinite;
 }
 
-.live-orbit i,
-.status-radar i {
+.live-orbit i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -472,23 +469,6 @@ svg {
 .product-topline strong {
   font-size: clamp(26px, 4vw, 40px);
   letter-spacing: -0.045em;
-}
-
-.product-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px 12px 7px 9px;
-  border-radius: 999px;
-  color: #16773b;
-  background: rgba(52, 199, 89, 0.11);
-  font-size: 12px;
-  font-weight: 650;
-}
-
-.product-status .status-radar {
-  width: 17px;
-  height: 17px;
 }
 
 .product-search {
@@ -886,7 +866,7 @@ svg {
 
 .job-row__main {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(230px, 0.75fr) 76px;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.75fr);
   align-items: center;
   gap: 30px;
   width: 100%;
@@ -916,11 +896,6 @@ svg {
   background: #f2f2f4;
   font-size: 10px;
   font-weight: 650;
-}
-
-.badge--fit {
-  color: #0666c5;
-  background: #eaf4ff;
 }
 
 .badge--new {
@@ -986,29 +961,6 @@ svg {
 
 .job-row__meta svg {
   display: none;
-}
-
-.job-row__score {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 10px;
-  color: var(--blue);
-}
-
-.job-row__score span {
-  font-size: 13px;
-  font-weight: 650;
-}
-
-.job-row__score svg {
-  width: 19px;
-  height: 19px;
-  transition: transform 0.25s ease;
-}
-
-.job-row:hover .job-row__score svg {
-  transform: translate(3px, -3px);
 }
 
 .favorite-button {
@@ -1376,25 +1328,8 @@ svg {
     var(--surface);
 }
 
-.modal-score {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 8px 11px;
-  border-radius: 999px;
-  color: #0768c8;
-  background: #eaf4ff;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.modal-score svg {
-  width: 15px;
-  height: 15px;
-}
-
 .modal-hero > h2 {
-  margin: 24px 0 0;
+  margin: 0;
   font-size: clamp(38px, 5vw, 60px);
   line-height: 0.98;
   letter-spacing: -0.055em;
@@ -1793,10 +1728,6 @@ svg {
 
   .job-row__main {
     grid-template-columns: 1fr minmax(190px, 0.65fr);
-  }
-
-  .job-row__score {
-    display: none;
   }
 
   .footer-inner {
@@ -2265,12 +2196,6 @@ html[data-theme="dark"] .badge {
   background: #2c2c2e;
 }
 
-html[data-theme="dark"] .badge--fit,
-html[data-theme="dark"] .modal-score {
-  color: #64aaff;
-  background: #172b43;
-}
-
 html[data-theme="dark"] .badge--new {
   color: #64d87b;
   background: #17321f;
@@ -2338,14 +2263,6 @@ html[data-theme="dark"] .footer-inner {
 
   .hero-actions {
     flex-direction: column;
-  }
-
-  .product-status svg {
-    display: none;
-  }
-
-  .product-status {
-    font-size: 10px;
   }
 
   .search-console {
