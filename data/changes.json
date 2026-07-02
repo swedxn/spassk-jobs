@@ -1,9 +1,210 @@
 {
-  "generatedAt": "2026-07-01T23:30:51.083Z",
+  "generatedAt": "2026-07-02T03:10:26.540Z",
   "summary": {
-    "new": 0,
-    "changed": 0,
-    "closed": 0
+    "new": 5,
+    "changed": 9,
+    "closed": 3
   },
-  "events": []
+  "events": [
+    {
+      "type": "new",
+      "vacancyId": "farpost-83056678",
+      "name": "Повар-шаурмист",
+      "source": "FarPost",
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "new",
+      "vacancyId": "farpost-136627593",
+      "name": "Торговый Представитель",
+      "source": "FarPost",
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "new",
+      "vacancyId": "farpost-107917034",
+      "name": "Инструктор -кинолог",
+      "source": "FarPost",
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "new",
+      "vacancyId": "farpost-123765421",
+      "name": "Водитель самосвала",
+      "source": "FarPost",
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "new",
+      "vacancyId": "farpost-118189505",
+      "name": "Разнорабочий",
+      "source": "FarPost",
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136041984",
+      "name": "Помощник машиниста тепловоза",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "АО РЖД сегодня в 09:25 530"
+      },
+      "after": {
+        "employer": "АО РЖД сегодня в 09:25 538"
+      },
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136608206",
+      "name": "МЕНЕДЖЕР ПО ПРОДАЖАМ",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "ИП Богодилов Руслан Александрович 71"
+      },
+      "after": {
+        "employer": "ИП Богодилов Руслан Александрович вчера в 12:44 83"
+      },
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-118491396",
+      "name": "Охранник",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "ООО \"ЧОА\"Вымпел\" 30 июня 3528"
+      },
+      "after": {
+        "employer": "ООО \"ЧОА\"Вымпел\" 30 июня 3532"
+      },
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-104396837",
+      "name": "Заместитель управляющего, старший продавец, продавец",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "ООО \"Альбион 2002\" 29 июня 4521"
+      },
+      "after": {
+        "employer": "ООО \"Альбион 2002\" 29 июня 4524"
+      },
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-126851422",
+      "name": "Сторож",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "ИП Папикян АА 25 июня 1613"
+      },
+      "after": {
+        "employer": "ИП Папикян АА 25 июня 1617"
+      },
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136476567",
+      "name": "Менеджер по логистике",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "ООО \"ФГ-Логистика\" 24 июня 194"
+      },
+      "after": {
+        "employer": "ООО \"ФГ-Логистика\" 24 июня 198"
+      },
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-108614800",
+      "name": "Водитель категорий В",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "ООО \"РесурсТранс\" 24 июня 7872"
+      },
+      "after": {
+        "employer": "ООО \"РесурсТранс\" 24 июня 7875"
+      },
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-135408228",
+      "name": "Водитель-экспедитор категории СЕ",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "ООО Русагро-Ресурс 23 июня 584"
+      },
+      "after": {
+        "employer": "ООО Русагро-Ресурс 23 июня 585"
+      },
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "changed",
+      "vacancyId": "farpost-136340702",
+      "name": "Водитель автомобиля",
+      "source": "FarPost",
+      "fields": [
+        "employer"
+      ],
+      "before": {
+        "employer": "АО ДРСК Приморские электрические сети 17 июня 184"
+      },
+      "after": {
+        "employer": "АО ДРСК Приморские электрические сети 17 июня 185"
+      },
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "closed",
+      "vacancyId": "farpost-110622462",
+      "name": "Торговый представитель",
+      "source": "FarPost",
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "closed",
+      "vacancyId": "farpost-135310972",
+      "name": "Разнорабочий",
+      "source": "FarPost",
+      "at": "2026-07-02T03:10:26.540Z"
+    },
+    {
+      "type": "closed",
+      "vacancyId": "farpost-135776645",
+      "name": "Пекарь и помощник пекаря",
+      "source": "FarPost",
+      "at": "2026-07-02T03:10:26.540Z"
+    }
+  ]
 }
