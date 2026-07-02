@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T03:10:26.540Z",
+  "generatedAt": "2026-07-02T03:25:05.858Z",
   "updateStatus": "Облачный импорт выполнен частично; недоступны: HeadHunter, Rabota1000, ЦентрРабота",
   "fallback": false,
   "sourcesChecked": 39,
@@ -48,7 +48,7 @@
       "mode": "auto",
       "status": "blocked",
       "found": 0,
-      "error": "robots.txt запрещает путь /spassk-dalni"
+      "error": "robots.txt недоступен — импорт отменён безопасно: rabota1000.ru HTTP 403"
     },
     {
       "name": "ЦентрРабота",
@@ -87,14 +87,14 @@
     "noHigherEducation": 330,
     "withSalary": 347,
     "goodFit": 162,
-    "newVacancies": 5,
-    "changedVacancies": 9,
-    "strongOpportunities": 4
+    "newVacancies": 0,
+    "changedVacancies": 2,
+    "strongOpportunities": 1
   },
   "changes": {
-    "new": 5,
-    "changed": 9,
-    "closed": 3
+    "new": 0,
+    "changed": 2,
+    "closed": 0
   },
   "policy": "Основной список: только явный Спасск-Дальний; общерегиональные, другие города, вахта и переезд исключены."
 }
